@@ -1,0 +1,12 @@
+{
+    "name": "Polairgroup",
+    "description": "PolairGroup",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Uldalex"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,25 @@
+.footer {
+  color:rgba(227, 234, 241, 0.51);
+  
+  p {
+    font-size:$font-size-sm;
+  }
+  .nav-link {
+    color: $gray-100;
+    font-weight: $font-weight-normal;
+    font-size: $font-size-base;
+    padding: 0.6rem 0rem;
+
+    &:hover {
+      color:$white;
+      opacity: 1 !important;
+      transition: $footer-link-animation;
+    }
+  }
+  .footer-logo {
+    max-width: 2rem;
+  }
+  .navbar__telegram{
+    padding-left: 1.9rem;
+  }
+}
