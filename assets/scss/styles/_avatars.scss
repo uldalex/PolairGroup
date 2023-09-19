@@ -83,6 +83,7 @@
 	width: $avatar-sm-width !important;
 	height: $avatar-sm-height !important;
 	font-size: $font-size-sm;
+	min-width:36px;
 
   &.avatar-raised {
     margin-top: -$avatar-sm-height * 0.5;

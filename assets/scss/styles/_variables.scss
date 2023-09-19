@@ -5,7 +5,7 @@
 
 $soft-background-color: #ffffff !default; // Testing
 $font-color:            #383E45 !default;
-$h-color:               #003B5C !default;
+$h-color:               #0B0C0C !default;
 
 // Color system
 
@@ -57,7 +57,7 @@ $primary:       $PrimaryBlue;
 $secondary:     $gray-300;
 $info:          #1A73E8 !default;
 $success:       #4CAF50 !default;
-$warning:       #fb8c00 !default;
+$warning:       #F5BD0B !default;
 $danger:        #F44335 !default;
 $light:         $gray-200 !default;
 $dark:          $h-color !default;
@@ -103,8 +103,8 @@ $danger-gradient-state:       #E53935 !default;
 $warning-gradient:            rgba(255, 168, 38, 0.146) !default;
 $warning-gradient-state:      rgba(255, 168, 38, 0.146) !default;
 
-$dark-gradient:               rgba(0,0,0,0.5) !default;
-$dark-gradient-state:         #003B5C !default;
+$dark-gradient:              #003B5C !default;
+$dark-gradient-state:         #1a2035 !default;
 
 $light-gradient:              #EBEFF4 !default;
 $light-gradient-state:        #CED4DA !default;
@@ -832,7 +832,7 @@ $btn-secondary-font-color:    $white !default;
 $btn-danger-font-color:       $white !default;
 $btn-info-font-color:         $white !default;
 $btn-success-font-color:      $white !default;
-$btn-warning-font-color:      $white !default;
+$btn-warning-font-color:      $black !default;
 $btn-dark-font-color:         $white !default;
 $btn-light-font-color:        #3A416F !default;
 

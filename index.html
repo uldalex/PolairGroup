@@ -22,7 +22,7 @@
   <main class="main-content position-relative max-height-vh-100 h-100 ">
     <header>
     <!-- Topbar -->
-    <div class="navbar  navbar-dark bg-dark">
+    <div class="navbar  navbar-dark ">
         <div class="container">
             <div class="left-part d-flex">
                 <a class="navbar-brand" href="#" aria-label="PolairGroup"><img src="assets/img/logo_polar.svg"></a>
@@ -34,8 +34,8 @@
             <div class="right-part d-flex ml-auto">
                 <a href="tel:8 800 432 32 32" class="navbar__phone nav-link" aria-label="8 800 432 32 32">8 800 432 32 32</a>
                 <a href="mailto:sale@polair.ru" class="navbar__mail nav-link" aria-label="sale@polair.ru">sale@polair.ru</a>
-                <a href="https://t.me/@link" class="navbar__telegram nav-link" aria-label="@link"></a>
-                <a href="https://wa.me/+000000000" class="navbar__whatsapp" aria-label="+000000000"></a>
+                <a href="https://t.me/@link" target="_blank" class="navbar__telegram nav-link" aria-label="@link"></a>
+                <a href="https://wa.me/+000000000" target="_blank" class="navbar__whatsapp" aria-label="+000000000"></a>
             </div>
         </div>
     </div>
@@ -51,8 +51,8 @@
 						<p>Сервисный портал</p>
 					</div>
 					<div class="order-0 order-md-3">
-						<a href="#application" class="btn btn-outline-primary btn-sm mb-0 me-3 decktop" data-bs-toggle="modal" data-bs-target="#application">Заявка на ремонт</a>
-						<a href="login" class="btn bg-gradient-primary btn-sm mb-0 decktop" data-bs-toggle="modal" data-bs-target="#login">Личный кабинет</a>
+						<a href="#application" class="btn btn-outline-primary btn-md mb-0 me-3 decktop" data-bs-toggle="modal" data-bs-target="#application">Заявка на ремонт</a>
+						<a href="login" class="btn bg-gradient-primary  btn-md mb-0 decktop" data-bs-toggle="modal" data-bs-target="#login">Личный кабинет</a>
 					</div>
           <div class="collapse navbar-collapse"  id="navbarcol" >
             <ul class="navbar-nav me-auto mb-2 mb-sm-0">
@@ -78,8 +78,8 @@
 							<a href="https://t.me/@link" class="navbar__telegram nav-link" aria-label="@link"></a>
 							<a href="https://wa.me/+000000000" class="navbar__whatsapp" aria-label="+000000000"></a>
 						</div>
-            <a href="#" class="btn btn-outline-primary btn-sm  mobile" aria-label="Заявка на ремонт">Заявка на ремонт</a>
-						<a href="#" class="btn bg-gradient-primary btn-sm mobile" aria-label="Личный кабинет">Личный кабинет</a>
+            <a href="#" class="btn btn-outline-primary btn-sm  mobile" data-bs-toggle="modal" data-bs-target="#application" aria-label="Заявка на ремонт">Заявка на ремонт</a>
+						<a href="#" class="btn bg-gradient-primary btn-sm mobile" data-bs-toggle="modal" data-bs-target="#login" aria-label="Личный кабинет">Личный кабинет</a>
           </div>
 
         </div>
@@ -194,7 +194,7 @@
               <h3>Партнерство</h3>
               <p>Lorem ipsum dolor sit amet consectetur. Interdum viverra ut eu vitae. Nisl id facilisi senectus dignissim eget enim tortor. Ut consequat vulputate vitae faucibus fermentum aenean viverra sed. Ipsum nibh pellentesque platea tempor adipiscing euismod. Odio urna natoque hac nulla odio amet.</p>
               <p>Lorem ipsum dolor sit amet consectetur. Interdum viverra ut eu vitae. Nisl id facilisi senectus dignissim eget enim tortor. Ut consequat vulputate vitae faucibus fermentum aenean viverra sed. </p>
-              <a href="#" class="btn bg-gradient-dark btn-sm mb-5" aria-label="Стать партнером">Стать партнером</a>
+              <a href="#partnership" class="btn bg-gradient-dark btn-sm mb-5" data-bs-toggle="modal" data-bs-target="#partnership"  aria-label="Стать партнером">Стать партнером</a>
               <h4 class="mb-4 mt-5">Уже с нами</h4>
             </div>
           </div>
@@ -328,7 +328,7 @@
               </div>
               <div class="col-lg-6">
                 <div class="input-group mb-3">
-                  <input type="text" class="form-control" id="phone" placeholder="Номер телефона" required/>
+                  <input type="text" class="form-control" id="phone"  data-masked="" data-inputmask="'mask': '+7 (999)-999-99-99'"placeholder="Номер телефона" required/>
                   <div class="invalid-feedback">
                     Пожалуйста, заполните номер телефона
                    </div>
@@ -361,7 +361,7 @@
     </section>
     <!--end section form-->
     <!--footer-->
-    <footer class="footer py-5 bg-dark ">
+    <footer class="footer py-5 navbar-dark">
         <div class="container">
           <div class="row justify-content-lg-between">
             <div class="col-lg-4 col-md-12 d-flex flex-column justify-content-lg-between">
@@ -962,7 +962,6 @@
           </form>
           <div id="response-send" class="m-auto response-send">
             <div class="modal-body">
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               <div class="text-center mt-3 mb-3 response-send__img">
                 <img src="assets/img/send.svg"/>
               </div>
@@ -1008,8 +1007,100 @@
       </div>
     </div>
   </div>
-
   <!-- end Логин-->
+  <!--Партнерство-->
+  <div class="modal modal-lg fade" id="partnership" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="pasportLabel">Заявка на партнерство с сервисным центром</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="form__wrapper">
+            <form class="needs-validation" novalidate action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '999999999'" id="inn" placeholder="ИНН" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '99999999'" id="kpp" placeholder="КПП" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " id="orgname" placeholder="Полное наименование организации" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " id="orgadress" placeholder="Адрес организации" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " id="orgfio" placeholder="ФИО ответственного" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " id="orgname" data-masked="" data-inputmask="'mask': '+7(999)999-99-99'" placeholder="Номер мобильного телефона" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control " id="orgname" data-masked="" data-inputmask-alias="email" placeholder="Email" required/>
+                    <div class="invalid-feedback">Это обязательное поле</div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div id="form-z-danger" class="alert alert-danger" role="alert">
+                    Есть ошибки в заполнении формы. <a href="#" id="danger-link" class="danger-link" aria-label="Проверить форму">Проверить</a>.
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-check p-0 mb-3">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required="">
+                    <label class="form-check-label" for="invalidCheck">
+                      Даю согласие на обработку<br> <a href="#" aria-label="Даю согласие на обработку персональных данных">персональных данных</a>
+                    </label>
+                    <div class="invalid-feedback">
+                      Нужно согласиться с условиями перед отправкой.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <button type="submit" class="btn bg-gradient-primary w-100">Отправить заявку</button>
+                </div>
+              </div>
+            </form>
+            <div id="response-send" class="m-auto response-send">
+              <div class="modal-body">
+                <div class="text-center mt-3 mb-3 response-send__img">
+                  <img src="assets/img/send.svg"/>
+                </div>
+                <h4 class="text-center">Спасибо!<br> Заявка на партнество успешно отправлена</h4>
+                <p class="text-center">На указанный email будет отправлено письмо с решением</p>
+                <div class="text-center">
+                  <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отлично!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <!-- end Партнерство-->
   <!--end modals-->
 	<script>
     var win = navigator.platform.indexOf('Win') > -1;
