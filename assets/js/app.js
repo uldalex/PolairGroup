@@ -1017,6 +1017,8 @@ $("#remove_custom").on('click', function(){
           console.log("valid form");
           $(this).hide();
           $(this).parents('.form__wrapper').find('.response-send').show();
+          event.preventDefault();
+          event.stopPropagation();
         }
         form.classList.add('was-validated')
       }, false)
@@ -1216,5 +1218,24 @@ $(document).ready(function(){
   $(":input").inputmask();
 });
 
+// input type file файл выбран
 
+let inputs = document.querySelectorAll('.custom-file-input');
+    Array.prototype.forEach.call(inputs, function (input) {
+      let label = input.parentElement,
+        labelVal = label.querySelector('.file-button-text').innerText;
   
+      input.addEventListener('change', function (e) {
+        let countFiles = '';
+        if (this.files && this.files.length >= 1)
+          countFiles = this.files.length;
+  
+        if (countFiles)
+          label.querySelector('.file-button-text').innerText = 'Выбрано файлов: ' + countFiles;
+        else
+          label.querySelector('.file-button-text').innerText = labelVal;
+      });
+    });
+
+    fsLightbox.props.type = "image";
+    fsLightbox.props.types = [null, null, "video"];

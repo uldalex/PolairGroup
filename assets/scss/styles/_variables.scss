@@ -330,6 +330,7 @@ $body-text-align:           null !default;
 // Style anchor elements.
 
 $link-color:                              $primary !default;
+$link-alt-color:                          $blue;
 $link-decoration:                         none !default;
 $link-hover-color:                        $link-color !default;
 $link-hover-decoration:                   none !default;
@@ -355,7 +356,7 @@ $paragraph-margin-bottom:   0.75rem !default;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
-  md: 768px,
+  md: 820px,
   lg: 992px,
   xl: 1200px,
   xxl: 1400px
@@ -1110,8 +1111,8 @@ $form-file-height-lg:             $input-height-lg !default;
 $form-feedback-margin-top:          $form-text-margin-top !default;
 $form-feedback-font-size:           $form-text-font-size !default;
 $form-feedback-font-style:          $form-text-font-style !default;
-$form-feedback-valid-color:         #66d432 !default;
-$form-feedback-invalid-color:       #fd5c70 !default;
+$form-feedback-valid-color:         #43B02A !default;
+$form-feedback-invalid-color:       #EE5157 !default;
 
 $form-feedback-icon-valid-color:    $form-feedback-valid-color !default;
 $form-feedback-icon-valid:          url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 10 8'><path fill='#{$form-feedback-icon-valid-color}' d='M2.3 6.73L.6 4.53c-.4-1.04.46-1.4 1.1-.8l1.1 1.4 3.4-3.8c.6-.63 1.6-.27 1.2.7l-4 4.6c-.43.5-.8.4-1.1.1z'/></svg>") !default;

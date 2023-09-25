@@ -9,7 +9,8 @@
   }
 
   th {
-    font-weight: $table-head-font-weight;
+    font-weight: 400;
+
   }
 
   td {
@@ -24,10 +25,7 @@
     }
   }
 
-  td,
-  th {
-    white-space: nowrap;
-  }
+
   // Vetical align table content
   &.align-items-center {
     td,
@@ -50,4 +48,7 @@
   > :not(:first-child) {
     border-top: (1 * $table-border-width) solid $table-group-separator-color;
   }
+}
+table p {
+  font-weight:400;
 }

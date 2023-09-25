@@ -833,10 +833,13 @@ body:not(.dark-version) {
   }
 }
 .navbar-vertical.navbar-expand-xs{
-  width:15.625rem !important
+  width:15.625rem 
 }
 @media(max-width:769px){
   .navbar-vertical.navbar-expand-xs{
     width:100%;
   }  
+}
+.sidenav .nav-item.active {
+  background-color: rgba(0, 59, 92, 0.05);
 }

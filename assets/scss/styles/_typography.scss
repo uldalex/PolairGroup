@@ -96,7 +96,7 @@ h4, .h4 {
 
 a {
   letter-spacing: $letter-normal;
-  color: $dark;
+  color: $blue;
 }
 
 .text-sm {
@@ -199,6 +199,9 @@ p {
   &.text-primary {
     background-image: $text-gradient-bg-primary;
   }
+  &.text-blue {
+    background-image: $text-gradient-bg-dark;
+  }
   &.text-info {
     background-image: $text-gradient-bg-info;
   }
@@ -215,7 +218,15 @@ p {
     background-image: $text-gradient-bg-dark;
   }
 }
-
+.text-gray200 {
+    color: $gray-200;
+  }
+.text-gray300 {
+    color: $gray-300;
+  }
+.text-gray400 {
+    color: $gray-400;
+  }
 .blockquote {
   border-left: 3px solid $text-muted;
   > span {
@@ -238,7 +249,9 @@ p {
 .text-decoration-none {
   text-decoration: none !important;
 }
-
+.link-alt-color{
+  color: $link-alt-color;
+}
 .text-break {
   word-wrap: break-word !important;
 }

@@ -20,12 +20,14 @@
 </head>
 
 <body class="g-sidenav-show  bg-gray-100 ">
+  <!--Развернем сайтбар на больших разрешениях на этой странице-->
   <script>
       if (window.innerWidth > 991) {
         let body = document.getElementsByTagName('body')[0];
         body.classList.add('g-sidenav-pinned');
       }
    </script>
+   <!--end Развернем сайтбар на больших разрешениях на этой странице-->
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start bg-white еуче-цршеу" id="sidenav-main">
     <div class="sidenav-header">
       <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
@@ -34,15 +36,7 @@
     <hr class="horizontal light mt-0 mb-2">
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="btn nav-link text-white active bg-gradient-primary me-3" href="#">
-            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
-              <i class="material-icons opacity-10">dashboard</i>
-            </div>
-            <span class="nav-link-text ms-1">Пример кнопки</span>
-          </a>
-        </li>
-        <li class="nav-item">
+        <li class="nav-item active">
           <a class="nav-link text-dark" href="dashboard.html">
             <div class="text-center text-dark me-2 d-flex align-items-center justify-content-center">
               <svg class="text-dark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -131,7 +125,7 @@
         </div>
         <div class="navbar" id="navbar">
           <div class="ms-md-auto pe-md-3 d-flex align-items-center">
-            <a class="btn btn-warning btn-sm mb-0">  Пожалуйста потвердите свой Телефон по SMS</a>
+            <a href="confirmation" class="btn btn-warning btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#confirmation">  Пожалуйста потвердите свой Телефон по SMS</a>
           </div>
           <ul class="navbar-nav  flex-nowrap flex-row justify-content-end">
             <li class="nav-item dropdown d-flex align-items-center">
@@ -218,207 +212,863 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="container-fluid py-4">
-      <!--карточки-->
+    <!--заголовок страницы-->
+    <div class="container-fluid pe--lg-4">
       <div class="row">
-        <div class="col-12 mb-5">
+        <div class="col-lg-6 mt-4 mb-3 mb-lg-5">
           <h1>Компании</h1>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+      </div>
+      <!--end заголовок страницы-->
+      <!--карточки-->
+      <div class="row">
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-2 mb-lg-4">
           <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div class="icon icon-lg icon-shape bg-gradient-success shadow-dark text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">weekend</i>
-              </div>
-              <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Всего оборудования</p>
-                <h4 class="mb-0">124</h4>
-              </div>
-            </div>
-            <hr class="dark horizontal my-0">
-            <div class="card-footer p-3">
-              <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+55% </span>текст</p>
+            <div class="row g-0">
+                <div class="col-3">
+                  <div class="card-header p-1 p-sm-3">
+                    <div class="card-about__img">
+                      <img src="assets/img/box.svg" class="img-fluid rounded-start" alt="Всего оборудования">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 d-flex d-sm-block align-items-center">
+                  <div class="card-body p-2 p-sm-3 d-flex d-sm-block align-items-center justify-content-between">
+                    <div>Всего оборудования</div>
+                    <h4 class="mb-0">324</h4>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-2 mb-lg-4">
           <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div class="icon icon-lg icon-shape bg-gradient-dark shadow-primary text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">settings</i>
-              </div>
-              <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Оборудования в ремонте</p>
-                <h4 class="mb-0">124</h4>
-              </div>
-            </div>
-            <hr class="dark horizontal my-0">
-            <div class="card-footer p-3">
-              <p class="mb-0"><span class="text-success text-sm font-weight-bolder">+3% </span>текст</p>
+            <div class="row g-0">
+                <div class="col-3">
+                  <div class="card-header p-1 p-sm-3">
+                    <div class="card-about__img">
+                      <img src="assets/img/key-gray.svg" class="img-fluid rounded-start" alt="Оборудование в ремонте">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 d-flex d-sm-block align-items-center">
+                  <div class="card-body p-2 p-sm-3 d-flex d-sm-block align-items-center justify-content-between">
+                    <p>Оборудование в ремонте</p>
+                    <h4 class="mb-0">124</h4>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
-        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-4">
-          <div class="card">
-            <div class="card-header p-3 pt-2">
-              <div class="icon icon-lg icon-shape bg-gradient-danger shadow-success text-center border-radius-xl mt-n4 position-absolute">
-                <i class="material-icons opacity-10">star</i>
-              </div>
-              <div class="text-end pt-1">
-                <p class="text-sm mb-0 text-capitalize">Ваш рейтинг</p>
-                <h4 class="mb-0">3,462</h4>
-              </div>
-            </div>
-            <hr class="dark horizontal my-0">
-            <div class="card-footer p-3">
-              <p class="mb-0"><span class="text-danger text-sm font-weight-bolder">-2%</span> текст</p>
+        <div class="col-xl-4 col-sm-6 mb-xl-0 mb-2 mb-lg-4">
+          <div class="card ">
+            <div class="row g-0">
+                <div class="col-3">
+                  <div class="card-header p-1 p-sm-3">
+                    <div class="card-about__img">
+                      <img src="assets/img/star.svg" class="img-fluid rounded-start" alt="124 953 продукции">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-9 d-flex d-sm-block align-items-center">
+                  <div class="card-body p-2 p-sm-3 d-flex d-sm-block align-items-center justify-content-between">
+                    <p>Ваш рейтинг</p>
+                    <h4 class="mb-0 d-flex d-sm-block flex-column align-items-end">5.0 <span class="text-secondary text-xs mt-1 mb-0">(129 отзывов)</span></h4>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
       <!--end карточки-->
-      <!--карточка организации-->
       <div class="row">
-        <div class="col-12 mb-xl-0 mb-4">
-          <div class="card my-4">
-            <div class="card-header p-3">
-              <h4>Данные компании</h4>
+        <div class="col-12 mb-xl-0 mb-md-4">
+          <div class="card my-2 my-lg-4">
+            <div class="card-header d-flex justify-content-between align-items-center p-3 p-md-4">
+              <h4 class="mb-0">Данные компании</h4>
+              <a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="link-alt-color font-weight-bold edit-link edit-link--edit ">Редактировать</a>
             </div>
-            <div class="card-body px-0 pb-2">
-              <div class="table-responsive p-0">
+            <div class="card-body px-0 pb-md-2">
+              <!--карточка организации mobile-->
+              <div class="d-block d-lg-none px-3">
+                <p class="text-secondary text-xs mt-1 mb-2">Полное наименование организации</p>
+                <p>ООО “ТехноХимСервис”</p>
+                <p class="text-secondary text-xs mt-1 mb-2">ИНН</p>
+                <p>346346346</p>
+                <p class="text-secondary text-xs mt-1 mb-2">ОГРН</p>
+                <p>24523523262</p>
+                <p class="text-secondary text-xs mt-1 mb-2">КПП</p>
+                <p>252525235</p>
+                <p class="text-secondary text-xs mt-1 mb-2">Адрес организации</p>
+                <p>г.Казань, ул.Вишневского,16В</p>
+              </div>
+              <!--end карточка организации mobile-->
+              <!--карточка организации десктоп-->
+              <div class="table-responsive d-none d-lg-block p-0">
                 <table class="table align-items-center mb-0">
                     <thead>
                     <tr>
-                        <th class="text-secondary  opacity-7">Полное наименование организации</th>
-                        <th class="text-secondary  opacity-7 ps-2">ИНН</th>
-                        <th class="text-secondary  opacity-7">ОГРН</th>
-                        <th class="text-secondary  opacity-7">КПП</th>
-                        <th class="text-secondary  opacity-7">Адрес организации</th>
+                        <th class="text-secondary text-sm opacity-7">Полное наименование организации</th>
+                        <th class="text-secondary  text-sm opacity-7 ps-2">ИНН</th>
+                        <th class="text-secondary  text-sm opacity-7">ОГРН</th>
+                        <th class="text-secondary  text-sm opacity-7">КПП</th>
+                        <th class="text-secondary  text-sm opacity-7">Адрес организации</th>
                     </tr>
                     </thead>
                     <tbody>
                     <tr>
-                        <td>
-                        <div class="d-flex px-2 py-1">
-                            <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                            </div>
-                        </div>
+                        <td class="ps-4">
+                            <p>ООО “ТехноХимСервис”</p>
                         </td>
                         <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
+                          <p>346346346</p>
                         </td>
-                        <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                        <td class="align-middle ">
+                          <p>24523523262</p>
                         </td>
-                        <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                        <td class="align-middle ">
+                          <p>252525235</p>
                         </td>
                         <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                            Edit
-                        </a>
+                          <p>г.Казань, ул.Вишневского,16В</p>
                         </td>
                     </tr>
                     </tbody>
                 </table>
               </div>
+              <!--end карточка организации десктоп-->
             </div>
          </div>
         </div>
       </div>
-      <!--end карточка организации-->
       <!--Таблица-->
       <div class="row">
-        <div class="col-12">
-          <div class="card my-4">
-            <div class="card-header p-3 pt-2">
-              Данные компании
+        <div class="col-12 mb-xl-0 mb-4">
+             <!--таблица пользователей десктоп-->
+            <div class="card my-2 my-lg-4">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h4>Пользователи</h4>
+              <a href="#adduser" data-bs-toggle="modal" data-bs-target="#adduser" class="link-alt-color font-weight-bold edit-link edit-link--add">Добавить</a>
             </div>
             <div class="card-body px-0 pb-2">
-              <div class="table-responsive p-0">
-                <table class="table align-items-center mb-0">
+              <!--мобильная карточка пользователя-->
+              <div class="card p-2 m-2 d-block d-lg-none border shadow-none ">
+                <div class="row">
+                  <div class="col-10">
+                  <p class="text-secondary text-xs mt-1 mb-2">Менеджер</p>
+                  <p class="font-weight-bold">Петров Алексей геннадьевич</p>
+                  </div>
+                  <div class="col-2 my-1 text-end">
+                    <div class="dropdown float-lg-end pe-4">
+                      <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a class="text-secondary" href="mailto:mail@mail.com">mail@mail.com</a> 
+                  <a class="px-1 text-secondary" href="tel:">+7 987 654 32 10</a>
+                </div>
+              </div>
+              <!--end мобильная карточка пользователя-->
+              <!--мобильная карточка пользователя-->
+              <div class="card p-2 m-2 d-block d-lg-none border shadow-none ">
+                <div class="row">
+                  <div class="col-10">
+                  <p class="text-secondary text-xs mt-1 mb-2">Менеджер</p>
+                  <p class="font-weight-bold">Петров Алексей геннадьевич</p>
+                  </div>
+                  <div class="col-2 my-1 text-end">
+                    <div class="dropdown float-lg-end pe-4">
+                      <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a class="text-secondary" href="mailto:mail@mail.com">mail@mail.com</a> 
+                  <a class="px-1 text-secondary" href="tel:">+7 987 654 32 10</a>
+                </div>
+              </div>
+              <!--end мобильная карточка пользователя-->
+              <!--мобильная карточка пользователя-->
+              <div class="card p-2 m-2 d-block d-lg-none border shadow-none ">
+                <div class="row">
+                  <div class="col-10">
+                  <p class="text-secondary text-xs mt-1 mb-2">Менеджер</p>
+                  <p class="font-weight-bold">Петров Алексей геннадьевич</p>
+                  </div>
+                  <div class="col-2 my-1 text-end">
+                    <div class="dropdown float-lg-end pe-4">
+                      <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a class="text-secondary" href="mailto:mail@mail.com">mail@mail.com</a> 
+                  <a class="px-1 text-secondary" href="tel:">+7 987 654 32 10</a>
+                </div>
+              </div>
+              <!--end мобильная карточка пользователя-->
+              <!--мобильная карточка пользователя-->
+              <div class="card p-2 m-2  d-block d-lg-none border shadow-none ">
+                <div class="row">
+                  <div class="col-10">
+                  <p class="text-secondary text-xs mt-1 mb-2">Менеджер</p>
+                  <p class="font-weight-bold">Петров Алексей геннадьевич</p>
+                  </div>
+                  <div class="col-2 my-1 text-end">
+                    <div class="dropdown float-lg-end pe-4">
+                      <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a class="text-secondary" href="mailto:mail@mail.com">mail@mail.com</a> 
+                  <a class="px-1 text-secondary" href="tel:">+7 987 654 32 10</a>
+                </div>
+              </div>
+              <!--end мобильная карточка пользователя-->
+              <!--мобильная карточка пользователя-->
+              <div class="card p-2 m-1 d-block d-lg-none border shadow-none ">
+                <div class="row">
+                  <div class="col-10">
+                  <p class="text-secondary text-xs mt-1 mb-2">Менеджер</p>
+                  <p class="font-weight-bold">Петров Алексей геннадьевич</p>
+                  </div>
+                  <div class="col-2 my-1 text-end">
+                    <div class="dropdown float-lg-end pe-4">
+                      <a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+                      </a>
+                      <ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+                        <li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="d-flex">
+                  <a class="text-secondary" href="mailto:mail@mail.com">mail@mail.com</a> 
+                  <a class="px-1 text-secondary" href="tel:">+7 987 654 32 10</a>
+                </div>
+              </div>
+              <!--end мобильная карточка пользователя-->
+              <div class="table-responsive d-none d-lg-block p-0">
+                <table class="table table_sort table-striped align-items-center mb-0">
                     <thead>
                     <tr>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Author</th>
-                        <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">Function</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Status</th>
-                        <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Employed</th>
-                        <th class="text-secondary opacity-7"></th>
+                        <th  class="text-secondary  text-sm opacity-7 sorted" data-order="-1">ФИО</th>
+                        <th class="text-secondary  text-sm opacity-7 ps-2">Email</th>
+                        <th class="text-secondary  text-sm opacity-7">Телефон</th>
+                        <th class="text-secondary  text-sm opacity-7">Должность</th>
+                        <th class="text-secondary  text-sm opacity-7">Адрес организации</th>
+                        <th class="text-secondary  text-sm opacity-7"></th>
+                        <th class="text-secondary  text-sm opacity-7"></th>
                     </tr>
                     </thead>
                     <tbody>
-                    <tr>
-                        <td>
-                        <div class="d-flex px-2 py-1">
-                            <div>
-                            <img src="../assets/img/team-2.jpg" class="avatar avatar-sm me-3 border-radius-lg" alt="user1">
-                            </div>
-                            <div class="d-flex flex-column justify-content-center">
-                            <h6 class="mb-0 text-sm">John Michael</h6>
-                            <p class="text-xs text-secondary mb-0">john@creative-tim.com</p>
-                            </div>
-                        </div>
+                      <tr>
+                          <td class="ps-4">
+                              <p><b>АПетров Алексей Геннадьевич</b></p>
+                          </td>
+                          <td>
+                            <p><a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                          </td>
+                          <td class="align-middle ">
+                            <p>24523523262</p>
+                          </td>
+                          <td class="align-middle ">
+                            <p>252525235</p>
+                          </td>
+                          <td class="align-middle">
+                            <p>г.Казань, ул.Вишневского,16В</p>
+                          </td>
+                          <td class="align-middle">
+                            <a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
+                          </td>
+                          <td class="align-middle">
+                            <a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
+                          </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                            <p><b>БЗакирова Лилия Латыповна</b></p>
                         </td>
                         <td>
-                        <p class="text-xs font-weight-bold mb-0">Manager</p>
-                        <p class="text-xs text-secondary mb-0">Organization</p>
+                          <p><a href="mailto:mail@mail.com">mail@mail.com</a></p>
                         </td>
-                        <td class="align-middle text-center text-sm">
-                        <span class="badge badge-sm bg-gradient-success">Online</span>
+                        <td class="align-middle ">
+                          <p>94523523262</p>
                         </td>
-                        <td class="align-middle text-center">
-                        <span class="text-secondary text-xs font-weight-bold">23/04/18</span>
+                        <td class="align-middle ">
+                          <p>452525235</p>
                         </td>
                         <td class="align-middle">
-                        <a href="javascript:;" class="text-secondary font-weight-bold text-xs" data-toggle="tooltip" data-original-title="Edit user">
-                            Edit
-                        </a>
+                          <p>г.Казань, ул.Вишневского,16В</p>
                         </td>
-                    </tr>
+                        <td class="align-middle">
+                          <a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                            <p><b>ЯКислов Алексей Сергеевич</b></p>
+                        </td>
+                        <td>
+                          <p><a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                        </td>
+                        <td class="align-middle ">
+                          <p>14523523262</p>
+                        </td>
+                        <td class="align-middle ">
+                          <p>952525235</p>
+                        </td>
+                        <td class="align-middle">
+                          <p>г.Казань, ул.Вишневского,16В</p>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="ps-4">
+                            <p><b>Петров Алексей Геннадьевич</b></p>
+                        </td>
+                        <td>
+                          <p><a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                        </td>
+                        <td class="align-middle ">
+                          <p>24523523262</p>
+                        </td>
+                        <td class="align-middle ">
+                          <p>752525235</p>
+                        </td>
+                        <td class="align-middle">
+                          <p>г.Казань, ул.Вишневского,16В</p>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
+                        </td>
+                        <td class="align-middle">
+                          <a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
+                        </td>
+                      </tr>
                     </tbody>
                 </table>
               </div>
             </div>
          </div>
+         <!--таблица пользователей десктоп-->
         </div>
       </div>
       <!--end Таблица-->
       <footer class="footer py-4  ">
         <div class="container-fluid">
           <div class="row align-items-center justify-content-lg-between">
-            <div class="col-lg-6 mb-lg-0 mb-4">
-              <div class="copyright text-center text-sm text-muted text-lg-start">
-                © 2004 - 2023 ООО "ПАРТС ТАЙМ". Все права защищены
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <ul class="nav nav-footer justify-content-center justify-content-lg-end align-items-center me-5">
-                <li class="nav-item">
-                  <a href="tel:+78004323232" class="navbar__phone nav-link pe-0 text-muted" aria-label="8 800 432 32 32">8 800 432 32 32</a>
-                </li>
-                <li class="nav-item">
-                  <a href="mailto:sale@polair.ru" class="navbar__mail nav-link pe-0 text-muted" aria-label="Заявка на ремонт">sale@polair.ru</a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://t.me/@link" class="navbar__telegram nav-link pe-0 text-muted" aria-label="@link"></a>
-                </li>
-                <li class="nav-item">
-                  <a href="https://wa.me/+000000000" class="navbar__whatsapp nav-link pe-0 text-muted" aria-label="+000000000"></a>
-                  
-                </li>
-              </ul>
-            </div>
+          <!--содержимое футера если есть-->
+          </div>
           </div>
         </div>
       </footer>
     </div>
   </main>
+    <!--подтверждение телефона-->
+    <div class="modal modal-sm fade" id="confirmation" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="pasportLabel">Подтверждение телефона</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="step-1">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <input type="tel" class="form-control " data-masked="" data-inputmask="'mask': '+7 (999) 999-99 99'" id="phone" placeholder="Номер мобильного телефона" required/>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <a class="step1__btn btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Отправить код</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+                <div class="m-auto step-2">
+                  <div class="form__wrapper">
+                    <form class="needs-validation" novalidate action="">
+                        <div class="row">
+                          <div class="col-12 mb-5">
+                            <p class="font-size-lg text-center mb-4">Мы отправили СМС с кодом на номер<br><span> +7 987 654 32 10 </span><a href="">Изменить</a></p>
+                            <div class="input-group--sms m-auto mb-3">
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n1" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n2" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n3" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n4" placeholder="" required/>
+                              <div class="invalid-feedback w-100 text-center">Неверный код</div>
+                              <a href="#" id="new-code" onclick="getElementById('clock').innerHTML = 10;"class="new-code font-size-lg w-100 text-center mt-2">Отправить код повторно</a>
+                            </div>
+                            <p class="text-center mb-5 mt-3"><span class="text-gray-4">Отправить повторно можно через </span  class="clock"><b id="clock"> 47 </b><span class="text-gray-4"> сек</span></p>
+                            <div class="text-center">
+                              <button type="submit" class="btn-md btn bg-gradient-primary mt-3 mb-3">Подтвердить</button>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                    <div class="m-auto response-send">
+                      <div class="modal-body">
+                        <div class="text-center mt-3 mb-3 response-send__img">
+                          <img src="assets/img/send.svg"/>
+                        </div>
+                        <h4 class="text-center">Номер телефона подтвержден</h4>
+                        <p class="text-center">Теперь вам открыты дополнительные возможности</p>
+                        <div class="text-center">
+                          <a href="" class="btn btn-md bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отлично!</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end подтверждение телефона-->
+    <!--редактирование организации-->
+    <div class="modal modal-lg fade" id="editcompany" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="pasportLabel">Редактирование организации</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form__wrapper">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control" id="orgname" value="ООО “ТехноХимСервис”" placeholder="Полное наименование организации" required/>
+                        <label for="orgname">Полное наименование организации</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control" id="orgadress" value="г.Казань, ул.Вишневского,16В" placeholder="Адрес" required/>
+                        <label for="orgadress">Адрес</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control" id="inn"  data-masked="" data-inputmask="'mask': '999999999'" value="346346346" placeholder="ИНН" required/>
+                        <label for="inn">ИНН</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control" id="kpp"  data-masked="" data-inputmask="'mask': '99999999'" value="252525235" placeholder="КПП" required/>
+                        <label for="kpp">КПП</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control" id="ogrn"  data-masked="" data-inputmask="'mask': '9999999999999'" value="2452352326245" placeholder="ОГРН" required/>
+                        <label for="ogrn">ОГРН</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control" id="orgphone" data-masked="" data-inputmask="'mask': '+7 (999) 999-99-99'" value="+7 (157) 954-78-46" placeholder="Номер телефона" required/>
+                        <label for="orgphone">Номер телефона</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group mb-3">
+                        <a href="" class="btn btn-md btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="m-auto response-send">
+                  <div class="modal-body">
+                    <div class="text-center mt-3 mb-3 response-send__img">
+                      <img src="assets/img/send.svg"/>
+                    </div>
+                    <p class="text-center">Данные организации сохранены</p>
+                    <div class="text-center">
+                      <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--end редактирование организации-->
+    <!--добавление пользователя-->
+    <div class="modal modal modal-lg fade" id="adduser" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="pasportLabel">Новый пользователь</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form__wrapper">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="input-group mb-3">
+                        <input type="text" class="form-control " id="name" placeholder="ФИО" required/>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group mb-3">
+                        <select class="form-select form-select__label" id="s_center" >
+                          <option selected disabled value="">Выбрать роль</option>
+                          <option value="Роль 1">Роль 1</option>
+                          <option value="Роль 2">Роль 2</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group mb-3">
+                        <input type="tel" class="form-control " data-masked="" data-inputmask="'mask': '999-99-999-9999-9'" id="phone" placeholder="Номер мобильного телефона" required/>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group mb-3">
+                        <input type="mail" class="form-control" data-inputmask-alias="email" id="mail" placeholder="Email" required/>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="password input-group mb-3">
+                        <input  id="password-input"  class="form-control password-input" name="PASSWORD" value="" type="password" placeholder="Придумайте пароль" >
+                        <a href="#" onclick="return show_hide_password(this);" class="password-vue password-control"></a>
+                        <div class="invalid-feedback">Придумайте пароль</div>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control password" id="password-input-repeat" placeholder="Повторите пароль" required/>
+                        <span onclick="return show_hide_password_repeat(this);"class="password-vue"></span>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group mb-3">
+                        <a href="" class="btn btn-md btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="m-auto response-send">
+                  <div class="modal-body">
+                    <div class="text-center mt-3 mb-3 response-send__img">
+                      <img src="assets/img/send.svg"/>
+                    </div>
+                    <p class="text-center">Пользователь создан</p>
+                    <div class="text-center">
+                      <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--end добавление пользователя-->
+    <!--редактирование пользователя-->
+    <div class="modal modal modal-lg fade" id="edituser" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="pasportLabel">Редактирование данных</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form__wrapper">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="text" class="form-control " id="name" placeholder="ФИО" value="Петров Алексей Геннадьевич" required/>
+                        <label for="name">ФИО</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating input-group mb-3">
+                        <select class="form-select form-select__label" id="s_center" >
+                          <option disabled value="">Выбрать роль</option>
+                          <option  selected value="Роль 1">Роль 1</option>
+                          <option value="Роль 2">Роль 2</option>
+                        </select>
+                        <label for="s_center">Роль</label>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="tel" class="form-control " data-masked="" data-inputmask="'mask': '+7 (999) 999-99-99" id="phone" value="+7 (498) 457-55-12" placeholder="Номер мобильного телефона" required/>
+                        <label for="phone">Номер телефона</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-floating input-group mb-3">
+                        <input type="mail" class="form-control" data-inputmask-alias="email" id="mail" placeholder="Email" value="petr88@gmail.com" required/>
+                        <label for="mail">e-mail</label>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="password input-group mb-3">
+                        <input  id="password-input"  class="form-control password-input" name="PASSWORD" value="" type="password" placeholder="Придумайте пароль" >
+                        <a href="#" onclick="return show_hide_password(this);" class="password-vue password-control"></a>
+                        <div class="invalid-feedback">Придумайте пароль</div>
+                    </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="input-group mb-3">
+                        <input type="password" class="form-control password" id="password-input-repeat" placeholder="Повторите пароль" required/>
+                        <span onclick="return show_hide_password_repeat(this);"class="password-vue"></span>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group mb-3">
+                        <a href="" class="btn btn-md btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <div class="input-group mb-3">
+                        <button type="submit" class="btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Сохранить</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="m-auto response-send">
+                  <div class="modal-body">
+                    <div class="text-center mt-3 mb-3 response-send__img">
+                      <img src="assets/img/send.svg"/>
+                    </div>
+                    <p class="text-center">Пользователь создан</p>
+                    <div class="text-center">
+                      <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--end редактирование пользователя-->
+    <!--удаление пользователя-->
+    <div class="modal modal modal-sm fade" id="removeuser" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form__wrapper">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <img src="assets/img/send-warning.svg"/>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="modal-title text-center" id="pasportLabel">Вы действительно хотите удалить данный объект?</h4>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mt-5">
+                        <button type="submit" class="btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Удалить</button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <a href="" class="btn btn-md btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="m-auto response-send">
+                  <div class="modal-body">
+                    <div class="text-center mt-3 mb-3 response-send__img">
+                      <img src="assets/img/send.svg"/>
+                    </div>
+                    <p class="text-center">Пользователь создан</p>
+                    <div class="text-center">
+                      <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--end удаление пользователя-->
+<!--скрипт сортировки таблиц-->
+  <script>
+  "use strict";
+  // Все таблицы в которых будет осуществлена сортировка по thead
+  const theads = document.querySelectorAll(".table_sort thead");
+  theads.forEach(thead => thead.addEventListener("click", evt => getSort(evt)));
+  function getSort({ target }) {
+    // Доступ к атрибуту data будет задан через объект dataset, можно и через getAttribute
+    // .dataset.order ~ data-order
+
+    // Переключение если равен -1, то при -(-1) = 1, если -(1) = -1
+    // В зависимости от того чему равен data-order, будет сменя стрелки "▲" "▼"
+    const order = (target.dataset.order = -(target.dataset.order || -1));
+
+    // Событие происходит target -> th, target.parentNode -> tr
+    // tr.cells -> всех <th> или <td>  
+    const thList = Array.from(target.parentNode.cells);
+
+    // Index - нажатого th
+    // (Можно заменить стандартный метод target.cellIndex,который выдает номер ячейки в строке <th> или <td>)
+    const index = thList.indexOf(target);
+
+    // Метод для правильного сравнения строк на разных языках, последующая их сортировать 
+    const collator = new Intl.Collator(["en", "ru"], { numeric: true });
+
+    // Функция сортировки использующая метод compare, и используемая внутри функции sort
+    const comparator = (index, order) => (a, b) => {
+      /* 
+        1) Index - соответствует колонке (index - нажатого th)
+        2) a.children -> td -> целый ряд, меняется взависимости от того сравнения sort: первый b, второй a
+          Ряд:
+            b: - - - -
+            a: - - - -
+      
+        3) a.children[index] -> td -> берет из ряда колонка согласно Index (нажатого th),
+          меняется взависимости от того сравнения sort: первый b, второй a
+          Выбранная колонка: index 3 - последняя
+          Ряд:
+            b: - - - 3
+            a: - - - 3
+            
+          Сравнение уже идет на основании текста колонок:
+
+        4) collator.compare - сравнивает столбцы с друг другом в соответствии с порядком сортировки объекта Collato 
+            -1, если строка string1 предшествует строке string2; 
+            1, если строка string1 следует за строкой string2; 
+            0, если строки считаются равными	
+          
+          Пример: 
+            a Беларусь
+            b Россия
+            -1
+            a Англия
+            b Беларусь
+            -1
+            a Зимбабве
+            b Англия
+            1
+            a Зимбабве
+            b Беларусь
+            1
+            a Зимбабве
+            b Россия
+            -1
+            a США
+            b Зимбабве
+            1
+            a США
+            b Россия
+            1
+            a Германия
+            b Зимбабве
+            -1
+            a Германия
+            b Беларусь
+            1
+            
+      5) На основе отсортированных стобцов, выстариваются все остальные строки в таблицы
+      */
+      return (
+        order * // order - переключатель, для того чтобы менять порядок сортировки: "с начала" или "с конца"
+        collator.compare(a.children[index].textContent, b.children[index].textContent)
+      );
+    };
+
+    // Коллекция элементов таблицы <tbody>
+    const tablesBodies = Array.from(target.closest("table").tBodies);
+    // console.log(tablesBodies)
+
+    tablesBodies.forEach(tBody => {
+      // tBody.rows - все ряды в таблице
+      // Добавляет (несколько) отсортированных узлов или строки в конец
+      tBody.append(...Array.from(tBody.rows).sort(comparator(index, order)));
+    });
+
+    /* 
+      При нажатии на элементы th которые находяться в <thead>, происходит сравнения и переключении класс sorted
+      Если установлено значение false, класс будет только удален, но не добавлен. 
+      Если установлено значение true, класс будет только добавляться, но не удаляться 
+    */
+    
+    thList.forEach( th => th.classList.toggle("sorted", th === target));
+  }
+ </script>
+ <!--end скрипт сортировки-->
    <script src="assets/js/core/popper.min.js"></script>
   <script src="assets/js/core/bootstrap.min.js"></script>
   <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>

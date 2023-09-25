@@ -1,20 +1,31 @@
 .page-item {
-  &.active .page-link {
-    box-shadow: $pagination-active-box-shadow;
-  }
-
-  .page-link,
-  span {
+  .page-link {
     display: $page-link-display;
     align-items: $page-link-align-items;
     justify-content: $page-link-justify-content;
-    color: $secondary;
+    color: $blue;
+    background-color: transparent;
     padding: 0;
     margin: $page-link-margin;
-    border-radius: $page-link-radius !important;
+    border-radius: 4px !important;;
+    border-color:$blue;
     width: $page-link-width;
     height: $page-link-height;
-    font-size: $font-size-sm;
+    font-size: $font-size-md;
+  }
+   span {
+    display: $page-link-display;
+    align-items: $page-link-align-items;
+    justify-content: $page-link-justify-content;
+    width: $page-link-width;
+    height: $page-link-height;
+    font-size: $font-size-md;
+    margin: $page-link-margin;
+  }
+  &.active .page-link {
+    box-shadow: $pagination-active-box-shadow;
+    background-color: $blue;
+    color:$white;
   }
 }
 
