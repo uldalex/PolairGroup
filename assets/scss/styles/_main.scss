@@ -426,16 +426,17 @@ display:none
     .support-block{
         margin: 0 1rem;
         display: flex;
+        align-items: center;
         border-radius: 8px;
         border: 1px solid var(--gray-1, #E3EAF1);
         padding: 12px;
         &__icon {
             display: flex;
-            padding: 8px;
-            width:36px;
-            min-width:36px;
-            height:36px;
-            margin-right:12px;
+            padding: 4px;
+            width:30px;
+            min-width:30px;
+            height:30px;
+            margin-right:8px;
             justify-content: center;
             align-items: flex-start;
             border-radius: 8px;
@@ -447,7 +448,7 @@ display:none
             margin-bottom:0;
         }
         & a {
-            font-size: $font-size-xl;
+            font-size: $font-size-md;
             font-weight:600;
             color:$blue;
         }
@@ -636,3 +637,8 @@ display:none
             }
         }  
     }
+    @media(max-width:600px){
+    .text-indent{
+        text-indent: -9999px;
+    }
+}

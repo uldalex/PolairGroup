@@ -206,20 +206,20 @@
     <!-- End Navbar -->
     <div class="container-fluid pe-lg-4">
 			<!--заголовок страницы-->
-      <div class="row">
-        <div class="col-lg-5 mt-5 mb-3 mb-lg-3">
+      <div class="row align-items-center">
+        <div class="col-7 mt-5 mb-3 mb-lg-3">
           <h1 class="title-smaill">Заявки на ремонт</h1>
           <p class="text-secondary  opacity-7 ">Всего: 54</p>
         </div>
-        <div class="g-0 gx-sm-2 row col-lg-7 mt-lg-5 px-3 px-lg-0 mb-3 mb-lg-3">
-					<div class="col-sm-1 ms-auto">
+        <div class="g-0 gx-sm-2 row col-5 mt-4 mb-3 mb-lg-3">
+					<div class="col-sm-1 col-4 ms-auto">
 						<!--фильтр-->
 						<a href="#" class="filter-link btn btn-sm btn-outline-primary btn--icon icon--filter me-2" aria-label="фильтр"></a>
 						<!--end фильтр-->
           </div>
-          <div class="col-sm-3 mt-3 mt-sm-0">
-						<div class="input-group">
-              <a href="#addob" class="btn btn-sm  bg-gradient-primary w-100 mb-0" data-bs-toggle="modal" data-bs-target="#addob">Добавить заявку</a>
+          <div class="col-4 ">
+						<div class="input-group w-65 w-sm-auto">
+              <a href="#addob" class="btn btn-sm  bg-gradient-primary text-indent w-sm-100 mb-0" data-bs-toggle="modal" data-bs-target="#addob">Добавить заявку</a>
 							<div class="input-group-text px-2 py-1 z-index-2"><img src="assets/img/plus-white.svg"/></div>
 						</div>
 					</div>
@@ -281,13 +281,22 @@
       <!--Таблица-->
       <div class="row">
         <div class="col-12 mb-xl-0 mb-4">
-					<!--мобильная карточка объекта-->
+					<!--мобильная карточка заявки-->
 					<div class="card p-2 my-2 d-block d-lg-none border ">
 						<div class="row">
-							<div class="col-10">
+							<div class="col-6">
 								<div class="d-flex">
-									<p class="">235364<span class="text-secondary">12.12.2023</span></p>
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
 								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-warning bg-warninglight">Согласование</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
 							</div>
 							<div class="col-2 my-1 text-end">
 								<div class="dropdown float-lg-end pe-4">
@@ -301,12 +310,146 @@
 								</div>
 							</div>
 							<div class="col-12">
-								<p class="tex-sm gray300">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37	</p>
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
 							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
 						</div>
 					</div>
-					<!--end мобильная карточка объекта-->
-					<!--таблица объекта десктоп-->
+					<!--end мобильная карточка заявки-->
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-success bg-successlight">Выполнена</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-info bg-infolight">В работе</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-danger bg-dangerlight">Отказ</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--таблица заявки десктоп-->
 					<div class="card d-none d-lg-block my-2 my-lg-4">
 						<div class="card-body px-0 pt-0 pb-2">
 							<div class="table-responsive  p-0">
@@ -618,7 +761,7 @@
 							</div>
 						</div>
 				</div>
-			 <!--end таблица объекта десктоп-->
+			 <!--end таблица заявки десктоп-->
         </div>
 				<!--пагинация-->
 				<div class="col-12 mb-xl-0 mb-4 d-none d-lg-block">

@@ -22296,10 +22296,9 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show:not(.rtl) .support-block {
   border: 0px;
-  text-indent: -9999px;
 }
 .g-sidenav-show:not(.rtl) .support-block a {
-  font-size: 0.875rem;
+  text-indent: -9999px;
 }
 .g-sidenav-show .sidenav.fixed-start + .main-content {
   margin-left: 5rem;
@@ -22343,7 +22342,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   border: 1px solid var(--gray-1, #E3EAF1);
 }
 .g-sidenav-show.g-sidenav-pinned .support-block a {
-  font-size: 1.09375rem;
+  font-size: 0.91875rem;
 }
 
 .sidenav.bg-gradient-dark .text-white svg {
@@ -24230,17 +24229,18 @@ h1.title-smaill, .title-smaill.h1 {
 .support-block {
   margin: 0 1rem;
   display: flex;
+  align-items: center;
   border-radius: 8px;
   border: 1px solid var(--gray-1, #E3EAF1);
   padding: 12px;
 }
 .support-block__icon {
   display: flex;
-  padding: 8px;
-  width: 36px;
-  min-width: 36px;
-  height: 36px;
-  margin-right: 12px;
+  padding: 4px;
+  width: 30px;
+  min-width: 30px;
+  height: 30px;
+  margin-right: 8px;
   justify-content: center;
   align-items: flex-start;
   border-radius: 8px;
@@ -24252,7 +24252,7 @@ h1.title-smaill, .title-smaill.h1 {
   margin-bottom: 0;
 }
 .support-block a {
-  font-size: 1.09375rem;
+  font-size: 0.91875rem;
   font-weight: 600;
   color: #003B5C;
 }
@@ -24434,6 +24434,11 @@ th.sorted[data-order="1"]::after {
   }
   .filter-form.open {
     max-height: 1300px;
+  }
+}
+@media (max-width: 600px) {
+  .text-indent {
+    text-indent: -9999px;
   }
 }
 .step-map {

@@ -362,10 +362,9 @@ body:not(.dark-version) {
       }
       .support-block{
         border: 0px;
-        text-indent: -9999px;
       }
       .support-block a {
-        font-size:$font-size-base;
+        text-indent: -9999px;
       }
     }
 
@@ -427,7 +426,7 @@ body:not(.dark-version) {
         border: 1px solid var(--gray-1, #E3EAF1);
       }
       .support-block a {
-        font-size:$font-size-xl;
+        font-size:$font-size-md;
       }
     }
 
