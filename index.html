@@ -44,10 +44,12 @@
     <!--navbar-->
     <nav class="navbar navbar-expand-md sticky-top navbar-light" id="navbarBlur"  data-scroll="true" aria-label="Меню">
         <div class="container">
-					<div class="d-flex">
-						<button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcol" aria-controls="navbarcol" aria-expanded="false" aria-label="Меню">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+					<div class="d-flex align-items-center">
+						<a class="hamburger me-2 navbar-toggler collapsed d-block d-lg-none text-white iconNavbarSidenavmob " href="javascript:;" data-bs-toggle="collapse" data-bs-target="#navbarcol" aria-controls="navbarcol" aria-expanded="false" aria-label="Меню"id="iconNavbarSidenavmob">
+              <span></span>
+              <span></span>
+              <span></span>
+          </a>
 						<p>Сервисный портал</p>
 					</div>
 					<div class="order-0 order-md-3">
@@ -516,6 +518,7 @@
                       <label class="custom-file-label w-100 text-center bg-blue" for="customFile">
                         <div id="drugfile" class="drugfile"></div>
                         <input type="file" class="custom-file-input" id="customFile"><h5>Фото/видео к заявке</h5><p><span>Загрузите</span> или перетащите файл в данную область</p>
+                        <span class="file-button-text"></span>
                       </label>
                     </div>
                   </div>

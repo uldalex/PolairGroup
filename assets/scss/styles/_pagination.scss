@@ -6,7 +6,7 @@
     color: $blue;
     background-color: transparent;
     padding: 0;
-    margin: $page-link-margin;
+    margin: 0 8px;
     border-radius: 4px !important;;
     border-color:$blue;
     width: $page-link-width;
@@ -24,8 +24,7 @@
   }
   &.active .page-link {
     box-shadow: $pagination-active-box-shadow;
-    background-color: $blue;
-    color:$white;
+    background-color: rgba(0, 59, 92, 0.15);
   }
 }
 

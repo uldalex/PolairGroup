@@ -2,7 +2,14 @@
   .badge.bg-#{$prop} {
     background: $value;
   }
+  .badge.badge-#{$prop} {
+    color: $value;
+  }
+  
 }
+
 .badge {
-  text-transform: uppercase;
+  text-transform: none;
+  font-weight:400;
+  font-size: 0.85em;
 }

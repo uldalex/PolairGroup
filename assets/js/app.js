@@ -1221,6 +1221,7 @@ $(document).ready(function(){
 // input type file файл выбран
 
 let inputs = document.querySelectorAll('.custom-file-input');
+if(inputs){
     Array.prototype.forEach.call(inputs, function (input) {
       let label = input.parentElement,
         labelVal = label.querySelector('.file-button-text').innerText;
@@ -1236,6 +1237,18 @@ let inputs = document.querySelectorAll('.custom-file-input');
           label.querySelector('.file-button-text').innerText = labelVal;
       });
     });
-
+  }
     fsLightbox.props.type = "image";
     fsLightbox.props.types = [null, null, "video"];
+
+    //тултипы
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+    //переключение фильтра
+    $(".filter-link").on('click', function(){
+      $(".filter-form").toggleClass("open")
+    });
+    $(".reset-filter").on('click', function(){
+    $('.filter-flex').trigger("reset");
+  });

@@ -4,6 +4,14 @@ img {
 .bg-blue{
     background: $bg-blue;
   }
+  h1.title-smaill{
+    font-size:1.5rem;
+  }
+  @media(max-width:600px){
+    h1.title-smaill{
+        font-size:1.15rem;
+      }  
+  }
 .top-block{
     position: relative;
     background-image: url('../img/top-block-bg.png');
@@ -606,4 +614,25 @@ display:none
     .table-striped > tbody > tr:nth-of-type(odd) > * {
         --bs-table-accent-bg:  #F7F9FB;
     }
-       
+    .filter-flex{
+        display:flex;
+    }
+    .filter-form {
+        max-height:0;
+        overflow:hidden;
+        transition: all 0.5s linear;
+        &.open{
+            max-height:200px;
+        }
+    }
+    @media(max-width:1100px){
+        .filter-flex{
+           flex-direction: column;
+        } 
+        .filter-form {
+            transition: all 1s linear;
+            &.open{
+                max-height:1300px;
+            }
+        }  
+    }

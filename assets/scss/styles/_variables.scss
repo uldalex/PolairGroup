@@ -55,10 +55,15 @@ $colors: (
 
 $primary:       $PrimaryBlue;
 $secondary:     $gray-300;
+$secondarylight:     rgba(227, 234, 241, 0.50)!default;
 $info:          #1A73E8 !default;
 $success:       #4CAF50 !default;
 $warning:       #F5BD0B !default;
 $danger:        #F44335 !default;
+$infolight:     rgba(49, 143, 173, 0.10)!default;
+$successlight:  rgba(67, 176, 42, 0.10)!default;
+$warninglight:  rgba(245, 189, 11, 0.1)!default;
+$dangerlight:   rgba(238, 81, 87, 0.1)!default;
 $light:         $gray-200 !default;
 $dark:          $h-color !default;
 $dark-blue:     $blue;
@@ -76,7 +81,12 @@ $theme-colors: (
   "dark":       $dark,
   "white":      $white,
   "dark-blue":  $dark-blue,
-) !default;
+  "secondarylight": $secondarylight,
+  "infolight":  $infolight, 
+  "successlight": $successlight,
+  "warninglight": $warninglight,
+  "dangerlight":  $dangerlight, 
+)!default;
 // scss-docs-end theme-colors-map
 
 
