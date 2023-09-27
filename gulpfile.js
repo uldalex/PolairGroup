@@ -33,11 +33,11 @@ gulp.task('open', function() {
     .pipe(open());
 });
 gulp.task('svg', function () {
-  return gulp.src('./assets/img/*.svg') 
+  return gulp.src('./assets/img/icons/*.svg') 
       .pipe(svgSprite({
               mode: {
                   stack: {
-                      sprite: "../sprite.svg"  
+                      sprite: "../spriteicons.svg"  
                   }
               },
           }

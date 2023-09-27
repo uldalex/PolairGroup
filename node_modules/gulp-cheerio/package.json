@@ -1,0 +1,39 @@
+{
+  "name": "gulp-cheerio",
+  "version": "1.0.0",
+  "description": "Manipulate HTML and XML files with Cheerio in Gulp.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/gulp test"
+  },
+  "repository": "KenPowers/gulp-cheerio",
+  "keywords": [
+    "gulpplugin",
+    "cheerio",
+    "html",
+    "manipulate"
+  ],
+  "author": "Kenneth Powers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KenPowers/gulp-cheerio/issues"
+  },
+  "homepage": "https://github.com/KenPowers/gulp-cheerio",
+  "devDependencies": {
+    "chai": "~1.8.1",
+    "cheerio": "0.*",
+    "coveralls": "^2.11.2",
+    "gulp": "^3.8.10",
+    "gulp-spawn-mocha": "^2.0.0",
+    "istanbul": "^0.3.5",
+    "mocha": "^2.1.0",
+    "sinon": "~1.7.3",
+    "sinon-chai": "~2.4.0",
+    "vinyl": "^2.1.0"
+  },
+  "dependencies": {
+    "cheerio": "0.*",
+    "plugin-error": "^0.1.2",
+    "through2": "^0.6.3"
+  }
+}

@@ -16,7 +16,9 @@
     <link id="pagestyle" href="assets/css/datepicker.min.css" rel="stylesheet" />
     <link id="pagestyle" href="assets/css/app.css?v=3.1.0" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
-    
+		<object type="image/svg+xml" data="images/svgicons.svg">
+			Your  browser does not support SVG 
+		</object>
 </head>
  <!--Здесь сайтбар свернут изначально-->
 <body class="g-sidenav-show  bg-gray-100 ">
@@ -205,79 +207,62 @@
     </nav>
     <!-- End Navbar -->
     <div class="container-fluid pe-lg-4">
-			<!--заголовок страницы-->
-      <div class="row align-items-center">
-        <div class="col-7 mt-5 mb-3 mb-lg-3">
-          <h1 class="title-smaill">Заявки на ремонт</h1>
-          <p class="text-secondary  opacity-7 ">Всего: 54</p>
-        </div>
-        <div class="g-0 gx-sm-2 row col-5 mt-4 mb-3 mb-lg-3">
-					<div class="col-sm-1 col-4 ms-auto">
-						<!--фильтр-->
-						<a href="#" class="filter-link btn btn-sm btn-outline-primary btn--icon icon--filter me-2" aria-label="фильтр"></a>
-						<!--end фильтр-->
-          </div>
-          <div class="col-4 ">
-						<div class="input-group w-65 w-sm-auto">
-              <a href="#addob" class="btn btn-sm  bg-gradient-primary text-indent w-sm-100 mb-0" data-bs-toggle="modal" data-bs-target="#addob">Добавить заявку</a>
-							<div class="input-group-text px-2 py-1 z-index-2"><img src="assets/img/plus-white.svg"/></div>
-						</div>
-					</div>
-        </div>
-      </div>
-	    <!--end заголовок страницы-->
-			<!--фильтр форма-->
-			<div class="row">
-        <div class="filter-form col-12 mb-xl-0 mb-md-4">
-          <div class="card">
-            <div class="card-body px-0 pb-md-2">
-							<form class="filter-flex align-items-center" action="">
-								<div class="input-group mb-3 px-2">
-									<select class="form-select form-select__label">
-										<option>Объект</option>
-										<option>Объект1</option>
-										<option>Объект2</option>
-									</select>
-								</div>
-								<div class="input-group mb-3 px-2">
-									<select class="form-select form-select__label">
-										<option>Статус</option>
-										<option>Статус1</option>
-										<option>Статус2</option>
-									</select>
-								</div>
-								<div class="input-group mb-3 px-2">
-									<select class="form-select form-select__label">
-										<option>Тип заявки</option>
-										<option>Тип заявки1</option>
-										<option>Тип заявки2</option>
-									</select>
-								</div>
-								<div class="input-group mb-3 px-2">
-									<select class="form-select form-select__label">
-										<option>Номенклатура</option>
-										<option>Номенклатура1</option>
-										<option>Номенклатура2</option>
-									</select>
-								</div>
-								<div class="input-group mb-3 px-2">
-									<input type="text" class="form-control datepicker_input datepicker-input" id="dateot" placeholder="Дата создания" required="" onfocus="focused(this)" onfocusout="defocused(this)">
-									<div class="input-group-text"><img src="assets/img/calendar.svg"></div>
-								</div>
-								<div class="input-group mb-3 px-2">
-									<select class="form-select form-select__label ">
-										<option>Исполнитель</option>
-										<option>Исполнитель1</option>
-										<option>Исполнитель2</option>
-									</select>
-								</div>
-								<a href="#" class="reset-filter mb-3 text-nowrap font-weight-bold px-2">Очистить фильтр</a>
-							</form>
+			<!-- шапка заявки -->
+        <div class="row">
+            <div class="col-12 mb-xl-0 mb-md-4">
+              <div class="card my-2 my-lg-4">
+                <div class="card-header row align-items-center p-3 p-md-4">
+									<div class="d-flex justify-content-between py-2 border-bottom">
+										<div class="d-flex ">
+											<div>
+												<!--кнопка назад-->
+												<a href="orders.html" class="btn btn-sm btn-outline-primary btn--svg me-3" aria-label="назад">
+													<svg height="20" width="20"><use xlink:href="assets/img/spriteicons.svg#Property_1=CaretLeft"></use></svg>
+												</a>
+											</div>
+											<div>
+												<span>Заявка на ремонт</span>
+												<h4 class="mb-0">№324253 от 12.12.2023</h4>
+											</div>
+										</div>
+										<div class="d-flex">
+											<div class="d-flex flex-column px-3">
+												<span class="text-sm">Текущий статус</span>
+												<span class="text-success font-weight:bold">Выполнено</span>
+											</div>
+											<div class="d-flex flex-column px-3">
+												<span class="text-sm">Авто заявки</span>
+												<span class="">Закиров А.А. (Вы)</span>
+											</div>
+											<div class="d-flex flex-column px-3">
+												<span class="text-sm">Планируемая дата</span>
+												<span class="">12.12.2023</span>
+											</div>
+											<div class="d-flex flex-column px-3">
+												<span class="text-sm">Дата выполнения</span>
+												<span class="">12.12.2023</span>
+											</div>
+											<div class="d-flex flex-column px-3">
+												<span class="text-sm">Длительность выполнения</span>
+												<span class="">12.12.2023</span>
+											</div>
+										</div>
+									<div class="col-2">
+										<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="link-alt-color font-weight-bold  ">
+											<svg class="me-2" height="20" width="20">
+												<use xlink:href="assets/img/sprite.svg#edit"></use>
+											</svg>Редактировать</a>
+									</div>	
+									</div>
+									
+                </div>
+                <div class="card-body px-0 pb-md-2">
+                 
+                </div>
+             </div>
             </div>
          </div>
-        </div>
-      </div>
-			<!--end фильтр форма-->
+			<!-- end шапка заявки -->
       <!--Таблица-->
       <div class="row">
         <div class="col-12 mb-xl-0 mb-4">

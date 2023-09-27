@@ -28,5 +28,10 @@
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^2.0.3",
     "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "gulp-cheerio": "^1.0.0",
+    "gulp-replace": "^1.1.4",
+    "gulp-svgmin": "^4.1.0"
   }
 }

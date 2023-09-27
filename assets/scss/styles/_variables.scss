@@ -1218,14 +1218,14 @@ $navbar-dark-color:                 rgba($white, .85) !default;
 $navbar-dark-hover-color:           rgba($white, .75) !default;
 $navbar-dark-active-color:          $white !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
-$navbar-dark-toggler-icon-bg:       url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-dark-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+$navbar-dark-toggler-icon-bg:       none !default;
 $navbar-dark-toggler-border-color:  rgba($white, .1) !default;
 
 $navbar-light-color:                $dark !default;
 $navbar-light-hover-color:          rgba($dark, .7) !default;
 $navbar-light-active-color:         rgba($dark, .9) !default;
 $navbar-light-disabled-color:       rgba($dark, .3) !default;
-$navbar-light-toggler-icon-bg:      url("data:image/svg+xml;charset=utf8,%3Csvg width='32' height='32' viewBox='0 0 32 32' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.125 16H22.875' stroke='%23003B5C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.125 11H22.875' stroke='%23003B5C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M9.125 21H22.875' stroke='%23003B5C' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Crect x='0.5' y='0.5' width='31' height='31' rx='3.5' stroke='%23003B5C'/%3E%3C/svg%3E");
+$navbar-light-toggler-icon-bg:      none;
 
 $navbar-light-toggler-border-color: rgba($dark, .1) !default;
 

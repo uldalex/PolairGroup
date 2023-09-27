@@ -251,6 +251,14 @@ p {
 }
 .link-alt-color{
   color: $link-alt-color;
+  svg {
+    stroke: $link-alt-color;
+  }
+  &:hover{
+    svg {
+      stroke: $PrimaryBlue;
+    }
+  }
 }
 .text-break {
   word-wrap: break-word !important;

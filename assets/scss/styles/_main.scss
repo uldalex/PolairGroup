@@ -642,3 +642,9 @@ display:none
         text-indent: -9999px;
     }
 }
+.svg-blue{
+    stroke: $blue;
+    &:hover{
+        stroke:$PrimaryBlue
+    }
+}
