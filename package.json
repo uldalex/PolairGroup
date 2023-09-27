@@ -26,6 +26,7 @@
     "gulp-open": "^3.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^2.6.5",
+    "gulp-svg-sprite": "^2.0.3",
     "sass": "^1.49.9"
   }
 }

@@ -1238,9 +1238,10 @@ if(inputs){
       });
     });
   }
+  if(fsLightbox){
     fsLightbox.props.type = "image";
     fsLightbox.props.types = [null, null, "video"];
-
+  }
     //тултипы
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()

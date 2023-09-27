@@ -4,6 +4,8 @@ var sass = require('gulp-sass')(require('sass'));
 var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var open = require('gulp-open');
+var svgSprite = require('gulp-svg-sprite');
+
 
 var Paths = {
   HERE: './',
@@ -29,6 +31,18 @@ gulp.task('watch', function() {
 gulp.task('open', function() {
   gulp.src('index.html')
     .pipe(open());
+});
+gulp.task('svg', function () {
+  return gulp.src('./assets/img/*.svg') 
+      .pipe(svgSprite({
+              mode: {
+                  stack: {
+                      sprite: "../sprite.svg"  
+                  }
+              },
+          }
+      ))
+      .pipe(gulp.dest('./assets/img/'));
 });
 
 gulp.task('build', gulp.parallel('open', 'watch'));
