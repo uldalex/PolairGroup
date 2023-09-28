@@ -1,0 +1,1326 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <title>
+   Заявки PolairGroup
+  </title>
+    <link href="assets/css/splide.min.css" rel="stylesheet" />  
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link id="pagestyle" href="assets/css/datepicker.min.css" rel="stylesheet" />
+    <link id="pagestyle" href="assets/css/app.css?v=3.1.0" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+		<object type="image/svg+xml" data="images/sprite.svg">
+			Your  browser does not support SVG 
+		</object>
+</head>
+ <!--Здесь сайтбар свернут изначально-->
+<body class="g-sidenav-show  bg-gray-100 ">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start bg-white " id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="#" target="_blank"></a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link text-dark" href="dashboard.html">
+            <div class="text-center text-dark me-2 d-flex align-items-center justify-content-center">
+              <svg class="text-dark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.875 5.625H3.125C2.77982 5.625 2.5 5.90482 2.5 6.25V16.25C2.5 16.5952 2.77982 16.875 3.125 16.875H16.875C17.2202 16.875 17.5 16.5952 17.5 16.25V6.25C17.5 5.90482 17.2202 5.625 16.875 5.625Z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M13.125 5.625V4.375C13.125 4.04348 12.9933 3.72554 12.7589 3.49112C12.5245 3.2567 12.2065 3.125 11.875 3.125H8.125C7.79348 3.125 7.47554 3.2567 7.24112 3.49112C7.0067 3.72554 6.875 4.04348 6.875 4.375V5.625"  stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M2.5 12.5H17.5" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="nav-link-text ms-1">Компания</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="../pages/tables.html">
+            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.125 16.875V3.75H17.5L13.75 8.4375L17.5 13.125H3.125" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <span class="nav-link-text ms-1">Объекты</span>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link text-dark" href="../pages/billing.html">
+            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M16.25 11.25H3.75C3.40482 11.25 3.125 11.5298 3.125 11.875V15.625C3.125 15.9702 3.40482 16.25 3.75 16.25H16.25C16.5952 16.25 16.875 15.9702 16.875 15.625V11.875C16.875 11.5298 16.5952 11.25 16.25 11.25Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M16.25 3.75H3.75C3.40482 3.75 3.125 4.02982 3.125 4.375V8.125C3.125 8.47018 3.40482 8.75 3.75 8.75H16.25C16.5952 8.75 16.875 8.47018 16.875 8.125V4.375C16.875 4.02982 16.5952 3.75 16.25 3.75Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M14.0625 14.375C14.4077 14.375 14.6875 14.0952 14.6875 13.75C14.6875 13.4048 14.4077 13.125 14.0625 13.125C13.7173 13.125 13.4375 13.4048 13.4375 13.75C13.4375 14.0952 13.7173 14.375 14.0625 14.375Z" fill=""/>
+                <path d="M14.0625 6.875C14.4077 6.875 14.6875 6.59518 14.6875 6.25C14.6875 5.90482 14.4077 5.625 14.0625 5.625C13.7173 5.625 13.4375 5.90482 13.4375 6.25C13.4375 6.59518 13.7173 6.875 14.0625 6.875Z" fill=""/>
+                </svg>
+            </div>
+            <span class="nav-link-text ms-1">Оборудование</span>
+          </a>
+        </li>
+        <li class="nav-item  active">
+          <a class="nav-link text-dark" href="../pages/virtual-reality.html">
+            <div class="text-dark text-center me-2 d-flex align-items-center justify-content-center">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7.5 18.75L8.75 12.5L3.75 10.625L12.5 1.25L11.25 7.5L16.25 9.375L7.5 18.75Z" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <span class="nav-link-text ms-1 mt-auto">Заявки на ремонт</span>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+    
+    <div class="sidenav-footer position-absolute w-100 bottom-0 ">
+      <div class="support-block">
+        <div class="text-dark support-block__icon">
+          <svg width="20" height="21" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M17.6172 10.4998H15.1172C14.7857 10.4998 14.4677 10.6315 14.2333 10.8659C13.9989 11.1003 13.8672 11.4183 13.8672 11.7498V14.8748C13.8672 15.2063 13.9989 15.5242 14.2333 15.7587C14.4677 15.9931 14.7857 16.1248 15.1172 16.1248H16.3672C16.6987 16.1248 17.0167 15.9931 17.2511 15.7587C17.4855 15.5242 17.6172 15.2063 17.6172 14.8748V10.4998ZM17.6172 10.4998C17.6172 9.50958 17.4212 8.52918 17.0404 7.61514C16.6596 6.7011 16.1015 5.87151 15.3984 5.17425C14.6954 4.47699 13.8612 3.92585 12.944 3.55264C12.0268 3.17942 11.0448 2.99152 10.0547 2.99977C9.06518 2.99256 8.08403 3.18122 7.16776 3.5549C6.2515 3.92858 5.41824 4.47988 4.716 5.17704C4.01376 5.8742 3.45642 6.70343 3.07609 7.61696C2.69576 8.53048 2.49997 9.51024 2.5 10.4998V14.8748C2.5 15.2063 2.6317 15.5242 2.86612 15.7587C3.10054 15.9931 3.41848 16.1248 3.75 16.1248H5C5.33152 16.1248 5.64946 15.9931 5.88388 15.7587C6.1183 15.5242 6.25 15.2063 6.25 14.8748V11.7498C6.25 11.4183 6.1183 11.1003 5.88388 10.8659C5.64946 10.6315 5.33152 10.4998 5 10.4998H2.5" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.6172 14.875V16.75C17.6172 17.413 17.3538 18.0489 16.885 18.5178C16.4161 18.9866 15.7802 19.25 15.1172 19.25H10.625" stroke="" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </div>
+        <div>
+          <p>Служба поддержки</p>
+          <a class="text-nowrap" href="tel:8 800 433 43 45">8 800 433 43 45</a>
+        </div>
+      </div>
+      <div class="mb-3">
+            <a class="d-none d-lg-block nav-link w-100 text-dark iconNavbarSidenav" href="javascript:;" id="iconNavbarSidenav">
+              <svg class="rotate" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.875 10H3.125" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8.75 4.375L3.125 10L8.75 15.625" stroke="" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Свернуть меню</a>
+      </div>
+    </div>
+  </aside>
+  <main class="bg-gray-100 main-content position-relative max-height-vh-100 pt-5 h-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top  p-0" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid px-3">
+        <a class="hamburger d-block d-lg-none text-white iconNavbarSidenavmob " href="javascript:;" id="iconNavbarSidenavmob">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class=" left-part align-items-center d-flex">
+          <a class="d-none d-sm-block navbar-brand" href="#" aria-label="PolairGroup"><img src="assets/img/logo_polar.svg"></a>
+          <a class="d-none d-sm-block navbar-brand" href="#" aria-label="Carboma"><img src="assets/img/logo_carbota.svg"></a>
+          <a class="d-none d-sm-block navbar-brand" href="#" aria-label="dazzl"><img src="assets/img/logo_dazzl.svg"></a>
+          <p><img src="assets/img/sp.svg"></p>
+        </div>
+        <div class="navbar" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <a href="confirmation" class="btn btn-warning btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#confirmation">  Пожалуйста потвердите свой Телефон по SMS</a>
+          </div>
+          <ul class="navbar-nav  flex-nowrap flex-row justify-content-end">
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="btn btn-outline-primary btn-sm mb-0 me-3 text-white width-right-icon lk-btn-user"  id="dropdownlkButton" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">ООО “Техносервис” </a>
+              <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownlkButton">
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">Перейти в личный кабинет</a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">Помощь</a>
+                </li>
+                <li>
+                  <a class="dropdown-item border-radius-md" href="javascript:;">Выйти</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+              <a href="javascript:;" class="nav-link  p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M4.39087 8.12509C4.38982 7.38413 4.53538 6.65029 4.81917 5.96584C5.10295 5.28138 5.51934 4.65983 6.04436 4.13699C6.56938 3.61414 7.19266 3.20034 7.87829 2.91941C8.56392 2.63847 9.29836 2.49596 10.0393 2.50009C13.1331 2.52352 15.6096 5.09384 15.6096 8.1954V8.75009C15.6096 11.547 16.1956 13.172 16.7112 14.0626C16.7659 14.1574 16.7948 14.265 16.7949 14.3745C16.795 14.4841 16.7663 14.5917 16.7117 14.6866C16.6571 14.7816 16.5785 14.8605 16.4838 14.9155C16.3891 14.9705 16.2816 14.9997 16.1721 15.0001H3.82837C3.71884 14.9997 3.61134 14.9705 3.51664 14.9155C3.42193 14.8605 3.34334 14.7816 3.28875 14.6866C3.23416 14.5917 3.20547 14.4841 3.20557 14.3745C3.20566 14.265 3.23454 14.1574 3.2893 14.0626C3.80493 13.172 4.39087 11.547 4.39087 8.75009V8.12509Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M7.5 15V15.625C7.5 16.288 7.76339 16.9239 8.23223 17.3928C8.70107 17.8616 9.33696 18.125 10 18.125C10.663 18.125 11.2989 17.8616 11.7678 17.3928C12.2366 16.9239 12.5 16.288 12.5 15.625V15" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+              </a>
+              <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="assets/img/team.jpg" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">Новое сообщение</span> от Админ
+                        </h6>
+                        <span class="text-xs text-secondary mb-0">
+                          <i class="fa fa-clock me-1"></i>
+                          13 минут назад
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="assets/img/team.jpg" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">Новое сообщение</span> от Админ
+                        </h6>
+                        <span class="text-xs text-secondary mb-0">
+                          <i class="fa fa-clock me-1"></i>
+                          13 минут назад
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="assets/img/team.jpg" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">Новое сообщение</span> от Админ
+                        </h6>
+                        <span class="text-xs text-secondary mb-0">
+                          <i class="fa fa-clock me-1"></i>
+                          13 минут назад
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid pe-lg-4">
+			<!-- шапка заявки -->
+        <div class="row">
+            <div class="col-12 mb-xl-0 mb-md-4">
+              <div class="card my-2 my-lg-4">
+                <div class="p-3 p-md-4">
+									<div class="d-flex flex-column justify-content-between flex-lg-row  py-2 border-bottom">
+										<div class="d-flex justify-content-between align-items-start">
+											<div>
+												<!--кнопка назад-->
+												<a href="orders.html" class="btn btn-sm btn-outline-primary btn--svg me-3" aria-label="назад">
+													<svg height="20" width="20"><use xlink:href="assets/img/sprites/spriteicon.svg#Property_1=CaretLeft"></use></svg>
+												</a>
+											</div>
+											<div>
+												<span>Заявка на ремонт</span>
+												<h5 class="mb-0">№324253 от 12.12.2023</h5>
+											</div>
+											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="d-block d-lg-none btn  bg-gradient-primary p-1 mb-0 ">
+												<svg class="" height="20" width="20">
+													<use xlink:href="assets/img/sprite.svg#loader"></use>
+												</svg></a>
+										</div>
+										<div class="d-flex flex-column flex-lg-row">
+											<div class="d-flex flex-lg-column justify-content-between px-lg-3">
+												<span class="text-sm">Текущий статус</span>
+												<span class="text-warning font-weight:bold">Согласование</span>
+											</div>
+											<div class="d-flex flex-lg-column justify-content-between my-2 my-lg-0 px-lg-3">
+												<span class="text-sm">Авто заявки</span>
+												<span class="">Закиров А.А. (Вы)</span>
+											</div>
+											<div class="d-flex flex-lg-column justify-content-between my-2 my-lg-0 px-lg-3">
+												<span class="text-sm">Планируемая дата</span>
+												<span class="">-</span>
+											</div>
+											<div class="d-flex flex-lg-column justify-content-between my-2 my-lg-0 px-lg-3">
+												<span class="text-sm">Дата выполнения</span>
+												<span class="">-</span>
+											</div>
+											<div class="d-flex flex-lg-column justify-content-between my-2 my-lg-0 px-lg-3">
+												<span class="text-sm">Длительность выполнения</span>
+												<span class="">-</span>
+											</div>
+										</div>
+										<div class="col-3 d-none d-lg-flex justify-content-end align-items-start">
+											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="btn  btn-outline-primary mb-0 me-2">
+												Отменить
+											</a>
+											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="btn  bg-gradient-primary mb-0 ">
+												Редактировать
+											</a>
+										</div>	
+									</div>
+									<div class="row d-none d-lg-flex">
+										<div class="col-lg-2">
+											<a href class="d-flex my-3 justify-content-between align-items-center">
+												<div class="d-flex align-items-center">
+													<div class="card-about__img card-about__img--small me-2">
+														<svg class="blue ms-2" height="20" width="20">
+															<use xlink:href="assets/img/sprite.svg#write"></use>
+														</svg>
+													</div>
+													<span>Формирование</span>
+												</div>
+												<svg class="gray200" class="ms-2" height="20" width="20">
+													<use xlink:href="assets/img//sprites/spriteicon.svg#Property_1=CaretRight"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="col-lg-2 opacity-5">
+											<a href class="d-flex my-3 justify-content-between align-items-center">
+												<div class="d-flex">
+													<div class="card-about__img card-about__img--small me-2">
+														<svg class="blue ms-2" height="20" width="20">
+															<use xlink:href="assets/img/sprite.svg#chat"></use>
+														</svg>
+													</div>
+													<span>Согласование </span>
+												</div>
+												<svg class="gray200" class="ms-2" height="20" width="20">
+													<use xlink:href="assets/img//sprites/spriteicon.svg#Property_1=CaretRight"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="col-lg-2 opacity-5">
+											<a href class="d-flex my-3 justify-content-between align-items-center">
+												<div class="d-flex">
+													<div class="card-about__img card-about__img--small me-2">
+														<svg class="blue ms-2" height="20" width="20">
+															<use xlink:href="assets/img/sprite.svg#target"></use>
+														</svg>
+													</div>
+													<span>Передача заявки	в АСЦ</span>
+												</div>
+												<svg class="gray200" class="ms-2" height="20" width="20">
+													<use xlink:href="assets/img//sprites/spriteicon.svg#Property_1=CaretRight"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="col-lg-2 opacity-5">
+											<a href class="d-flex my-3 justify-content-between align-items-center">
+												<div class="d-flex">
+													<div class="card-about__img card-about__img--small me-2">
+														<svg class="blue ms-2" height="20" width="20">
+															<use xlink:href="assets/img/sprite.svg#chat"></use>
+														</svg>
+													</div>
+													<span>Работа АСЦ и согласование сроков</span>
+												</div>
+												<svg class="gray200" class="ms-2" height="20" width="20">
+													<use xlink:href="assets/img//sprites/spriteicon.svg#Property_1=CaretRight"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="col-lg-2 opacity-5">
+											<a href class="d-flex my-3 justify-content-between align-items-center">
+												<div class="d-flex">
+													<div class="card-about__img card-about__img--small me-2">
+														<svg class="blue ms-2" height="20" width="20">
+															<use xlink:href="assets/img/sprite.svg#key"></use>
+														</svg>
+													</div>
+													<span>Ремонт/выполнение заявки</span>
+												</div>
+												<svg class="gray200" class="ms-2" height="20" width="20">
+													<use xlink:href="assets/img//sprites/spriteicon.svg#Property_1=CaretRight"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="col-lg-2 opacity-5">
+											<a href class="d-flex my-3 justify-content-between align-items-center">
+												<div class="d-flex">
+													<div class="card-about__img card-about__img--small me-2">
+														<svg class="blue ms-2" height="20" width="20">
+															<use xlink:href="assets/img/sprite.svg#star"></use>
+														</svg>
+													</div>
+													<span>Оценка качества работы</span>
+												</div>
+												<svg class="gray200" class="ms-2" height="20" width="20">
+													<use xlink:href="assets/img//sprites/spriteicon.svg#Property_1=CaretRight"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+                </div>
+                <div class="card-body px-0 pb-md-2">
+                 
+                </div>
+             </div>
+            </div>
+         </div>
+			<!-- end шапка заявки -->
+			<!--табы-->
+      <div class="row">
+        <div class="col-12 mb-xl-0 mb-4">
+					<div class="my-2 my-lg-4">
+						<div class="card p-3 ">
+							<ul class="nav nav-pills nav-justified nav-tabs" id="orderTab" role="tablist">
+								<li class="nav-item" role="presentation">
+									<button class="nav-link active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order" type="button" role="tab" aria-controls="order" aria-selected="true">Заявка на ремонт</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="work-tab" data-bs-toggle="tab" data-bs-target="#work" type="button" role="tab" aria-controls="work" aria-selected="false">Работы</button>
+								</li>
+								<li class="nav-item" role="presentation">
+									<button class="nav-link" id="report-tab" data-bs-toggle="tab" data-bs-target="#report" type="button" role="tab" aria-controls="report" aria-selected="false">Отчет и оценка сервиса</button>
+								</li>
+							</ul>
+							<div class="tab-content" id="orderTabContent">
+								<!--таб1-->
+								<div class="tab-pane active" id="order" role="tabpanel" aria-labelledby="order-tab">
+									<div class="row py-3">
+										<div class="col-lg-3">
+											<!--слайдер. скрипт к нему внизу страницы-->
+											<div class="splide orderslider" id="orderslider" aria-label="Фото оборудования">
+												<div class="splide__track">
+													<ul class="splide__list">
+														<li class="splide__slide"><a href="assets/img/holod.png" data-fslightbox="demo-images"  aria-label="посмотреть"><img src="assets/img/holod.png"/></a></li>
+														<li class="splide__slide"><a href="assets/img/holod.png" data-fslightbox="demo-images"  aria-label="посмотреть"><img src="assets/img/holod.png"/></a></li>
+														<li class="splide__slide"><a href="assets/img/holod.png" data-fslightbox="demo-images"  aria-label="посмотреть"><img src="assets/img/holod.png"/></a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-9">
+											<div class="d-flex flex-column flex-lg-row">
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0 text-sm text-secondary">Оборудование</p>
+													<p class="px-2 m-0 ">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
+												</div>
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0  text-sm text-secondary">Бренд</p>
+													<p class="px-2 m-0 ">Polair</p>
+												</div>
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0  text-sm text-secondary">Дата покупки</p>
+													<p class="px-2 m-0 ">12.12.2023</p>
+												</div>
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0  text-sm text-secondary">Дата ввода в экслуатацию</p>
+													<p class="px-2 m-0 ">12.12.2023</p>
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0  text-sm text-secondary">Адрес оборудования</p>
+													<p class="px-2 m-0 ">г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
+												</div>
+											</div>
+											<div class="row">
+												<div class="col-md-6 d-flex flex-column">
+													<p class="p-2 m-0  text-sm text-secondary">Уточнения по адресу</p>
+													<p>г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
+												</div>
+												<div class="col-md-6 d-flex flex-column">
+													<p class="p-2 m-0  text-sm text-secondary">Заявленная неисправность</p>
+													<p>г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
+												</div>
+											</div>
+											<div class="d-flex">
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0 text-sm text-secondary">Сервисный центр</p>
+													<p class="px-2 m-0 ">“Техносервис-116” (ул.Фучика, 35В)</p>
+												</div>
+												<div class="d-flex flex-column">
+													<p class="p-2 m-0 text-sm text-secondary">Дилер</p>
+													<p class="px-2 m-0 ">“Техносервис-116”</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!--таб2-->
+								<div class="tab-pane fade show " id="work" role="tabpanel" aria-labelledby="work-tab">
+									<!--карточка-->
+									<div class="tab-head border bg-blue rounded border-success my-3">
+										<div class="d-flex align-items-center ">
+											<svg class="success" height="64" width="64"><use xlink:href="assets/img/sprite.svg#check"></use></svg>
+											<div>
+												<h5 class="text-success">Работы выполнены</h5>
+												<span>Общая стоимость работ: <b>16 000 руб</b></span>
+											</div>
+										</div>
+									</div>
+									<!--карточка-->
+									<div class="border rounded my-3 pt-3 px-3">
+											<div class="d-flex justify-content-between">
+												<h5>Диагностика</h5>
+												<svg class="gray200" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
+											</div>
+											<div class="d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Выявленные неисправности</span>
+												<span class="font-weight-bold">Не герметичность испарителя</span>
+											</div>
+											<div class="d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Комментарий</span>
+												<span class="font-weight-bold">Требуется пайка</span>
+											</div>
+											<div class="d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Неисправность</span>
+												<span class="font-weight-bold">531 - Негерметичность пайки калачей батареи испарителя (БИ)</span>
+											</div>
+									</div>
+									<!--карточка-->
+									<div class="border rounded my-3 pt-3 px-3">
+										<div class="d-flex justify-content-between">
+											<h5>Работы</h5>
+											<div class="d-flex">
+												<p class="font-weight-bold">2 400,00 руб</p>
+												<a href="#">
+													<svg class="gray200 mx-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
+												</a>
+												<div class="dropdown float-lg-end pe-4">
+													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+													</a>
+													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--карточка работ мобильная-->
+										<div class="d-block d-lg-none d-flex flex-column my-2">
+											<span class="text-sm text-secondary">Работа</span>
+											<span class="font-weight-bold">Регулировка дозы хладагента</span>
+										</div>
+										<div class="d-block d-lg-none d-flex flex-column my-2">
+											<span class="text-sm text-secondary">Категория работ</span>
+											<span class="font-weight-bold">Диагностика</span>
+										</div>
+										<div class="row">
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Часы</span>
+												<span class="font-weight-bold">1,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Стоимость</span>
+												<span class="font-weight-bold">800,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Сумма</span>
+												<span class="font-weight-bold">800,0</span>
+											</div>
+										</div>
+										<!--таблица работ десктоп-->
+										<div class="card d-none d-lg-block my-2 my-lg-4">
+											<div class="card-body px-0 pt-0 pb-2">
+												<div class="table-responsive  p-0">
+													<table class="table table_sort table-striped align-items-center mb-0">
+															<thead>
+															<tr >
+																	<th  class="col-5 text-sm opacity-7 ps-2" >Работа</th>
+																	<th  class="col-4 text-sm opacity-7 ps-2 sorted" data-order="-1">Категория работ</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Часы</th>
+																	<th  class="text-sm opacity-7 sorted ps-2 text-nowrap">Стоимость</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
+															</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
+																	<td><p class="font-weight-bold text-sm">Диагностика</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">1,0</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																</tr>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
+																	<td><p class="font-weight-bold text-sm">Диагностика</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">2,0</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">1600,00</p></td>
+																</tr>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
+																	<td><p class="font-weight-bold text-sm">Диагностика</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">3,0</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">1800,00</p></td>
+																</tr>
+															</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+			 		<!--end таблица заявки десктоп-->
+									</div>
+									<!--карточка-->
+									<div class="border rounded my-3 pt-3 px-3">
+										<div class="d-flex justify-content-between">
+											<h5>Запчасти с ответхранения</h5>
+											<div class="d-flex">
+												<a href="#">
+													<svg class="gray200 mx-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
+												</a>
+												<div class="dropdown float-lg-end pe-4">
+													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+													</a>
+													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--карточка запчасти мобильная-->
+										<div class="d-block d-lg-none d-flex flex-column my-2">
+											<span class="text-sm text-secondary">Наименование запчасти</span>
+											<span class="font-weight-bold">Фрион А45</span>
+										</div>
+										<div class="row">
+											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">	Ед изм</span>
+												<span class="font-weight-bold">л</span>
+											</div>
+											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Кол-во</span>
+												<span class="font-weight-bold">2,0</span>
+											</div>
+										</div>
+										<!--таблица запчасти десктоп-->
+										<div class="card d-none d-lg-block my-2 my-lg-4">
+											<div class="card-body px-0 pt-0 pb-2">
+												<div class="table-responsive  p-0">
+													<table class="table table_sort table-striped align-items-center mb-0">
+															<thead>
+															<tr >
+																	<th  class="col-4 text-sm opacity-7 ps-2" >Наименование запчасти</th>
+																	<th  class="col-4 text-sm opacity-7 ps-2 sorted" data-order="-1">Единица измерения</th>
+																	<th  class="col-4 text-sm opacity-7 sorted ps-2">Количество</th>
+															</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Фрион А45</p></td>
+																	<td><p class="font-weight-bold text-sm">л</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+																</tr>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Вентиль М20</p></td>
+																	<td><p class="font-weight-bold text-sm">шт</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">1,0</p></td>
+																</tr>
+															</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--карточка-->
+									<div class="border rounded my-3 pt-3 px-3">
+										<div class="d-flex justify-content-between">
+											<h5>Собственные запчасти </h5>
+											<div class="d-flex">
+												<p class="font-weight-bold">1 600,00 руб</p>
+												<a href="#">
+													<svg class="gray200 mx-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
+												</a>
+												<div class="dropdown float-lg-end pe-4">
+													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+													</a>
+													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--карточка запчасти мобильная-->
+										<div class="d-block d-lg-none d-flex flex-column my-2">
+											<span class="text-sm text-secondary">Наименование запчасти</span>
+											<span class="font-weight-bold">Фрион А45</span>
+										</div>
+										<div class="row">
+											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">	Ед изм</span>
+												<span class="font-weight-bold">л</span>
+											</div>
+											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Кол-во</span>
+												<span class="font-weight-bold">2,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Часы</span>
+												<span class="font-weight-bold">2,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Стоимость</span>
+												<span class="font-weight-bold">800,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Сумма</span>
+												<span class="font-weight-bold">1600,0</span>
+											</div>
+										</div>
+										<!--таблица запчасти десктоп-->
+										<div class="card d-none d-lg-block my-2 my-lg-4">
+											<div class="card-body px-0 pt-0 pb-2">
+												<div class="table-responsive  p-0">
+													<table class="table table_sort table-striped align-items-center mb-0">
+															<thead>
+															<tr >
+																	<th  class="col-3 text-sm opacity-7 ps-2" >Наименование запчасти</th>
+																	<th  class="col-3 text-sm opacity-7 ps-2 sorted" data-order="-1">Единица измерения</th>
+																	<th  class="col-3 text-sm opacity-7 sorted ps-2">Количество</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Часы</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Стоимость</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
+
+															</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Фрион А45</p></td>
+																	<td><p class="font-weight-bold text-sm">л</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+																	<td><p class="font-weight-bold text-sm">1,0</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																</tr>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Вентиль М20</p></td>
+																	<td><p class="font-weight-bold text-sm">шт</p></td>
+																	<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+																	<td><p class="font-weight-bold text-sm">1,0</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																</tr>
+															</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--карточка-->
+									<div class="border rounded my-3 pt-3 px-3">
+										<div class="d-flex justify-content-between">
+											<h5>Транспортные расходы</h5>
+											<div class="d-flex">
+												<p class="font-weight-bold">12 000,00 руб</p>
+												<a href="#">
+													<svg class="gray200 mx-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
+												</a>
+												<div class="dropdown float-lg-end pe-4">
+													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+														<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
+													</a>
+													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<!--карточка транспорт мобильная-->
+										<div class="row">
+											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Пункт А</span>
+												<span class="font-weight-bold">Казань</span>
+											</div>
+											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Пункт Б</span>
+												<span class="font-weight-bold">Москва</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Дистанция, км</span>
+												<span class="font-weight-bold">2,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Стоимость</span>
+												<span class="font-weight-bold">2,0</span>
+											</div>
+											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Сумма</span>
+												<span class="font-weight-bold">1600,0</span>
+											</div>
+										</div>
+										<!--таблица транспорт дескторп-->
+										<div class="card d-none d-lg-block my-2 my-lg-4">
+											<div class="card-body px-0 pt-0 pb-2">
+												<div class="table-responsive  p-0">
+													<table class="table table_sort table-striped align-items-center mb-0">
+															<thead>
+															<tr >
+																	<th  class="col-3 text-sm opacity-7 ps-2" >Пункт А</th>
+																	<th  class="col-3 text-sm opacity-7 ps-2 sorted" data-order="-1">Пункт Б</th>
+																	<th  class="col-3 text-sm opacity-7 sorted ps-2">Дистанция, км</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Стоимость</th>
+																	<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
+
+															</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Казань</p></td>
+																	<td><p class="font-weight-bold text-sm">Москва</p></td>
+																	<td><p class="font-weight-bold text-sm">845</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																</tr>
+																<tr>
+																	<td><p class="font-weight-bold text-sm">Москва</p></td>
+																	<td><p class="font-weight-bold text-sm">Санкт-Петербург</p></td>
+																	<td><p class="font-weight-bold text-sm">360</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	<td><p class="font-weight-bold text-sm">800,0</p></td>
+																</tr>
+															</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--общий итог-->
+									<div class="d-flex justify-content-end p-3">
+										<h4 class="text-secondary me-2">Общий итог:</h4>
+										<h4>16 000,00</h4>
+									</div>
+								</div>
+								<!--таб3-->
+								<div class="tab-pane fade" id="report" role="tabpanel" aria-labelledby="report-tab">
+									<!--карточка-->
+									<div class="tab-head border  rounded my-3">
+										<div class="d-flex align-items-center ">
+											<svg class="blue" height="64" width="64"><use xlink:href="assets/img/sprite.svg#dock"></use></svg>
+											<div>
+												<h5>Отчет по работе</h5>
+												<a href="#">Скачать</a>
+											</div>
+										</div>
+									</div>
+									<!--карточка-->
+									<div class="border  rounded p-3 my-3">
+										<div class="review-list">
+											<!--отзыв-->
+											<div class="review-item">
+												<h5>Качество выполненной работы</h5>
+												<div class="rating">
+													<input type="radio" id="r-1" name="r" value="1">
+													<label for="r-1" title="Оценка «1»"></label>
+													<input type="radio" id="r-2" name="r" value="2"checked>
+													<label for="r-2" title="Оценка «2»"></label>
+													<input type="radio" id="r-3" name="r" value="3">
+													<label for="r-3" title="Оценка «3»"></label>
+													<input type="radio" id="r-4" name="r" value="4">
+													<label for="r-4" title="Оценка «4»"></label>
+													<input type="radio" id="r-5" name="r" value="5">
+													<label for="r-5" title="Оценка «5»"></label>
+												</div>
+												<div class="border rounded my-2 p-3">
+													Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.
+												</div>
+											</div>
+											<!--отзыв-->
+											<div class="review-item">
+												<h5>Вежливость сотрудника сервисного центра</h5>
+												<div class="rating">
+													<input type="radio" id="r-1-1" name="r-1-1" value="1">
+													<label for="r-1-1" title="Оценка «1»"></label>
+													<input type="radio" id="r-1-2" name="r-1-1" value="2" >
+													<label for="r-1-2" title="Оценка «2»"></label>
+													<input type="radio" id="r-1-3" name="r-1-1" value="3">
+													<label for="r-1-3" title="Оценка «3»"></label>
+													<input type="radio" id="r-1-4" name="r-1-1" value="4">
+													<label for="r-1-4" title="Оценка «4»"></label>
+													<input type="radio" id="r-1-5" name="r-1-1" value="5">
+													<label for="r-1-5" title="Оценка «5»"></label>
+												</div>
+												<div class="border rounded my-2 p-3">
+													Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.
+												</div>
+											</div>
+											<!--отзыв-->
+											<div class="review-item">
+												<h5>Сроки ремонта</h5>
+												<div class="rating">
+													<input type="radio" id="r-2-1" name="r-2-1" value="1">
+													<label for="r-2-1" title="Оценка «1»"></label>
+													<input type="radio" id="r-2-2" name="r-2-1" value="2"  >
+													<label for="r-2-2" title="Оценка «2»"></label>
+													<input type="radio" id="r-2-3" name="r-2-1" value="3" checked>
+													<label for="r-2-3" title="Оценка «3»"></label>
+													<input type="radio" id="r-2-4" name="r-2-1" value="4">
+													<label for="r-2-4" title="Оценка «4»"></label>
+													<input type="radio" id="r-2-5" name="r-2-1" value="5">
+													<label for="r-2-5" title="Оценка «5»"></label>
+												</div>
+												<div class="border rounded my-2 p-3">
+													Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+			 <!--end таблица заявки десктоп-->
+        </div>
+      </div>
+		</div>
+      <footer class="footer py-4  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+          <!--содержимое футера если есть-->
+          </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+		<!--модальные-->
+    <!--подтверждение телефона-->
+    <div class="modal modal-sm fade" id="confirmation" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="pasportLabel">Подтверждение телефона</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="step-1">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <input type="tel" class="form-control " data-masked="" data-inputmask="'mask': '+7 (999) 999-99 99'" id="phone" placeholder="Номер мобильного телефона" required/>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <a class="step1__btn btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Отправить код</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+                <div class="m-auto step-2">
+                  <div class="form__wrapper">
+                    <form class="needs-validation" novalidate action="">
+                        <div class="row">
+                          <div class="col-12 mb-5">
+                            <p class="font-size-lg text-center mb-4">Мы отправили СМС с кодом на номер<br><span> +7 987 654 32 10 </span><a href="">Изменить</a></p>
+                            <div class="input-group--sms m-auto mb-3">
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n1" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n2" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n3" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n4" placeholder="" required/>
+                              <div class="invalid-feedback w-100 text-center">Неверный код</div>
+                              <a href="#" id="new-code" onclick="getElementById('clock').innerHTML = 10;"class="new-code font-size-lg w-100 text-center mt-2">Отправить код повторно</a>
+                            </div>
+                            <p class="text-center mb-5 mt-3"><span class="text-gray-4">Отправить повторно можно через </span  class="clock"><b id="clock"> 47 </b><span class="text-gray-4"> сек</span></p>
+                            <div class="text-center">
+                              <button type="submit" class="btn-md btn bg-gradient-primary mt-3 mb-3">Подтвердить</button>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                    <div class="m-auto response-send">
+                      <div class="modal-body">
+                        <div class="text-center mt-3 mb-3 response-send__img">
+                          <img src="assets/img/send.svg"/>
+                        </div>
+                        <h4 class="text-center">Номер телефона подтвержден</h4>
+                        <p class="text-center">Теперь вам открыты дополнительные возможности</p>
+                        <div class="text-center">
+                          <a href="" class="btn btn-md bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отлично!</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end подтверждение телефона-->
+    <!--добавление Заявки-->
+    <div class="modal modal modal-lg fade" id="addob" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+						<div class="modal-header">
+								<h4 class="modal-title" id="pasportLabel">Добавление новой заявки</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+								<div class="form__wrapper">
+									<form class="needs-validation" novalidate action="">
+											<div class="row">
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<input type="text" class="form-control " id="objname" placeholder="Серийный номер оборудования" required/>
+														<div class="input-group-text"><img src="assets/img/qrcode.svg"/></div>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<input type="text" class="form-control datepicker_input"  id="dateot" placeholder="Дата покупки" required/>
+														<div class="input-group-text"><img src="assets/img/calendar.svg"/></div>
+														<div class="invalid-feedback">
+															Пожалуйста, выберите дату
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<input type="text" class="form-control datepicker_input"  id="datedo" placeholder="Дата ввода в эксплуатацию" required/>
+														<div class="input-group-text"><img src="assets/img/calendar.svg"/></div>
+														<div class="invalid-feedback">
+															Пожалуйста, выберите дату
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Адрес расположения оборудования</span>
+														<input type="text" class="form-control " id="adress" placeholder="Адрес расположения оборудования*" required/>
+														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
+														<div class="invalid-feedback">
+														Пожалуйста, укажите адрес
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Наименование объекта</span>
+														<input type="text" class="form-control " id="adress" placeholder="Наименование объекта*" required/>
+														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
+														<div class="invalid-feedback">
+														Пожалуйста, укажите адрес
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Сервисный центр</span>
+														<select class="form-select form-select__label" id="s_center" >
+															<option selected disabled value="">Сервисный центр</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+														</select>
+														<div class="w-100 text-right"><small>Вы можете выбрать любой ближайший к вам</small></div>
+														<div class="invalid-feedback">
+															Выберите сервисный центр
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Дилер</span>
+														<select class="form-select form-select__label" id="s_center" >
+															<option selected disabled value="">Дилер</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+														</select>
+														<div class="invalid-feedback">
+															Выберите дилера
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<textarea class="form-control" id="validationTextarea" placeholder="Уточнения по адресу расположения" ></textarea>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<textarea class="form-control" id="validationTextarea" placeholder="Заявленная неисправность" ></textarea>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="custom-file mb-3">
+														<label class="custom-file-label w-100 text-center bg-blue" for="customFile">
+															<div id="drugfile" class="drugfile"></div>
+															<input type="file" class="custom-file-input" id="customFile"><h5>Фото/видео к заявке</h5><p><span>Загрузите</span> или перетащите файл в данную область</p>
+															<span class="file-button-text"></span>
+														</label>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<button type="submit" class="btn  bg-gradient-primary w-100 mt-3 mb-3">Сохранить и отправить</button>
+													</div>
+												</div>
+											</div>
+									</form>
+									<div class="m-auto response-send">
+										<div class="modal-body">
+											<div class="text-center mt-3 mb-3 response-send__img">
+												<img src="assets/img/send.svg"/>
+											</div>
+											<h4 class="text-center">Заявка на ремонт оборудования успешно отправлена</h4>
+											<p class="text-center">Следите за статусом в личном кабинете</p>
+											<div class="text-center">
+												<a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отлично!</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+        </div>
+      </div>
+    </div>
+    <!--end добавление заявки-->
+    <!--удаление объекта-->
+    <div class="modal modal modal-sm fade" id="removeuser" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form__wrapper">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <img src="assets/img/send-warning.svg"/>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="modal-title text-center" id="pasportLabel">Вы действительно хотите удалить данный объект?</h4>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mt-5">
+                        <button type="submit" class="btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Удалить</button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <a href="" class="btn btn-md btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="m-auto response-send">
+                  <div class="modal-body">
+                    <div class="text-center mt-3 mb-3 response-send__img">
+                      <img src="assets/img/send.svg"/>
+                    </div>
+                    <p class="text-center">Пользователь создан</p>
+                    <div class="text-center">
+                      <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--end удаление объекта-->
+		<!--просмотр оборудования-->
+		<div class="modal modal-lg fade" id="pasport" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header border-bottom">
+						<h4 class="modal-title d-flex flex-column" id="pasportLabel"><span>Пароконвектомат TR10M0L</span><span>ТУ 28.93.15-001-47653896-2020</span>		</h4>
+						<div class="d-flex ml-auto">
+							<a href="#application" class="btn btn-outline-primary btn-sm btn--icon icon--setting me-2" aria-label="Заявка на ремонт" data-bs-toggle="modal" data-bs-target="#application"></a>
+							<a href="#login" class="btn bg-gradient-dark btn-sm btn--icon icon--repair me-2" aria-label="Личный кабинет"data-bs-toggle="modal" data-bs-target="#login"></a>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="row g-0 border-bottom pb-3 mb-3">
+							<div class="col-6">
+								<p>Серийный номер оборудования</p>
+								<p>Дата покупки</p>
+								<p>Дата ввода в эксплуатацию</p>
+								<p>Объект</p>
+								<p>Поставшик</p>
+							</div>
+							<div class="col-6 text-right">
+								<p class="font-weight-bold text-right">346LHF0834</p>
+								<p class="font-weight-bold text-right">12.12.2023</p>
+								<p class="font-weight-bold text-right">12.12.2023</p>
+								<div class="d-flex flex-column" ><span class="font-weight-bold text-right">Точка отгрузки №1</span><span class="text-secondary  text-sm">г.Казань, ул.Вишневского,16В</span></div>
+								<div class="d-flex flex-column" ><span class="font-weight-bold text-right">ООО “ТехноХимСервис”</span><span class="text-secondary  text-sm">ИНН 32425335. г.Казань, ул.Вишневского,16В</span></div>
+							</div>
+							</div>
+							<div class="row g-0 ">
+							<div class="col-md-6">
+								<div class="custom-file mt-3">
+									<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
+										<div class="d-flex justify-content-between">
+											<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ"><img src="assets/img/pdf.svg"/><span class="ms-3 text-blue width-icon icon-pdf">Document_001_1.pdf</span></a>
+											<a href="#" aria-label="удалить документ"><span class="text-blue width-icon width-icon--remove"><img src="assets/img/remove-red.svg"/></span></a>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-6 ps-2">
+								<div class="custom-file mt-3">
+									<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
+										<div class="d-flex justify-content-between">
+											<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ"><img src="assets/img/pdf.svg"/><span class="ms-3 text-blue width-icon icon-pdf">Document_001_1.pdf</span></a>
+											<a href="#" aria-label="удалить документ"><span class="text-blue width-icon width-icon--remove"><img src="assets/img/remove-red.svg"/></span></a>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end просмотр оборудования-->
+<!--скрипт сортировки таблиц-->
+  <script>
+  "use strict";
+  // Все таблицы в которых будет осуществлена сортировка по thead
+  const theads = document.querySelectorAll(".table_sort thead");
+  theads.forEach(thead => thead.addEventListener("click", evt => getSort(evt)));
+  function getSort({ target }) {
+    // Доступ к атрибуту data будет задан через объект dataset, можно и через getAttribute
+    // .dataset.order ~ data-order
+
+    // Переключение если равен -1, то при -(-1) = 1, если -(1) = -1
+    // В зависимости от того чему равен data-order, будет сменя стрелки "▲" "▼"
+    const order = (target.dataset.order = -(target.dataset.order || -1));
+
+    // Событие происходит target -> th, target.parentNode -> tr
+    // tr.cells -> всех <th> или <td>  
+    const thList = Array.from(target.parentNode.cells);
+
+    // Index - нажатого th
+    // (Можно заменить стандартный метод target.cellIndex,который выдает номер ячейки в строке <th> или <td>)
+    const index = thList.indexOf(target);
+
+    // Метод для правильного сравнения строк на разных языках, последующая их сортировать 
+    const collator = new Intl.Collator(["en", "ru"], { numeric: true });
+
+    // Функция сортировки использующая метод compare, и используемая внутри функции sort
+    const comparator = (index, order) => (a, b) => {
+      /* 
+        1) Index - соответствует колонке (index - нажатого th)
+        2) a.children -> td -> целый ряд, меняется взависимости от того сравнения sort: первый b, второй a
+          Ряд:
+            b: - - - -
+            a: - - - -
+      
+        3) a.children[index] -> td -> берет из ряда колонка согласно Index (нажатого th),
+          меняется взависимости от того сравнения sort: первый b, второй a
+          Выбранная колонка: index 3 - последняя
+          Ряд:
+            b: - - - 3
+            a: - - - 3
+            
+          Сравнение уже идет на основании текста колонок:
+
+        4) collator.compare - сравнивает столбцы с друг другом в соответствии с порядком сортировки объекта Collato 
+            -1, если строка string1 предшествует строке string2; 
+            1, если строка string1 следует за строкой string2; 
+            0, если строки считаются равными	
+          
+          Пример: 
+            a Беларусь
+            b Россия
+            -1
+            a Англия
+            b Беларусь
+            -1
+            a Зимбабве
+            b Англия
+            1
+            a Зимбабве
+            b Беларусь
+            1
+            a Зимбабве
+            b Россия
+            -1
+            a США
+            b Зимбабве
+            1
+            a США
+            b Россия
+            1
+            a Германия
+            b Зимбабве
+            -1
+            a Германия
+            b Беларусь
+            1
+            
+      5) На основе отсортированных стобцов, выстариваются все остальные строки в таблицы
+      */
+      return (
+        order * // order - переключатель, для того чтобы менять порядок сортировки: "с начала" или "с конца"
+        collator.compare(a.children[index].textContent, b.children[index].textContent)
+      );
+    };
+
+    // Коллекция элементов таблицы <tbody>
+    const tablesBodies = Array.from(target.closest("table").tBodies);
+    // console.log(tablesBodies)
+
+    tablesBodies.forEach(tBody => {
+      // tBody.rows - все ряды в таблице
+      // Добавляет (несколько) отсортированных узлов или строки в конец
+      tBody.append(...Array.from(tBody.rows).sort(comparator(index, order)));
+    });
+
+    /* 
+      При нажатии на элементы th которые находяться в <thead>, происходит сравнения и переключении класс sorted
+      Если установлено значение false, класс будет только удален, но не добавлен. 
+      Если установлено значение true, класс будет только добавляться, но не удаляться 
+    */
+    
+    thList.forEach( th => th.classList.toggle("sorted", th === target));
+  }
+ </script>
+ <!--end скрипт сортировки-->
+ 
+   <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/js/datepicker-full.min.js"></script>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/inputmask.min.js"></script>
+	<script src="assets/js/fslightbox.js"></script>
+	<script src="assets/js/splide.min.js"></script>
+  <script src="assets/js/app.js?v=3.1.0"></script>
+</body>
+<!--скрипт слайдера-->
+<script>
+	if(document.getElementById("orderslider")) {
+	 var banner =  document.getElementById('orderslider') 
+	 var splide = new Splide( banner, {
+		 type   : 'loop',
+		 perPage: 1,
+		 perMove: 1,
+		 autoplay:false,
+		 pauseOnHover:true,
+		 pauseOnFocus: true,
+		 arrows:true,
+		 pagination: false,
+		 clones:0,
+		 arrowPath: 'M7.5 13.25L1.25 7L7.5 0.75',
+	 }); 
+ splide.on( 'mounted', function() {
+			 // if fewer slides than provided in options, set option to the number of slides
+			 if ( splide.length <= splide.options.perPage ) {
+					 splide.options.perPage = splide.length;
+					
+			 }
+	 }); 
+	 splide.mount();
+ }
+ </script>
+</html>
