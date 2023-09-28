@@ -957,11 +957,13 @@
             <div class="modal-header d-flex align-items-center">
                 <h5 class="modal-title" id="pasportLabel">Профиль</h5>
                 <div class="d-flex ml-auto">
-                  <a href="#application" class="btn btn-outline-primary btn-sm mb-0 me-2" aria-label="" data-bs-toggle="modal" data-bs-target="#application">
-                    <svg class="blue me-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#password"></use></svg>
-                    Изменить пароль
+                  <a href="#application" class="d-flex  btn btn-outline-primary btn-sm mb-0 me-2" aria-label="" data-bs-toggle="modal" data-bs-target="#application">
+                    <svg class="blue me-lg-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#password"></use></svg>
+                    <span class="d-none d-lg-block">Изменить пароль</span>
                   </a>
-                  <a href="#login" class="btn bg-gradient-dark mb-0 btn-sm" aria-label="Личный кабинет"data-bs-toggle="modal" data-bs-target="#login">Редактировать</a>
+                  <a href="#login" class="d-flex btn bg-gradient-dark mb-0 btn-sm" aria-label="Личный кабинет"data-bs-toggle="modal" data-bs-target="#login">
+										<svg class="d-block d-lg-none whitesvg me-lg-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
+										<span class="d-none d-lg-block">Редактировать</span></a>
                   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
               </div>
@@ -1002,7 +1004,7 @@
 										<p class="text-sm">Email</p>
 									</div>
 									<div class="col-lg-6 mb-3">
-										<div class="d-flex justify-content-end">
+										<div class="d-flex justify-content-lg-end">
 											<p class="mb-0 font-weight-bold">mail@mail.com</p>
 											<span  data-toggle="tooltip" data-placement="left" data-bs-original-title="E-mail подтвержден">
 												<svg class="ms-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#green-check"></use></svg>
