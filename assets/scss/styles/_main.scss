@@ -120,6 +120,11 @@ img {
         display:flex;
         align-items: center;
         justify-content: center;
+        &--small{
+            width:32px;
+            min-width:32px;
+            height:32px;
+        }
     }
     &__body{
         padding:0 0 0 16px;
@@ -647,4 +652,24 @@ display:none
     &:hover{
         stroke:$PrimaryBlue
     }
+}
+.nav.nav-pills{
+    background-color: transparent;
+}
+.moving-tab .nav-link.active {
+    color: #fff;
+    font-weight: 600;
+    animation: 0.2s ease;
+    box-shadow: none;
+    border-radius: 0;
+    border: 0;
+    background: transparent;
+    border-bottom: 2px solid #318FAD;
+    width: 100%;
+    height:100%;
+}
+.nav-pills .nav-link.moving-tab{
+    border-radius:0;
+    width:100%;
+    height:100%;
 }
