@@ -20980,6 +20980,9 @@ hr.horizontal.gray-light {
     margin-right: auto;
     margin-left: auto;
   }
+  .modal-dialog--right {
+    margin-right: 10px;
+  }
   .modal-sm {
     --bs-modal-width: 404px;
   }

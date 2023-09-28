@@ -198,6 +198,10 @@
     max-width: var(--#{$prefix}modal-width);
     margin-right: auto;
     margin-left: auto;
+
+    &--right{
+      margin-right:10px;
+    }
   }
 
   .modal-sm {
