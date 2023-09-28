@@ -746,3 +746,14 @@ display:none
         object-fit: cover;
     }
   }
+  .more{
+    &.open{
+        svg{
+            transform: rotate(180deg);
+        }
+    }
+  }
+  .point {
+    stroke-width: 2px;
+stroke: rgba(96, 192, 195, 0.20);
+  }

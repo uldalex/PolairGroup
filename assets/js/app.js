@@ -1253,3 +1253,13 @@ if(inputs){
     $(".reset-filter").on('click', function(){
     $('.filter-flex').trigger("reset");
   });
+
+
+$(".more").click(function() {
+    $(this).toggleClass("open");
+    if ($(this).find('span').text() == "Показать")
+       $(this).find('span').text("Скрыть")
+    else
+    $(this).find('span').text("Показать");
+
+});
