@@ -674,3 +674,75 @@ display:none
     width:100%;
     height:100%;
 }
+.rating {
+    width: 200px;
+    height: 40px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .rating:not(:checked)>input {
+    display: none;
+  }
+  
+  .rating:not(:checked)>label {
+    width: 30px;
+    cursor: pointer;
+    font-size: 30px;
+    color: lightgrey;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .rating:not(:checked)>label:before {
+    content: '★';
+  }
+  
+  .rating>input:checked~label {
+    color: $warning;
+  }
+  
+  .rating:not(:checked)>label:hover,
+  .rating:not(:checked)>label:hover~label {
+    color: $warning;
+  }
+  .orderslider {
+    & .splide__arrows{
+        position:absolute;
+        bottom:20px;
+        right:30px;
+
+        & .splide__arrow{
+            background-color: $white;
+            border-radius:4px;
+            &:hover {
+                background-color: $blue;
+                & svg {
+                    display:block;
+                    fill:none;
+                    stroke: $white;
+                }
+            }
+        }
+        & .splide__arrow--prev{
+            margin-right:12px;
+            transform: none;
+        }
+        & .splide__arrow--next{
+            left:0;
+            transform: rotate(180deg);
+        }
+        & svg {
+            display:block;
+            fill:none;
+            stroke: $blue;
+        }
+    }
+    & img {
+        width:100%;
+        height:100%;
+        object-fit: cover;
+    }
+  }

@@ -1,0 +1,41 @@
+svg {
+    &.gray200{
+    stroke:$gray-200;
+    }
+    &.blue {
+        stroke: $blue;
+    }
+    &.gray100{
+        stroke:$gray-100;   
+    }
+    &.primary{
+        stroke:$PrimaryBlue;   
+    }
+    &.gray400 {
+        stroke:$gray-400;     
+    }
+    &.gray500 {
+        stroke:$gray-500;     
+    }
+    &.gray600 {
+        stroke:$gray-600;     
+    }
+    &.info {
+        stroke:$info;     
+    }
+    &.success{
+        stroke: $success;
+    }
+    &.warning{
+        stroke: $warning;
+    }
+    &.danger{
+        stroke: $danger;
+    }
+    &.whitesvg {
+        stroke: $white;
+    }
+    &.yellow {
+        stroke: $warning;
+    }
+}

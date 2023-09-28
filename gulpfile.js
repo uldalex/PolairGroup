@@ -5,6 +5,7 @@ var autoprefixer = require('gulp-autoprefixer');
 var sourcemaps = require('gulp-sourcemaps');
 var open = require('gulp-open');
 var svgSprite = require('gulp-svg-sprite');
+var cheerio = require('gulp-cheerio');
 
 
 var Paths = {
@@ -33,12 +34,20 @@ gulp.task('open', function() {
     .pipe(open());
 });
 gulp.task('svg', function () {
-  return gulp.src('./assets/img/icons/*.svg') 
+  return gulp.src('./assets/img/template-icons/*.svg') 
+  .pipe(cheerio({
+    run: function ($) {
+      $('[stroke]').removeAttr('stroke');
+    },
+    parserOptions: {xmlMode: true}
+  }))
       .pipe(svgSprite({
               mode: {
-                  stack: {
-                      sprite: "../spriteicons.svg"  
-                  }
+                symbol: {
+                  dest: '.',
+                  example: true,
+                  sprite: 'sprite.svg'
+                },
               },
           }
       ))

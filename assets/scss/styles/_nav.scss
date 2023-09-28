@@ -1,20 +1,20 @@
 .nav {
   &.nav-pills {
-    background: $nav-pills-background;
-    border-radius: $nav-pills-border-radius;
+    background: transparent;
+    border-radius: 0;
     position: relative;
     &.nav-pills-vertical {
-      border-radius: $nav-pills-vertical-radius;
+      border-radius: 0;
       .nav-link {
         &.active {
-          border-radius: $nav-pills-vertical-link-radius;
+          border-radius: 0;
         }
       }
     }
     .nav-link {
       z-index: 3;
       color: $dark;
-      border-radius: $nav-pills-link-border-radius;
+      border-radius: 0;
       background-color: inherit;
       &.active {
         animation: $nav-pills-link-active-animation;
@@ -108,13 +108,13 @@
   .nav-link {
     color: $white;
     transition: .2s ease;
-    border-radius: $nav-pills-link-border-radius;
+    border-radius: 0;
     &.active {
       color: $white;
       font-weight: $font-weight-bold;
-      box-shadow: $nav-pills-link-box-shadow;
+      box-shadow: none;
       animation: $nav-pills-link-active-animation;
-      background: $white;
+      background: transparent;
     }
     &:hover:not(.active) {
       color: $dark;
