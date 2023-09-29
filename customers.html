@@ -213,7 +213,7 @@
           <p class="text-secondary  opacity-7 ">Всего: 54</p>
         </div>
         <div class="g-0 gx-sm-2 row col-lg-8 mt-lg-5 px-3 px-lg-0 mb-3 mb-lg-3">
-					<div class="col-5">
+					<div class="col-lg-5 mb-3 mb-lg-0">
 						<!--поиск-->
 						<form class="row "  action="">
 							<div class="input-group">
@@ -225,7 +225,7 @@
 						</form>
 						<!--end поиск-->
 					</div>
-					<div class="col-3">
+					<div class="col-6 col-lg-3">
 						<!--выбор менеджера-->
 						<form class="row "  action="">
 							<div class="input-group">
@@ -238,18 +238,18 @@
 						</form>
 						<!--end выбор менеджера-->
 					</div>
-					<div class="col-4 d-flex align-items-start">
+					<div class="col-6 col-lg-4 d-flex align-items-start">
 						<!--фильтр-->
-						<a href="#" class="btn btn-outline-primary px-0 w-50 w-sm-20 ms-2 ms-lg-0 me-2" aria-label="загрузить">
+						<a href="#addfile" class="btn btn-outline-primary px-0 w-50 w-sm-20 ms-2 ms-lg-0 me-2" aria-label="выгрузить">
 							<svg class="blue" height="20" width="20"><use xlink:href="assets/img/sprite.svg#download"></use></svg>
 						</a>
 						<!--end фильтр-->
-						<a href="#" class="btn btn-outline-primary px-0 w-50 w-sm-20 ms-2 ms-lg-0 me-2" aria-label="выгрузить">
+						<a href="#" class="btn btn-outline-primary px-0 w-50 w-sm-20 ms-2 ms-lg-0 me-2" aria-label="загрузить"data-bs-toggle="modal" data-bs-target="#addfile">
 							<svg class="blue" height="20" width="20"><use xlink:href="assets/img/sprite.svg#upload"></use></svg>
 						</a>
 						<div class="input-group w-lg-auto w-50">
 							<a href="#addob" class="d-flex justify-content-center btn bg-gradient-primary px-0 px-lg-3 w-100 mb-0 " data-bs-toggle="modal" data-bs-target="#addob">
-								<span class="d-none d-lg-block">Добавить заявку</span>
+								<span class="d-none d-lg-block">Добавить</span>
 								<svg class="whitesvg ms-lg-2" height="22" width="22"><use xlink:href="assets/img/sprite.svg#plus"></use></svg>
 							</a>
 							
@@ -259,7 +259,7 @@
 			</div>
      <!--end заголовок страницы-->
      <!--карточки-->
-     <div class="row">
+     <div class="row d-none d-lg-flex">
         <div class="col-xl-4 col-sm-6 mb-xl-0 mb-2 mb-lg-4">
           <div class="card">
             <div class="row g-0">
@@ -322,12 +322,18 @@
       <!--Таблица-->
       <div class="row">
         <div class="col-12 mb-xl-0 mb-4">
-					<!--мобильная карточка оборудования-->
+					<!--мобильная карточка покупателя-->
 					<div class="card p-3 my-2 d-block d-lg-none border">
 						<div class="row">
-							<div class="col-10">
-								<p class="mt-1 mb-2">00J2801309</p>
-								<p class="font-weight-bold">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
+							<div class="col-12">
+								<div class="d-flex justify-content-between mb-2">
+									<p class="mt-1 mb-2"><span class="text-secondary me-2">ИНН</span>346346346</p>
+									<p class="mt-1 mb-2"><span class="text-secondary me-2">КПП</span>23523525</p>
+								</div>
+							</div>
+							<div class="col-10">	
+								<p class="font-weight-bold mb-0">Точка отгрузки №2</p>
+								<span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
 							</div>
 							<div class="col-2 my-1 text-end">
 								<div class="dropdown float-lg-end pe-4">
@@ -340,29 +346,31 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-12">
-								<p class="d-flex flex-column">
-									<span class="text-sm">Точка отгрузки №2</span>
-									<span class="text-gray400 text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
-								</p>
-									<div class="d-flex  w-100 justify-content-between">
-										<p class="text-secondary">Дата покупки/ввода в эксплуатацию</p> 
-										<p>12.12.2023 / 14.12.2023</p>
-									</div>
-									<div class="d-flex w-100 justify-content-between">
-										<p class="text-secondary">Поставщик</p> 
-										<p>ООО “ТрансХимСервис”</p>
-									</div>
+							<div class="col-6 mt-3">
+								<a href="tel:+7 987 654 32 10">+7 987 654 32 10</a>
+							</div>
+							<div class="col-6 mt-3">
+								<a href="mailto:mail@mail.com">mail@mail.com</a>
+							</div>
+							<div class="col-12 mt-3">
+								<p class="text-sm text-secondary">Прикрепленный менеджер</p>
+								<p class="font-weight-bold">Зайцев А.А.</p>
 							</div>
 						</div>
 					</div>
-					<!--end мобильная карточка оборудования-->
-					<!--мобильная карточка оборудования-->
+					<!--end мобильная карточка покупателя-->
+					<!--мобильная карточка покупателя-->
 					<div class="card p-3 my-2 d-block d-lg-none border">
 						<div class="row">
-							<div class="col-10">
-								<p class="mt-1 mb-2">00J2801309</p>
-								<p class="font-weight-bold">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
+							<div class="col-12">
+								<div class="d-flex justify-content-between mb-2">
+									<p class="mt-1 mb-2"><span class="text-secondary me-2">ИНН</span>346346346</p>
+									<p class="mt-1 mb-2"><span class="text-secondary me-2">КПП</span>23523525</p>
+								</div>
+							</div>
+							<div class="col-10">	
+								<p class="font-weight-bold mb-0">Точка отгрузки №2</p>
+								<span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
 							</div>
 							<div class="col-2 my-1 text-end">
 								<div class="dropdown float-lg-end pe-4">
@@ -375,29 +383,31 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-12">
-								<p class="d-flex flex-column">
-									<span class="text-sm">Точка отгрузки №2</span>
-									<span class="text-gray400 text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
-								</p>
-									<div class="d-flex  w-100 justify-content-between">
-										<p class="text-secondary">Дата покупки/ввода в эксплуатацию</p> 
-										<p>12.12.2023 / 14.12.2023</p>
-									</div>
-									<div class="d-flex w-100 justify-content-between">
-										<p class="text-secondary">Поставщик</p> 
-										<p>ООО “ТрансХимСервис”</p>
-									</div>
+							<div class="col-6 mt-3">
+								<a href="tel:+7 987 654 32 10">+7 987 654 32 10</a>
+							</div>
+							<div class="col-6 mt-3">
+								<a href="mailto:mail@mail.com">mail@mail.com</a>
+							</div>
+							<div class="col-12 mt-3">
+								<p class="text-sm text-secondary">Прикрепленный менеджер</p>
+								<p class="font-weight-bold">Зайцев А.А.</p>
 							</div>
 						</div>
 					</div>
-					<!--end мобильная карточка оборудования-->
-					<!--мобильная карточка оборудования-->
+					<!--end мобильная карточка покупателя-->
+					<!--мобильная карточка покупателя-->
 					<div class="card p-3 my-2 d-block d-lg-none border">
 						<div class="row">
-							<div class="col-10">
-								<p class="mt-1 mb-2">00J2801309</p>
-								<p class="font-weight-bold">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
+							<div class="col-12">
+								<div class="d-flex justify-content-between mb-2">
+									<p class="mt-1 mb-2"><span class="text-secondary me-2">ИНН</span>346346346</p>
+									<p class="mt-1 mb-2"><span class="text-secondary me-2">КПП</span>23523525</p>
+								</div>
+							</div>
+							<div class="col-10">	
+								<p class="font-weight-bold mb-0">Точка отгрузки №2</p>
+								<span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
 							</div>
 							<div class="col-2 my-1 text-end">
 								<div class="dropdown float-lg-end pe-4">
@@ -410,58 +420,19 @@
 									</ul>
 								</div>
 							</div>
-							<div class="col-12">
-								<p class="d-flex flex-column">
-									<span class="text-sm">Точка отгрузки №2</span>
-									<span class="text-gray400 text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
-								</p>
-									<div class="d-flex  w-100 justify-content-between">
-										<p class="text-secondary">Дата покупки/ввода в эксплуатацию</p> 
-										<p>12.12.2023 / 14.12.2023</p>
-									</div>
-									<div class="d-flex w-100 justify-content-between">
-										<p class="text-secondary">Поставщик</p> 
-										<p>ООО “ТрансХимСервис”</p>
-									</div>
+							<div class="col-6 mt-3">
+								<a href="tel:+7 987 654 32 10">+7 987 654 32 10</a>
+							</div>
+							<div class="col-6 mt-3">
+								<a href="mailto:mail@mail.com">mail@mail.com</a>
+							</div>
+							<div class="col-12 mt-3">
+								<p class="text-sm text-secondary">Прикрепленный менеджер</p>
+								<p class="font-weight-bold">Зайцев А.А.</p>
 							</div>
 						</div>
 					</div>
-					<!--end мобильная карточка оборудования-->
-					<!--мобильная карточка оборудования-->
-					<div class="card p-3 my-y d-block d-lg-none border">
-						<div class="row">
-							<div class="col-10">
-								<p class="mt-1 mb-2">00J2801309</p>
-								<p class="font-weight-bold">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
-							</div>
-							<div class="col-2 my-1 text-end">
-								<div class="dropdown float-lg-end pe-4">
-									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
-										<i class="fa fa-ellipsis-v text-secondary" aria-hidden="true"></i>
-									</a>
-									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
-										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
-										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-12">
-								<p class="d-flex flex-column">
-									<span class="text-sm">Точка отгрузки №2</span>
-									<span class="text-gray400 text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
-								</p>
-									<div class="d-flex  w-100 justify-content-between">
-										<p class="text-secondary">Дата покупки/ввода в эксплуатацию</p> 
-										<p>12.12.2023 / 14.12.2023</p>
-									</div>
-									<div class="d-flex w-100 justify-content-between">
-										<p class="text-secondary">Поставщик</p> 
-										<p>ООО “ТрансХимСервис”</p>
-									</div>
-							</div>
-						</div>
-					</div>
-					<!--end мобильная карточка оборудования-->
+					<!--end мобильная карточка покупателя-->
           <!--таблица оборудования десктоп-->
 					<div class="card d-none d-lg-block my-2 my-lg-4">
 							<div class="card-body px-0 pt-0 pb-2">
@@ -469,11 +440,12 @@
 									<table class="table table_sort table-striped align-items-center mb-0">
 											<thead>
 											<tr >
-													<th  class="col-2  text-secondar  text-sm opacity-7 sorted" data-order="-1">Наименование</th>
-													<th class="text-secondary  text-sm opacity-7 ps-2">Серийный номер</th>
-													<th class="col-4 text-secondary  text-sm opacity-7">Объект</th>
-													<th class="col-2 text-secondary  text-sm opacity-7">Дата покупки/ввода в эксплуатацию</th>
-													<th class="text-secondary  text-sm opacity-7">Поставщик</th>
+													<th  class="col-4  text-secondar  text-sm opacity-7 sorted" data-order="-1">Наименование</th>
+													<th class="text-secondary  text-sm opacity-7 ps-2">ИНН</th>
+													<th class="text-secondary  text-sm opacity-7">КПП</th>
+													<th class="text-secondary  text-sm opacity-7">Email</th>
+													<th class="text-secondary  text-sm opacity-7">Телефон</th>
+													<th class="text-secondary  text-sm opacity-7">Прикрепленный менеджер</th>
 													<th class="text-secondary  text-sm opacity-7"></th>
 													<th class="text-secondary  text-sm opacity-7"></th>
 											</tr>
@@ -481,22 +453,50 @@
 											<tbody>
 												<tr>
 														<td  class="ps-4">
-															<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport" ><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
-																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
-															</a>
+															<p class="mb-0 font-weight-bold">Точка отгрузки №2</p>
+															<p class="text-sm text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
 														</td>
 														<td>
-															<p class="text-sm">00J2801309</p>
+															<p class="font-weight-bold">346346346</p>
 														</td>
 														<td class="align-middle ">
-															<p class="text-sm">Точка отгрузки №2</p>
-															<p class="text-secondary  text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
+															<p class="font-weight-bold">23523525</p>
 														</td>
 														<td class="align-middle ">
-															<p class="text-sm"><b>12.12.2023 / 14.12.2023</b></p>
+															<p class="font-weight-bold"><a href="mailto:mail@mail.com" class="font-weight-bold">mail@mail.com</a></p>
 														</td>
 														<td class="align-middle">
-															<p class="text-sm"><b>ООО “ТрансХимСервис”</b></p>
+															<p class="font-weight-bold"><a href="tel:+7 987 654 32 10" class="font-weight-bold">+7 987 654 32 10</a></p>
+														</td>
+														<td>
+															<p class="font-weight-bold">Зайцев А.А.</p>
+														</td>
+														<td class="align-middle">
+															<a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
+														</td>
+														<td class="align-middle">
+															<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
+														</td>
+												</tr>
+												<tr>
+														<td  class="ps-4">
+															<p class="mb-0 font-weight-bold">Точка отгрузки №2</p>
+															<p class="text-sm text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
+														</td>
+														<td>
+															<p class="font-weight-bold">346346346</p>
+														</td>
+														<td class="align-middle ">
+															<p class="font-weight-bold">23523525</p>
+														</td>
+														<td class="align-middle ">
+															<p class="font-weight-bold"><a href="mailto:mail@mail.com" class="font-weight-bold">mail@mail.com</a></p>
+														</td>
+														<td class="align-middle">
+															<p class="font-weight-bold"><a href="tel:+7 987 654 32 10" class="font-weight-bold">+7 987 654 32 10</a></p>
+														</td>
+														<td>
+															<p class="font-weight-bold">Зайцев А.А.</p>
 														</td>
 														<td class="align-middle">
 															<a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
@@ -507,22 +507,23 @@
 												</tr>
 												<tr>
 													<td  class="ps-4">
-														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport" ><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
-															<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
-														</a>
+														<p class="mb-0 font-weight-bold">Точка отгрузки №2</p>
+														<p class="text-sm text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
 													</td>
 													<td>
-														<p class="text-sm">00J2801309</p>
+														<p class="font-weight-bold">346346346</p>
 													</td>
 													<td class="align-middle ">
-														<p class="text-sm">Точка отгрузки №2</p>
-														<p class="text-secondary  text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
+														<p class="font-weight-bold">23523525</p>
 													</td>
 													<td class="align-middle ">
-														<p class="text-sm"><b>12.12.2023 / 14.12.2023</b></p>
+														<p class="font-weight-bold"><a href="mailto:mail@mail.com" class="font-weight-bold">mail@mail.com</a></p>
 													</td>
 													<td class="align-middle">
-														<p class="text-sm"><b>ООО “ТрансХимСервис”</b></p>
+														<p class="font-weight-bold"><a href="tel:+7 987 654 32 10" class="font-weight-bold">+7 987 654 32 10</a></p>
+													</td>
+													<td>
+														<p class="font-weight-bold">Зайцев А.А.</p>
 													</td>
 													<td class="align-middle">
 														<a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
@@ -530,59 +531,34 @@
 													<td class="align-middle">
 														<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
 													</td>
-												</tr>
-												<tr>
-													<td  class="ps-4">
-														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport" ><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
-															<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
-														</a>
-													</td>
-													<td>
-														<p class="text-sm">00J2801309</p>
-													</td>
-													<td class="align-middle ">
-														<p class="text-sm">Точка отгрузки №2</p>
-														<p class="text-secondary  text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
-													</td>
-													<td class="align-middle ">
-														<p class="text-sm"><b>12.12.2023 / 14.12.2023</b></p>
-													</td>
-													<td class="align-middle">
-														<p class="text-sm"><b>ООО “ТрансХимСервис”</b></p>
-													</td>
-													<td class="align-middle">
-														<a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
-													</td>
-													<td class="align-middle">
-														<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
-													</td>
-												</tr>
-												<tr>
-													<td  class="ps-4">
-														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport" ><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
-															<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
-														</a>
-													</td>
-													<td>
-														<p class="text-sm">00J2801309</p>
-													</td>
-													<td class="align-middle ">
-														<p class="text-sm">Точка отгрузки №2</p>
-														<p class="text-secondary  text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
-													</td>
-													<td class="align-middle ">
-														<p class="text-sm"><b>12.12.2023 / 14.12.2023</b></p>
-													</td>
-													<td class="align-middle">
-														<p class="text-sm"><b>ООО “ТрансХимСервис”</b></p>
-													</td>
-													<td class="align-middle">
-														<a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
-													</td>
-													<td class="align-middle">
-														<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
-													</td>
-												</tr>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<p class="mb-0 font-weight-bold">Точка отгрузки №2</p>
+													<p class="text-sm text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</p>
+												</td>
+												<td>
+													<p class="font-weight-bold">346346346</p>
+												</td>
+												<td class="align-middle ">
+													<p class="font-weight-bold">23523525</p>
+												</td>
+												<td class="align-middle ">
+													<p class="font-weight-bold"><a href="mailto:mail@mail.com" class="font-weight-bold">mail@mail.com</a></p>
+												</td>
+												<td class="align-middle">
+													<p class="font-weight-bold"><a href="tel:+7 987 654 32 10" class="font-weight-bold">+7 987 654 32 10</a></p>
+												</td>
+												<td>
+													<p class="font-weight-bold">Зайцев А.А.</p>
+												</td>
+												<td class="align-middle">
+													<a href="#edituser" data-bs-toggle="modal" data-bs-target="#edituser" class="table-edit"></a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser" class="table-remove"></a>
+												</td>
+										</tr>
 											</tbody>
 									</table>
 								</div>
@@ -702,53 +678,40 @@
       </div>
     </div>
     <!-- end подтверждение телефона-->
-    <!--добавление оборудования-->
+    <!--добавление покупателя-->
     <div class="modal modal modal-lg fade" id="addob" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
 					<div class="step-1">
 						<div class="modal-header">
-								<h4 class="modal-title" id="pasportLabel">Регистрация нового оборудования</h4>
+								<h4 class="modal-title" id="pasportLabel">Новый покупатель</h4>
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
 								<div class="form__wrapper">
 									<form class="needs-validation" novalidate action="">
 											<div class="row">
-												<div class="col-12">
+												<div class="col-md-6">
 													<div class="input-group mb-3">
-														<input type="text" class="form-control " id="name" placeholder="Серийный номер оборудования" required/>
-														<div class="input-group-text"><img src="assets/img/qrcode.svg"/></div>
+														<input type="tel" class="form-control" id="inn"  data-masked="" data-inputmask="'mask': '999999999'" placeholder="ИНН" required/>
 														<div class="invalid-feedback">Это обязательное поле</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-md-6">
 													<div class="input-group mb-3">
-														<input type="text" class="form-control datepicker_input" id="dateot" placeholder="Дата покупки" required/>
-														<div class="input-group-text"><img src="assets/img/calendar.svg"/></div>
-														<div class="invalid-feedback">
-															Пожалуйста, выберите дату
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="input-group mb-3">
-														<input type="text" class="form-control datepicker_input" id="datedo" placeholder="Дата ввода в эксплуатацию" required/>
-														<div class="input-group-text"><img src="assets/img/calendar.svg"/></div>
-														<div class="invalid-feedback">
-															Пожалуйста, выберите дату
-														</div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="input-group mb-3">
-														<input type="tel" class="form-control" id="inn"  data-masked="" data-inputmask="'mask': '999999999'" placeholder="ИНН поставщика" required/>
+														<input type="tel" class="form-control" id="kpp"  data-masked="" data-inputmask="'mask': '999999999'" placeholder="КПП" required/>
 														<div class="invalid-feedback">Это обязательное поле</div>
 													</div>
 												</div>
 												<div class="col-12">
 													<div class="input-group mb-3">
-														<input type="text" class="form-control " id="adress" placeholder="Адрес расположения оборудования*" required/>
+														<input type="text" class="form-control " id="nameorg" placeholder="Полное наименование организации" required/>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<input type="text" class="form-control " id="adress" placeholder="Адрес" required/>
 														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
 														<div class="invalid-feedback">
 														Пожалуйста, укажите адрес
@@ -756,19 +719,31 @@
 													</div>
 												</div>
 												<div class="col-12">
-													<div class="custom-file mb-3">
-														<label class="custom-file-label w-100  bg-blue width-icon" for="customFile">
-															<input style="position:absolute" type="file" class="custom-file-input" id="customFile"><p class="text-blue m-0"><b>Документ покупки</b></p>
-															<span class="file-button-text"></span>
-														</label>
+													<div class="input-group mb-3">
+														<input type="text" class="form-control " id="name" placeholder="ФИО ответственного" required/>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="input-group mb-3">
+														<input type="tel" class="form-control" id="phone"  data-masked="" data-inputmask="'mask': '+7 999 999 99 99'" placeholder="Номер мобильного телефона" required/>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="input-group mb-3">
+														<input type="mail" class="form-control" data-inputmask-alias="email" id="mail" placeholder="Email" required="" onfocus="focused(this)" onfocusout="defocused(this)">
+														<div class="invalid-feedback">Это обязательное поле</div>
 													</div>
 												</div>
 												<div class="col-12">
-													<div class="custom-file mb-3">
-														<label class="custom-file-label w-100  bg-blue width-icon" for="customFile">
-															<input style="position:absolute" type="file" class="custom-file-input" id="customFile"><p class="text-blue m-0"><b>Акт ввода в эксплуатацию</b></p>
-														  <span class="file-button-text"></span>
-														</label>
+													<p class="font-weight-bold">Прикрепление менеджера к покупателю</p>
+													<div class="input-group mb-3">
+														<select class="form-select form-select__label" id="s_center">
+															<option selected="" disabled="" value="">Выберите менеджера</option>
+															<option value="Роль 1">Зайцев А.А.</option>
+															<option value="Роль 2">Волков Б.Б.</option>
+														</select>
 													</div>
 												</div>
 												<div class="col-lg-6">
@@ -788,7 +763,7 @@
 											<div class="text-center mt-3 mb-3 response-send__img">
 												<img src="assets/img/send.svg"/>
 											</div>
-											<p class="text-center">Создано новое оборудование</p>
+											<h5 class="text-center mb-3">Создан новый покупатель</h5>
 											<div class="text-center">
 												<a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
 											</div>
@@ -800,7 +775,7 @@
 					<div class="step-map">
 						<div class="modal-header px-2 mb-0">
 							<div>
-								<h4 class="modal-title" id="applicationLabel">Адрес расположения оборудования</h4>
+								<h4 class="modal-title" id="applicationLabel">Адрес покупателя</h4>
 							</div>
 							<div class="d-flex align-self-start ml-auto">
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -809,7 +784,7 @@
 						<div class="row  modal-body">
 								<div class="col-12">
 									<div class="input-group mb-3">
-										<input type="text" class="form-control " id="mapinput" placeholder="Выберите сервисный центр"/>
+										<input type="text" class="form-control " id="mapinput" placeholder="Введите адрес"/>
 									</div>
 									<div class="input-group mb-3">
 										<!--Здесь фрейм с картой-->
@@ -824,76 +799,81 @@
         </div>
       </div>
     </div>
-    <!--end добавление оборудования-->
-    <!--редактирование оборудования-->
+    <!--end добавление покупателя-->
+    <!--редактирование покупателя-->
     <div class="modal modal modal-lg fade" id="edituser" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
 					<div class="step-1">
 						<div class="modal-header">
-								<h4 class="modal-title" id="pasportLabel">Регистрация нового оборудования</h4>
+								<h4 class="modal-title" id="pasportLabel">Редактировать покупателя</h4>
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 							</div>
 							<div class="modal-body">
 								<div class="form__wrapper">
 									<form class="needs-validation" novalidate action="">
 											<div class="row">
-												<div class="col-12">
+												<div class="col-md-6">
 													<div class="input-group mb-3">
-														<input type="text" class="form-control " id="name" value="346LHF0834346LHF0834" placeholder="Серийный номер оборудования" required/>
-														<div class="input-group-text"><img src="assets/img/qrcode.svg"/></div>
+														<span class="input-group-text input-group-text--left" for="s_center">ИНН</span>
+														<input type="tel" class="form-control" id="inn"  data-masked="" value="346346346" data-inputmask="'mask': '999999999'" placeholder="ИНН" required/>
 														<div class="invalid-feedback">Это обязательное поле</div>
 													</div>
 												</div>
-												<div class="col-lg-6">
+												<div class="col-md-6">
 													<div class="input-group mb-3">
-														<input type="text" class="form-control datepicker_input" value="12.12.2023" id="dateot" placeholder="Дата покупки" required/>
-														<div class="input-group-text"><img src="assets/img/calendar.svg"/></div>
-														<div class="invalid-feedback">
-															Пожалуйста, выберите дату
-														</div>
-													</div>
-												</div>
-												<div class="col-lg-6">
-													<div class="input-group mb-3">
-														<input type="text" class="form-control datepicker_input" value="12.12.2023" id="datedo" placeholder="Дата ввода в эксплуатацию" required/>
-														<div class="input-group-text"><img src="assets/img/calendar.svg"/></div>
-														<div class="invalid-feedback">
-															Пожалуйста, выберите дату
-														</div>
-													</div>
-												</div>
-												<div class="col-12">
-													<div class="input-group mb-3">
-														<input type="tel" class="form-control" id="inn"  value="2352366436" data-masked="" data-inputmask="'mask': '999999999'" placeholder="ИНН поставщика" required/>
+														<span class="input-group-text input-group-text--left" for="s_center">КПП</span>
+														<input type="tel" class="form-control" id="kpp"  data-masked="" value="323523525" data-inputmask="'mask': '999999999'" placeholder="КПП" required/>
 														<div class="invalid-feedback">Это обязательное поле</div>
 													</div>
 												</div>
 												<div class="col-12">
 													<div class="input-group mb-3">
-														<input type="text" class="form-control " id="adress" value="г.Казань, ул.Толстого,16а" placeholder="Адрес расположения оборудования*" required/>
-														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
+														<span class="input-group-text input-group-text--left" for="s_center">Полное наименование организации</span>
+														<input type="text" class="form-control " value="ООО “ТехноХимСервис”" id="nameorg" placeholder="Полное наименование организации" required/>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Адрес</span>
+														<input type="text" class="form-control " value="420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37" id="adress" placeholder="Адрес" required/>
+														<div class="w-100 text-right"><a href="#"  class="step1__map"><small>Показать на карте</small></a></div>
 														<div class="invalid-feedback">
 														Пожалуйста, укажите адрес
 														</div>
 													</div>
 												</div>
 												<div class="col-12">
-													<div class="custom-file mb-3">
-														<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
-															<div class="d-flex justify-content-between">
-																<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ"><img src="assets/img/pdf.svg"/><span class="ms-3 text-blue width-icon icon-pdf">Document_001_1.pdf</span></a>
-																<a href="#" aria-label="удалить документ"><span class="text-blue width-icon width-icon--remove"><img src="assets/img/remove-red.svg"/></span></a>
-															</div>
-														</label>
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">ФИО ответственного</span>
+														<input type="text" class="form-control " id="name" value="Зайцев А.А." placeholder="ФИО ответственного" required/>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Номер мобильного телефона</span>
+														<input type="tel" class="form-control" id="phone"  data-masked="" value="+7 987 654 32 10" data-inputmask="'mask': '+7 999 999 99 99'" placeholder="Номер мобильного телефона" required/>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-md-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Email</span>
+														<input type="mail" class="form-control" data-inputmask-alias="email" value="mail@mail.com" id="mail" placeholder="Email" required="" onfocus="focused(this)" onfocusout="defocused(this)">
+														<div class="invalid-feedback">Это обязательное поле</div>
 													</div>
 												</div>
 												<div class="col-12">
-													<div class="custom-file mb-3">
-														<label class="custom-file-label w-100  bg-blue width-icon" for="customFile">
-															<input style="position:absolute" type="file" class="custom-file-input" id="customFile"><p class="text-blue m-0"><b>Документ покупки</b></p>
-															<span class="file-button-text"></span>
-														</label>
+													<p class="font-weight-bold">Прикрепление менеджера к покупателю</p>
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Выберите менеджера</span>
+														<select class="form-select form-select__label" id="s_center">
+															<option  disabled="" value="">Выберите менеджера</option>
+															<option selected value="Менеджер 1">Зайцев А.А.</option>
+															<option value="Менеджер 2">Волков Б.Б.</option>
+														</select>
 													</div>
 												</div>
 												<div class="col-lg-6">
@@ -913,7 +893,7 @@
 											<div class="text-center mt-3 mb-3 response-send__img">
 												<img src="assets/img/send.svg"/>
 											</div>
-											<p class="text-center">Оборудование изменено</p>
+											<h5 class="text-center mb-3">Создан новый покупатель</h5>
 											<div class="text-center">
 												<a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
 											</div>
@@ -925,7 +905,7 @@
 					<div class="step-map">
 						<div class="modal-header px-2 mb-0">
 							<div>
-								<h4 class="modal-title" id="applicationLabel">Адрес расположения оборудования</h4>
+								<h4 class="modal-title" id="applicationLabel">Адрес покупателя</h4>
 							</div>
 							<div class="d-flex align-self-start ml-auto">
 								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -934,7 +914,7 @@
 						<div class="row  modal-body">
 								<div class="col-12">
 									<div class="input-group mb-3">
-										<input type="text" class="form-control " id="mapinput" placeholder="Выберите сервисный центр"/>
+										<input type="text" class="form-control " id="mapinput" placeholder="Введите адрес"/>
 									</div>
 									<div class="input-group mb-3">
 										<!--Здесь фрейм с картой-->
@@ -949,8 +929,8 @@
         </div>
       </div>
     </div>
-    <!--end редактирование оборудования-->
-    <!--удаление оборудования-->
+    <!--end редактирование покупателя-->
+    <!--удаление покупателя-->
     <div class="modal modal modal-sm fade" id="removeuser" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
@@ -995,64 +975,57 @@
         </div>
       </div>
     </div>
-    <!--end удаление оборудования-->
-	<!--просмотр оборудования-->
-	<div class="modal modal-lg fade" id="pasport" tabindex="-1" aria-hidden="true">
+    <!--end удаление покупателя-->
+		<!--загрузить файл-->
+		<div class="modal modal modal-lg fade" id="addfile" tabindex="-1" aria-hidden="true">
 			<div class="modal-dialog">
 				<div class="modal-content">
-					<div class="modal-header border-bottom">
-						<h4 class="modal-title d-flex flex-column" id="pasportLabel"><span>Пароконвектомат TR10M0L</span><span>ТУ 28.93.15-001-47653896-2020</span>		</h4>
-						<div class="d-flex ml-auto">
-							<a href="#application" class="btn btn-outline-primary btn-sm btn--icon icon--setting me-2" aria-label="Заявка на ремонт" data-bs-toggle="modal" data-bs-target="#application"></a>
-							<a href="#login" class="btn bg-gradient-dark btn-sm btn--icon icon--repair me-2" aria-label="Личный кабинет"data-bs-toggle="modal" data-bs-target="#login"></a>
-							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						<div class="modal-header">
+								<h4 class="modal-title" id="pasportLabel">Загрузить файл</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
-					</div>
-					<div class="modal-body">
-						<div class="row g-0 border-bottom pb-3 mb-3">
-							<div class="col-6">
-								<p>Серийный номер оборудования</p>
-								<p>Дата покупки</p>
-								<p>Дата ввода в эксплуатацию</p>
-								<p>Объект</p>
-								<p>Поставшик</p>
-							</div>
-							<div class="col-6 text-right">
-								<p class="font-weight-bold text-right">346LHF0834</p>
-								<p class="font-weight-bold text-right">12.12.2023</p>
-								<p class="font-weight-bold text-right">12.12.2023</p>
-								<div class="d-flex flex-column" ><span class="font-weight-bold text-right">Точка отгрузки №1</span><span class="text-secondary  text-sm">г.Казань, ул.Вишневского,16В</span></div>
-								<div class="d-flex flex-column" ><span class="font-weight-bold text-right">ООО “ТехноХимСервис”</span><span class="text-secondary  text-sm">ИНН 32425335. г.Казань, ул.Вишневского,16В</span></div>
-							</div>
-							</div>
-							<div class="row g-0 ">
-							<div class="col-md-6">
-								<div class="custom-file mt-3">
-									<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
-										<div class="d-flex justify-content-between">
-											<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ"><img src="assets/img/pdf.svg"/><span class="ms-3 text-blue width-icon icon-pdf">Document_001_1.pdf</span></a>
-											<a href="#" aria-label="удалить документ"><span class="text-blue width-icon width-icon--remove"><img src="assets/img/remove-red.svg"/></span></a>
+							<div class="modal-body">
+								<div class="form__wrapper">
+									<form class="needs-validation" novalidate action="">
+											<div class="row">
+												<div class="col-12">
+													<div class="custom-file mb-3">
+														<label class="custom-file-label w-100  bg-blue width-icon" for="customFile">
+															<input style="position:absolute" type="file" class="custom-file-input" id="customFile"><p class="text-blue m-0"><b>Загрузить файл</b></p>
+															<span class="file-button-text"></span>
+														</label>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<a class="btn btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<button type="submit" class="btn  bg-gradient-primary w-100 mt-3 mb-3">Сохранить</button>
+													</div>
+												</div>
+											</div>
+									</form>
+									<div class="m-auto response-send">
+										<div class="modal-body">
+											<div class="text-center mt-3 mb-3 response-send__img">
+												<img src="assets/img/send.svg"/>
+											</div>
+											<p class="text-center">Создано новое оборудование</p>
+											<div class="text-center">
+												<a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+											</div>
 										</div>
-									</label>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6 ps-2">
-								<div class="custom-file mt-3">
-									<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
-										<div class="d-flex justify-content-between">
-											<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ"><img src="assets/img/pdf.svg"/><span class="ms-3 text-blue width-icon icon-pdf">Document_001_1.pdf</span></a>
-											<a href="#" aria-label="удалить документ"><span class="text-blue width-icon width-icon--remove"><img src="assets/img/remove-red.svg"/></span></a>
-										</div>
-									</label>
-								</div>
-							</div>
-						</div>
-					</div>
+					
 				</div>
 			</div>
-	</div>
-	<!--end просмотр оборудования-->
-
+		</div>
+		<!--end загрузить файл-->
 <!--скрипт сортировки таблиц-->
   <script>
   "use strict";
