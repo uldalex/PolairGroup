@@ -1263,3 +1263,6 @@ $(".more").click(function() {
     $(this).find('span').text("Показать");
 
 });
+$('.work-clone').on('click', function() {
+  $('.card-work').clone().appendTo(".card-work-list:last");
+});

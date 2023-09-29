@@ -255,7 +255,7 @@
 											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="btn  btn-outline-primary mb-0 me-2">
 												Отменить
 											</a>
-											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="btn  bg-gradient-primary mb-0 ">
+											<a href="#editwork" data-bs-toggle="modal" data-bs-target="#editwork" class="btn  bg-gradient-primary mb-0 ">
 												Редактировать
 											</a>
 										</div>	
@@ -495,7 +495,7 @@
 											<h5>Работы</h5>
 											<div class="d-flex">
 												<p class="font-weight-bold">2 400,00 руб</p>
-												<a href="#">
+												<a href="#editwork" data-bs-toggle="modal" data-bs-target="#editwork">
 													<svg class="gray200 mx-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#edit"></use></svg>
 												</a>
 												<div class="dropdown float-lg-end pe-4">
@@ -1425,30 +1425,59 @@
 		</div>
 		<!--end карта-->
 		<!--работы-->
-		<div class="modal modal-lg fade" id="work" tabindex="-1" aria-hidden="true">
+		<div class="modal modal-lg fade" id="editwork" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
 					<div class="modal-header px-2 mb-0">
 						<div>
-							<h4 class="modal-title" id="applicationLabel">Выбрать адрес</h4>
+							<h4 class="modal-title" id="applicationLabel">Добавление работ</h4>
 						</div>
 						<div class="d-flex align-self-start ml-auto">
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 					</div>
-					<div class="row  modal-body">
-							<div class="col-12">
-								<div class="input-group mb-3">
-									<input type="text" class="form-control " id="mapinput" placeholder="Выберите сервисный центр"/>
-								</div>
-								<div class="input-group mb-3">
-									<!--Здесь фрейм с картой-->
-									<img src="assets/img/map.png"/>
+					<div class="modal-body">
+						<form>
+							<div class="card-work-list col-12">
+								<div class="card-work bg-secondarylight p-3 mb-3">
+									<p class="text-sm opacity-7">Работа #1</p>
+									<div class="d-flex flex-column flex-lg-row">
+										<div class="input-group mb-2 pe-1">
+											<select class="form-select form-select__label" id="s_center">
+												<option selected="" disabled="" value="">Выберите работу</option>
+												<option value="">работа</option>
+												<option value="">работа</option>
+											</select>
+										</div>
+										<div class="input-group mb-2 px-1">
+											<select class="form-select form-select__label" id="s_center">
+												<option selected="" disabled="" value="">Категория</option>
+												<option value="">работа</option>
+												<option value="">работа</option>
+											</select>
+										</div>
+										<div class="input-group mb-2 px-1">
+											<input type="text" class="form-control " id="adress" placeholder="Часы" required>
+										</div>
+										<div class="input-group mb-2 px-1">
+											<input type="text" class="form-control " id="adress" placeholder="Стоимость" required>
+										</div>
+										<div class="input-group mb-2 ps-1">
+											<input type="text" class="form-control " id="adress" placeholder="Сумма" required>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-12">
-								<a href="#" class="map__btn btn bg-gradient-primary w-100">Сохранить</a>
+							<a class="work-clone mb-4 font-weight-bold d-flex" href="#"><svg class="blue me-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#plus"></use></svg>Добавить работу</a>	
+							<div class="row">
+								<div class="col-6">
+									<a href="#"  class="btn  btn-outline-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отменить</a>
+								</div>
+								<div class="col-6">
+									<a href="#" class="map__btn btn bg-gradient-primary w-100">Сохранить</a>
+								</div>
 							</div>
+						</form>
 					</div>
 				</div>
 			</div>
