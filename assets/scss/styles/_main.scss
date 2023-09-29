@@ -617,8 +617,12 @@ display:none
        border-bottom:1px solid $gray-100;
        text-transform: none;
     }
-    .table-striped > tbody > tr:nth-of-type(odd) > * {
+    .table-striped > tbody > tr:nth-of-type(odd) {
         --bs-table-accent-bg:  #F7F9FB;
+        background:#F7F9FB;
+    }
+    .table-striped > tbody > tr:nth-of-type(odd) > * {
+        --bs-table-accent-bg:  transparent;
     }
     .filter-flex{
         display:flex;

@@ -24482,8 +24482,13 @@ th.sorted[data-order="1"]::after {
   text-transform: none;
 }
 
-.table-striped > tbody > tr:nth-of-type(odd) > * {
+.table-striped > tbody > tr:nth-of-type(odd) {
   --bs-table-accent-bg: #F7F9FB;
+  background: #F7F9FB;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: transparent;
 }
 
 .filter-flex {
