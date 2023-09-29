@@ -150,6 +150,7 @@ They might well be outsourced to an external stylesheet of course.
  .svg-target-dims { width: 21px; height: 20px; }
  .svg-telegram-dims { width: 20px; height: 20px; }
  .svg-timer-dims { width: 32px; height: 33px; }
+ .svg-upload-dims { width: 20px; height: 20px; }
  .svg-user-dims { width: 20px; height: 20px; }
  .svg-users-dims { width: 33px; height: 33px; }
  .svg-vue-dims { width: 20px; height: 20px; }
@@ -224,6 +225,7 @@ for further details on how to create this embeddable sprite variant.
      <symbol fill="none" viewBox="0 0 21 20" id="target" xmlns="http://www.w3.org/2000/svg"><path d="M10.667 16.875a6.875 6.875 0 1 0 0-13.75 6.875 6.875 0 0 0 0 13.75ZM10.667 1.563v3.125M2.23 10h3.124M10.667 18.438v-3.125M19.104 10H15.98"/><path d="M10.667 12.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z"/></symbol>
      <symbol fill="none" viewBox="0 0 20 20" id="telegram" xmlns="http://www.w3.org/2000/svg"><path d="m6.875 10.54 7.023 6.179a.624.624 0 0 0 1.024-.328l2.937-12.829a.625.625 0 0 0-.836-.718L2.601 8.508c-.578.226-.5 1.07.11 1.195l4.164.836ZM6.875 10.54l10.633-7.68"/><path d="m10.383 13.625-2.438 2.438a.625.625 0 0 1-1.07-.438v-5.086"/></symbol>
      <symbol fill="none" viewBox="0 0 32 33" id="timer" xmlns="http://www.w3.org/2000/svg"><path d="M16 27.465c6.075 0 11-4.925 11-11s-4.925-11-11-11-11 4.925-11 11 4.925 11 11 11ZM16 16.465l4.95-4.95M13 1.465h6"/></symbol>
+     <symbol fill="none" viewBox="0 0 20 20" id="upload" xmlns="http://www.w3.org/2000/svg"><path d="M6.719 8.594 10 11.875l3.281-3.281M10 3.125v8.75M16.875 11.875v4.375a.624.624 0 0 1-.625.625H3.75a.625.625 0 0 1-.625-.625v-4.375"/></symbol>
      <symbol fill="none" viewBox="0 0 20 20" id="user" xmlns="http://www.w3.org/2000/svg"><path d="M10 12.5a5 5 0 1 0 0-10 5 5 0 0 0 0 10Z"/><path d="M2.422 16.875a8.75 8.75 0 0 1 15.156 0"/></symbol>
      <symbol fill="none" viewBox="0 0 33 33" id="users" xmlns="http://www.w3.org/2000/svg"><path d="M16.5 22.965a5 5 0 1 0 0-10 5 5 0 0 0 0 10ZM25 14.965a7.474 7.474 0 0 1 6 3M2 17.965a7.475 7.475 0 0 1 6-3"/><path d="M9.3 27.465a8.012 8.012 0 0 1 14.4 0M8 14.965a4 4 0 1 1 3.925-4.75M21.075 10.215A4 4 0 1 1 25 14.965"/></symbol>
      <symbol fill="none" viewBox="0 0 20 20" id="vue" xmlns="http://www.w3.org/2000/svg"><path d="M10 4.375C3.75 4.375 1.25 10 1.25 10s2.5 5.625 8.75 5.625S18.75 10 18.75 10 16.25 4.375 10 4.375Z"/><path d="M10 13.125a3.125 3.125 0 1 0 0-6.25 3.125 3.125 0 0 0 0 6.25Z"/></symbol>
@@ -617,6 +619,14 @@ embedded above. They may be styled via CSS.
                         </svg>
                     </div>
                     <h2>timer, </h2>
+                </li>
+             <li title="upload">
+                    <div class="icon-box">
+                        <svg class="svg-upload-dims">
+                            <use xlink:href="#upload"></use>
+                        </svg>
+                    </div>
+                    <h2>upload, </h2>
                 </li>
              <li title="user">
                     <div class="icon-box">
@@ -1061,6 +1071,14 @@ SVG sprite. They may be styled via CSS.
                     </div>
                     <h2>timer</h2>
                 </li>
+             <li title="upload">
+                    <div class="icon-box">
+                        <svg class="svg-upload-dims">
+                            <use xlink:href="sprite.svg#upload"></use>
+                        </svg>
+                    </div>
+                    <h2>upload</h2>
+                </li>
              <li title="user">
                     <div class="icon-box">
                         <svg class="svg-user-dims">
@@ -1133,7 +1151,7 @@ SVG sprite. They may be styled via CSS.
 
         </section>
         <footer>
-            <p>Generated at Thu, 28 Sep 2023 15:42:36 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+            <p>Generated at Fri, 29 Sep 2023 06:12:26 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
         </footer>
     </body>
 </html>
