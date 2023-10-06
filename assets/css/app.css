@@ -24528,6 +24528,10 @@ th.sorted[data-order="1"]::after {
   stroke: #318FAD;
 }
 
+.reset-filter {
+  overflow: visible;
+}
+
 .nav.nav-pills {
   background-color: transparent;
 }
