@@ -761,3 +761,12 @@ display:none
     stroke-width: 2px;
 stroke: rgba(96, 192, 195, 0.20);
   }
+ .content {
+ min-height:50vh;
+ }
+ .block-404{
+    h1 {
+        font-size:200px;
+        color:$gray-200;
+    }
+ }

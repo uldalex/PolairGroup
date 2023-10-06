@@ -20075,7 +20075,7 @@ label,
 }
 .input-group .input-group-text--left {
   left: 0;
-  z-index: 5;
+  z-index: 6;
   top: -12px;
   font-size: 10px;
   padding: 0;
@@ -24629,6 +24629,15 @@ th.sorted[data-order="1"]::after {
 .point {
   stroke-width: 2px;
   stroke: rgba(96, 192, 195, 0.2);
+}
+
+.content {
+  min-height: 50vh;
+}
+
+.block-404 h1, .block-404 .h1 {
+  font-size: 200px;
+  color: #CCD3D9;
 }
 
 .step-map {
