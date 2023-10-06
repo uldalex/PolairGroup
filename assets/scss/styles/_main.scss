@@ -548,6 +548,7 @@ display:none
             }
        }
     @media(max-width:600px){
+       
         text-indent: -9999px;
     }
     }
@@ -648,6 +649,7 @@ display:none
     }
     @media(max-width:600px){
     .text-indent{
+        display:inline-block;
         text-indent: -9999px;
     }
 }
@@ -769,4 +771,11 @@ stroke: rgba(96, 192, 195, 0.20);
         font-size:200px;
         color:$gray-200;
     }
+ }
+ @media(max-width:600px){
+    .block-404{
+        h1 {
+            font-size:150px;
+        }
+     }  
  }

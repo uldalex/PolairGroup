@@ -24517,6 +24517,7 @@ th.sorted[data-order="1"]::after {
 }
 @media (max-width: 600px) {
   .text-indent {
+    display: inline-block;
     text-indent: -9999px;
   }
 }
@@ -24640,6 +24641,11 @@ th.sorted[data-order="1"]::after {
   color: #CCD3D9;
 }
 
+@media (max-width: 600px) {
+  .block-404 h1, .block-404 .h1 {
+    font-size: 150px;
+  }
+}
 .step-map {
   display: none;
 }
