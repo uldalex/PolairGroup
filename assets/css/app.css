@@ -17865,6 +17865,14 @@ textarea.form-control-lg {
   font-weight: 400;
   font-size: 0.85em;
 }
+.badge.badge-sidebar {
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  padding: 0.3rem 0.35rem;
+  font-size: 80%;
+  font-weight: 500;
+}
 
 .btn {
   font-weight: 500;
@@ -22319,6 +22327,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show:not(.rtl) .support-block {
   border: 0px;
+  background-color: #fff;
 }
 .g-sidenav-show:not(.rtl) .support-block a {
   text-indent: -9999px;
@@ -22523,8 +22532,11 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   margin-top: 1.5px;
   margin-bottom: 1.5px;
 }
-.navbar-vertical .nav-item:hover .nav-link {
+.navbar-vertical .nav-item:hover {
   background-color: rgba(199, 199, 199, 0.2);
+}
+.navbar-vertical .nav-item:hover .nav-link {
+  background-color: transparent;
   border-radius: 4px;
 }
 .navbar-vertical .nav-item:hover .nav-link + .collapse .nav .nav-item:hover > .nav-link {
@@ -22534,6 +22546,9 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 .navbar-vertical .nav-item:hover .nav-link + .collapse .nav .nav-item + .collapse .nav .nav-item:hover .nav-link {
   background-color: rgba(199, 199, 199, 0.2);
   border-radius: 4px;
+}
+.navbar-vertical .nav-item:hover ul li {
+  background-color: none;
 }
 
 @media (min-width: 1200px) {

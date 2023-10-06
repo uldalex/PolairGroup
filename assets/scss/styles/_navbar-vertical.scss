@@ -362,6 +362,7 @@ body:not(.dark-version) {
       }
       .support-block{
         border: 0px;
+        background-color:$white;
       }
       .support-block a {
         text-indent: -9999px;
@@ -639,8 +640,9 @@ body:not(.dark-version) {
       }
     }
     &:hover {
+      background-color: $navbar-vertical-hover-bg-color;
       .nav-link {
-        background-color: $navbar-vertical-hover-bg-color;
+        background-color: transparent;
         border-radius: $navbar-nav-link-border-radius;
 
         +.collapse {
@@ -667,6 +669,9 @@ body:not(.dark-version) {
             }
           }
         }
+      }
+      & ul li {
+        background-color: none;
       }
     }
   }

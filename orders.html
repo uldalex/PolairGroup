@@ -21,14 +21,13 @@
 <body class="g-sidenav-show  bg-gray-100 ">
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start bg-white " id="sidenav-main">
     <div class="sidenav-header">
-      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-      <a class="navbar-brand m-0" href="#" target="_blank"></a>
     </div>
     <hr class="horizontal light mt-0 mb-2">
     <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
       <ul class="navbar-nav">
         <li class="nav-item ">
-          <a class="nav-link text-dark" href="dashboard.html">
+					<!--Внимание! обращаем внимание на data-bs-target - он разворачивает блок с этой айдишкой-->
+          <a class="nav-link text-dark" data-bs-target="#pages" data-bs-toggle="collapse" class="sidebar-link collapsed" href="dashboard.html">
             <div class="text-center text-dark me-2 d-flex align-items-center justify-content-center">
               <svg class="text-dark" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M16.875 5.625H3.125C2.77982 5.625 2.5 5.90482 2.5 6.25V16.25C2.5 16.5952 2.77982 16.875 3.125 16.875H16.875C17.2202 16.875 17.5 16.5952 17.5 16.25V6.25C17.5 5.90482 17.2202 5.625 16.875 5.625Z" stroke-linecap="round" stroke-linejoin="round"/>
@@ -38,6 +37,27 @@
             </div>
             <span class="nav-link-text ms-1">Компания</span>
           </a>
+					<ul id="pages" class="nav-item sidebar-dropdown list-unstyled collapse " data-bs-parent="#sidebar">
+						<li class="nav-item"><a class="nav-link text-dark" href="#">Пункт 1</a></li>
+						<li class="nav-item"><a class="nav-link text-dark" href="#">Пункт 2</a></li>
+						<li class="nav-item"><a class="nav-link text-dark" href="#">Пункт 3</a></li>
+						<li class="nav-item">
+							<a data-bs-target="#projects" data-bs-toggle="collapse" class="nav-link text-dark collapsed">
+								Пункт 4 и Второй уровень
+							</a>
+							<ul id="projects" class="sidebar-dropdown list-unstyled collapse ">
+								<li class="nav-item">
+									<a class="nav-link  text-dark" href="#">Пункт 1</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" href="#">Пункт 2 <span class="badge badge-sidebar-primary">New</span></a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item"><a class="nav-link text-dark" href="#">Пункт 5</a></li>
+						<li class="nav-item"><a class="nav-link text-dark" href="#">Пункт 6</a></li>
+						<li class="nav-item"><a class="nav-link text-dark" href="#">С бейджем<span class="badge badge-sidebar bg-success">бейдж</span></a></li>
+					</ul>
         </li>
         <li class="nav-item">
           <a class="nav-link text-dark" href="../pages/tables.html">

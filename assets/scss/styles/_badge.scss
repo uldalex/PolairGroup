@@ -12,4 +12,14 @@
   text-transform: none;
   font-weight:400;
   font-size: 0.85em;
+
+
+&.badge-sidebar{
+  position: absolute;
+  right: 20px;
+  top: 12px;
+  padding: 0.3rem 0.35rem;
+  font-size: 80%;
+  font-weight: 500;
+}
 }
