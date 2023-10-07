@@ -394,6 +394,7 @@ body:not(.dark-version) {
         @media(max-width:769px){
           &.fixed-start+.main-content {
             margin-left: 100%;
+            overflow:hidden;
     
           } 
         }

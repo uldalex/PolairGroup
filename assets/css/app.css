@@ -22349,6 +22349,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 @media (max-width: 769px) {
   .g-sidenav-show.g-sidenav-pinned .sidenav.fixed-start + .main-content {
     margin-left: 100%;
+    overflow: hidden;
   }
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link {
