@@ -22548,7 +22548,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   border-radius: 4px;
 }
 .navbar-vertical .nav-item:hover ul li {
-  background-color: none;
+  background-color: #fff;
+}
+.navbar-vertical .nav-item:hover ul li:hover {
+  background-color: transparent;
 }
 
 @media (min-width: 1200px) {

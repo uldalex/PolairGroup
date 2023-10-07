@@ -671,7 +671,10 @@ body:not(.dark-version) {
         }
       }
       & ul li {
-        background-color: none;
+        background-color: $white;
+        &:hover {
+          background-color: transparent;
+        }
       }
     }
   }
