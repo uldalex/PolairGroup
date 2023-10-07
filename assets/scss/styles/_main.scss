@@ -782,3 +782,16 @@ stroke: rgba(96, 192, 195, 0.20);
         }
      }  
  }
+.notes{
+    position:relative;
+    .active {
+        width: 8px;
+        height: 8px;
+        display: block;
+        position: absolute;
+        background: $red;
+        border-radius: 50%;
+        right: -2px;
+        bottom: 2px;
+    }
+}

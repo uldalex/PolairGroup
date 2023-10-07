@@ -24668,6 +24668,20 @@ th.sorted[data-order="1"]::after {
     font-size: 150px;
   }
 }
+.notes {
+  position: relative;
+}
+.notes .active {
+  width: 8px;
+  height: 8px;
+  display: block;
+  position: absolute;
+  background: #EE5157;
+  border-radius: 50%;
+  right: -2px;
+  bottom: 2px;
+}
+
 .step-map {
   display: none;
 }
