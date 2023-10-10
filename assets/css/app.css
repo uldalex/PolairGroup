@@ -21609,7 +21609,7 @@ hr.horizontal.gray-light {
 .navbar-vertical.navbar-expand-xs .navbar-collapse {
   display: block;
   overflow: auto;
-  height: calc(100vh - 200px);
+  height: calc(100vh - 250px);
 }
 .navbar-vertical.navbar-expand-xs > [class*=container] {
   flex-direction: column;
@@ -21686,7 +21686,7 @@ hr.horizontal.gray-light {
   .navbar-vertical.navbar-expand-sm .navbar-collapse {
     display: block;
     overflow: auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
   }
   .navbar-vertical.navbar-expand-sm > [class*=container] {
     flex-direction: column;
@@ -21766,7 +21766,7 @@ hr.horizontal.gray-light {
   .navbar-vertical.navbar-expand-md .navbar-collapse {
     display: block;
     overflow: auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
   }
   .navbar-vertical.navbar-expand-md > [class*=container] {
     flex-direction: column;
@@ -21846,7 +21846,7 @@ hr.horizontal.gray-light {
   .navbar-vertical.navbar-expand-lg .navbar-collapse {
     display: block;
     overflow: auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
   }
   .navbar-vertical.navbar-expand-lg > [class*=container] {
     flex-direction: column;
@@ -21926,7 +21926,7 @@ hr.horizontal.gray-light {
   .navbar-vertical.navbar-expand-xl .navbar-collapse {
     display: block;
     overflow: auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
   }
   .navbar-vertical.navbar-expand-xl > [class*=container] {
     flex-direction: column;
@@ -22006,7 +22006,7 @@ hr.horizontal.gray-light {
   .navbar-vertical.navbar-expand-xxl .navbar-collapse {
     display: block;
     overflow: auto;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 250px);
   }
   .navbar-vertical.navbar-expand-xxl > [class*=container] {
     flex-direction: column;
@@ -22309,10 +22309,11 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 .g-sidenav-show:not(.rtl) .sidenav .nav-link {
   position: relative;
   margin: 0;
+  padding-right: 2px;
 }
 .g-sidenav-show:not(.rtl) .sidenav .nav-link svg {
   position: absolute;
-  right: 1rem;
+  right: 1.2rem;
 }
 .g-sidenav-show:not(.rtl) .sidenav .nav-link.btn {
   display: none;
@@ -22331,6 +22332,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show:not(.rtl) .support-block a {
   text-indent: -9999px;
+  opacity: 0;
 }
 .g-sidenav-show .sidenav.fixed-start + .main-content {
   margin-left: 5rem;
@@ -22339,6 +22341,9 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   .g-sidenav-show .sidenav.fixed-start + .main-content {
     margin-left: 0;
   }
+}
+.g-sidenav-show .badge {
+  display: none;
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav {
   transform: translateX(0);
@@ -22376,6 +22381,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show.g-sidenav-pinned .support-block a {
   font-size: 0.91875rem;
+  opacity: 1;
+}
+.g-sidenav-show.g-sidenav-pinned .badge {
+  display: block;
 }
 
 .sidenav.bg-gradient-dark .text-white svg {
@@ -22437,9 +22446,12 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   font-variant: normal;
   text-rendering: auto;
   -webkit-font-smoothing: antialiased;
-  font-family: "Font Awesome 5 Free";
-  font-weight: 700;
-  content: "\f107";
+  width: 9px;
+  height: 20px;
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8'?%3E%3Csvg width='10px' height='7px' viewBox='0 0 10 7' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Ctitle%3Edown-arrow%3C/title%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='2' transform='translate(-938.000000, -135.000000)' fill='%2367748E' fill-rule='nonzero'%3E%3Cg id='down-arrow' transform='translate(938.000000, 135.000000)'%3E%3Cpath d='M7.91769231,0.994615385 L4.61538462,4.29692308 L1.31307692,0.994615385 C1.01124701,0.7030983 0.531473248,0.707267405 0.234754942,1.00398571 C-0.0619633645,1.30070402 -0.0661324689,1.78047778 0.225384615,2.08230769 L4.07153846,5.92846154 C4.37192296,6.22875534 4.85884627,6.22875534 5.15923077,5.92846154 L9.00538462,2.08230769 C9.20535122,1.88917348 9.28554815,1.60317085 9.21515166,1.33422514 C9.14475517,1.06527942 8.93472058,0.855244834 8.66577486,0.784848341 C8.39682915,0.714451848 8.11082652,0.794648781 7.91769231,0.994615385 Z' id='Path'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  content: " ";
   margin-left: auto;
   color: rgba(206, 212, 218, 0.7);
   transition: all 0.2s ease-in-out;

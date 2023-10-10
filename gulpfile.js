@@ -42,6 +42,7 @@ gulp.task('svg', function () {
     parserOptions: {xmlMode: true}
   }))
       .pipe(svgSprite({
+        
               mode: {
                 symbol: {
                   dest: '.',
