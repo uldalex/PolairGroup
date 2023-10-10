@@ -15,6 +15,28 @@
 </head>
  <!--Здесь сайтбар свернут изначально-->
 <body class="g-sidenav-show  bg-gray-100 ">
+	<!--прелоадер-->
+  <div id="preloader" class="preloader">
+		<div class="preloader-grid">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<!--end прелоадер -->
+	<!--скрипт для прелоадера-->
+	<script>
+		window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+	</script>
+	<!--end скрипт для прелоадера-->
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start bg-white " id="sidenav-main">
     <div class="sidenav-header">
     </div>
