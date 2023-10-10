@@ -12,7 +12,7 @@
     .dropdown-toggle {
       &:after{
         content: "\f107";
-        font: normal normal normal 14px/1 FontAwesome;
+
         border: none;
         vertical-align: middle;
         font-weight: $font-weight-bold;
@@ -61,7 +61,7 @@
 
     &.dropdown-hover:hover > .dropdown-menu:before,
     .dropdown-menu.show:before {
-      top: $dropdown-hover-arrow-active-top;
+      top: 10px;
     }
 
     &.dropdown-hover {
@@ -81,15 +81,16 @@
 
     .dropdown-menu {
       &:before {
-        font-family: "FontAwesome";
-        content: "\f0d8";
+        content: "";
         position: absolute;
+        display: block;
+        width: 0px;
+        left: 50%;
         top: 0;
-        left: $dropdown-animation-arrow-left-position;
-        right: auto;
-        font-size: $dropdown-animation-arrow-font-size;
-        color: $white;
-        transition: $dropdown-animation-arrow-transition;
+        border: 15px solid transparent;
+        border-top: 0;
+        border-bottom: 15px solid #fff;
+        transform: translate(-50%, calc(-100% - 5px));
       }
     }
 
