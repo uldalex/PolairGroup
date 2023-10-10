@@ -685,9 +685,15 @@
 									<form class="needs-validation" novalidate action="">
 											<div class="row">
 												<div class="col-md-6">
-													<div class="input-group mb-3">
-														<input type="tel" class="form-control" id="inn"  data-masked="" data-inputmask="'mask': '999999999'" placeholder="ИНН" required/>
-														<div class="invalid-feedback">Это обязательное поле</div>
+													<div class="row input-group">
+														<div class="col-10 mb-3 pe-0">
+															<span class="input-group-text input-group-text--left" for="s_center">ИНН</span>
+															<input type="text" class="form-control" id="inn"  data-masked="" value="346346346" data-inputmask="'mask': '999999999'" placeholder="ИНН" required/>
+															<div class="invalid-feedback">Это обязательное поле</div>
+														</div>
+														<div class="col-2 mb-3 p-0">
+															<a href="#" class="btn  bg-gradient-primary w-100 px-0 h-100 mb-0">Найти</a>
+														</div>
 													</div>
 												</div>
 												<div class="col-md-6">
@@ -806,11 +812,16 @@
 								<div class="form__wrapper">
 									<form class="needs-validation" novalidate action="">
 											<div class="row">
-												<div class="col-md-6">
-													<div class="input-group mb-3">
-														<span class="input-group-text input-group-text--left" for="s_center">ИНН</span>
-														<input type="tel" class="form-control" id="inn"  data-masked="" value="346346346" data-inputmask="'mask': '999999999'" placeholder="ИНН" required/>
-														<div class="invalid-feedback">Это обязательное поле</div>
+												<div class="col-md-6 ">
+													<div class="row input-group">
+														<div class="col-10 mb-3 pe-0">
+															<span class="input-group-text input-group-text--left" for="s_center">ИНН</span>
+															<input type="text" class="form-control" id="inn"  data-masked="" value="346346346" data-inputmask="'mask': '999999999'" placeholder="ИНН" required/>
+															<div class="invalid-feedback">Это обязательное поле</div>
+														</div>
+														<div class="col-2 mb-3 p-0">
+															<a href="#" class="btn  bg-gradient-primary w-100 px-0 h-100 mb-0"><svg class="whitesvg" height="20" width="20"><use xlink:href="assets/img/sprite.svg#search"></use></svg></a>
+														</div>
 													</div>
 												</div>
 												<div class="col-md-6">
