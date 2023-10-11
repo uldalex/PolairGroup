@@ -22800,11 +22800,11 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   justify-content: center;
   color: #003B5C;
   background-color: transparent;
-  padding: 0;
+  padding: 3px;
   margin: 0 8px;
   border-radius: 4px !important;
   border-color: #003B5C;
-  width: 36px;
+  min-width: 36px;
   height: 36px;
   font-size: 0.91875rem;
 }

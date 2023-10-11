@@ -5,11 +5,11 @@
     justify-content: $page-link-justify-content;
     color: $blue;
     background-color: transparent;
-    padding: 0;
+    padding: 3px;
     margin: 0 8px;
     border-radius: 4px !important;;
     border-color:$blue;
-    width: $page-link-width;
+    min-width: $page-link-width;
     height: $page-link-height;
     font-size: $font-size-md;
   }
