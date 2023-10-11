@@ -1037,12 +1037,24 @@ const getDatePickerTitle = elem => {
   }
   return titleText;
 }
+const getDatePickerParent = elem => {
+let parent = elem.parentNode.classList[0];
+let p = '.'+parent
+  return p;
+}
 
 const elems = document.querySelectorAll('.datepicker_input');
+
 for (const elem of elems) {
+  $(elem).on('click', function(){
+    alert(getDatePickerParent(elem))
+  })
   const datepicker = new Datepicker(elem, {
     'format': 'dd.mm.yyyy',
     language: 'ru',
+    autoclose:true,
+    ClearBtn: true,
+    container: getDatePickerParent(elem),
     title: getDatePickerTitle(elem)
   });
 }      
