@@ -17917,9 +17917,6 @@ textarea.form-control-lg {
   height: 1.5rem;
   padding: 0.3rem 0.3rem;
 }
-.btn.btn-sm i, .btn-group-sm > .btn i {
-  font-size: 0.5rem;
-}
 .btn.btn-md {
   font-size: 0.85rem;
   padding: 0.375rem 1rem;
@@ -22315,6 +22312,13 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   position: absolute;
   right: 1.2rem;
 }
+.g-sidenav-show:not(.rtl) .sidenav .nav-link i {
+  position: absolute;
+  right: 1.2rem;
+}
+.g-sidenav-show:not(.rtl) .sidenav .nav-link i.rotate {
+  transform: rotate(180deg);
+}
 .g-sidenav-show:not(.rtl) .sidenav .nav-link.btn {
   display: none;
 }
@@ -22325,6 +22329,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show:not(.rtl) .sidenav .sidenav-footer svg.rotate {
   transform: rotate(180deg);
+}
+.g-sidenav-show:not(.rtl) .sidenav .sidenav-footer .support-block__icon {
+  position: absolute;
+  right: 0.5rem;
 }
 .g-sidenav-show:not(.rtl) .support-block {
   border: 0px;
@@ -22359,11 +22367,18 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link {
   position: relative;
-  margin: 0 1rem;
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link svg {
   position: relative;
   right: auto;
+}
+.g-sidenav-show.g-sidenav-pinned .sidenav .nav-link i {
+  position: relative;
+  right: 0;
+}
+.g-sidenav-show.g-sidenav-pinned .sidenav .nav-link i.rotate {
+  transform: none;
+  transition: all 0.5s linear;
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link.btn {
   display: flex;
@@ -22375,6 +22390,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .sidenav-footer svg.rotate {
   transform: none;
+}
+.g-sidenav-show.g-sidenav-pinned .sidenav .sidenav-footer .support-block__icon {
+  position: relative;
+  right: 0;
 }
 .g-sidenav-show.g-sidenav-pinned .support-block {
   border: 1px solid var(--gray-1, #E3EAF1);
@@ -24768,6 +24787,10 @@ th.sorted[data-order="1"]::after {
     opacity: 0.5;
   }
 }
+.lh-0 {
+  line-height: 0;
+}
+
 .step-map {
   display: none;
 }

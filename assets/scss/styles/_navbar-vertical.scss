@@ -343,6 +343,13 @@ body:not(.dark-version) {
           position:absolute;
           right:1.2rem;
         }
+        & i {
+          position:absolute;
+          right:1.2rem;
+          &.rotate {
+            transform: rotate(180deg);
+         }
+        }
 
       }
       .sidenav .nav-link.btn {
@@ -359,7 +366,10 @@ body:not(.dark-version) {
           }
   
         }
-  
+       & .support-block__icon{
+        position:absolute;
+        right:0.5rem;
+       }
       }
       .support-block{
         border: 0px;
@@ -405,11 +415,18 @@ body:not(.dark-version) {
       }
       .sidenav .nav-link{
         position:relative;
-        margin:0 1rem;
 
         & svg {
           position:relative;
           right:auto;
+        }
+        & i {
+          position:relative;
+          right:0;
+          &.rotate {
+            transform: none;
+            transition:all 0.5s linear;
+          }
         }
       }
       .sidenav .nav-link.btn {
@@ -426,7 +443,10 @@ body:not(.dark-version) {
           }
   
         }
-  
+        & .support-block__icon{
+          position:relative;
+          right:0;
+         }
       }
       .support-block{
         border: 1px solid var(--gray-1, #E3EAF1);
