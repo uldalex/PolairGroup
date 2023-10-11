@@ -45,10 +45,13 @@ gulp.task('svg', function () {
         
               mode: {
                 symbol: {
-                  dest: '.',
+                  dest: '.symbol',
                   example: true,
-                  sprite: 'sprite.svg'
+                  sprite: 'symbol.svg'
                 },
+                stack: {
+                  sprite: "../sprite.svg"  //sprite file name
+              }
               },
           }
       ))
