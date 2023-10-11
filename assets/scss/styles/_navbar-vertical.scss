@@ -441,12 +441,12 @@ body:not(.dark-version) {
     }
 
   }
-  .sidenav.bg-gradient-dark .text-white svg {
-    stroke:#ffffff;
+  .sidenav.bg-gradient-dark .text-white i{
+    color:#ffffff;
   }
 
-  .sidenav.bg-white .text-dark svg {
-      stroke:#003B5C;
+  .sidenav.bg-white .text-dark i{
+      color:#003B5C;
     }
 
  
