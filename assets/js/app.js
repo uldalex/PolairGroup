@@ -1046,9 +1046,6 @@ let p = '.'+parent
 const elems = document.querySelectorAll('.datepicker_input');
 
 for (const elem of elems) {
-  $(elem).on('click', function(){
-    alert(getDatePickerParent(elem))
-  })
   const datepicker = new Datepicker(elem, {
     'format': 'dd.mm.yyyy',
     language: 'ru',
