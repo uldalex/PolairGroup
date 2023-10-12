@@ -29,7 +29,7 @@
   opacity: 0;
   transition: background-color .2s linear, opacity .2s linear;
   -webkit-transition: background-color .2s linear, opacity .2s linear;
-  width: 15px;
+  width: 6px;
   /* there must be 'right' or 'left' for ps__rail-y */
   right: 0;
   /* please don't change 'position' */
@@ -53,7 +53,7 @@
 .ps .ps__rail-y:hover,
 .ps .ps__rail-y:focus,
 .ps .ps__rail-y.ps--clicking {
-  background-color: #eee;
+  background-color: transparent;
   opacity: 0.9;
 }
 
@@ -77,7 +77,7 @@
   border-radius: 6px;
   transition: background-color .2s linear, width .2s ease-in-out;
   -webkit-transition: background-color .2s linear, width .2s ease-in-out;
-  width: 6px;
+  width: 4px;
   /* there must be 'right' for ps__thumb-y */
   right: 2px;
   /* please don't change 'position' */
@@ -95,7 +95,7 @@
 .ps__rail-y:focus > .ps__thumb-y,
 .ps__rail-y.ps--clicking .ps__thumb-y {
   background-color: #999;
-  width: 11px;
+  width: 4px;
 }
 
 /* MS supports */
