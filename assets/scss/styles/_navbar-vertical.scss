@@ -350,7 +350,9 @@ body:not(.dark-version) {
             transform: rotate(180deg);
          }
         }
-
+        & span{
+          opacity:0;
+        }
       }
       .sidenav .nav-link.btn {
         display:none;
@@ -415,6 +417,10 @@ body:not(.dark-version) {
       }
       .sidenav .nav-link{
         position:relative;
+        
+        & span{
+          opacity:1;
+        }
 
         & svg {
           position:relative;
@@ -560,6 +566,7 @@ body:not(.dark-version) {
       background-position:center;
       content:" ";
       margin-left: auto;
+      margin-right:5px;
       color: rgba($light-gradient-state, 0.7);
       @include transition($transition-base);
     }

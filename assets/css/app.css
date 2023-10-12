@@ -22319,6 +22319,9 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 .g-sidenav-show:not(.rtl) .sidenav .nav-link i.rotate {
   transform: rotate(180deg);
 }
+.g-sidenav-show:not(.rtl) .sidenav .nav-link span {
+  opacity: 0;
+}
 .g-sidenav-show:not(.rtl) .sidenav .nav-link.btn {
   display: none;
 }
@@ -22367,6 +22370,9 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link {
   position: relative;
+}
+.g-sidenav-show.g-sidenav-pinned .sidenav .nav-link span {
+  opacity: 1;
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link svg {
   position: relative;
@@ -22472,6 +22478,7 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   background-position: center;
   content: " ";
   margin-left: auto;
+  margin-right: 5px;
   color: rgba(206, 212, 218, 0.7);
   transition: all 0.2s ease-in-out;
 }
