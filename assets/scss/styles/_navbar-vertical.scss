@@ -66,15 +66,11 @@
           position: fixed;
           top: 0;
           bottom: 0;
-         
-          overflow-y: auto;
           padding: 0;
           box-shadow: none;
 
           .navbar-collapse {
             display: block;
-            overflow: auto;
-            height: calc(100vh - 240px);
           }
           // Container
           > [class*="container"] {
@@ -323,16 +319,18 @@ body:not(.dark-version) {
     &:not(.rtl) {
 
       .sidenav {
-        transform: translateX(-(12.125rem));
+       // transform: translateX(-(12.125rem));
+       width:60px;
       }
       @media(max-width:991px){
-        .sidenav {
-          transform: translateX(-(17.125rem));
-        } 
+      //  .sidenav {
+      //    transform: translateX(-(17.125rem));
+     //   } 
       }
       @media(max-width:991px){
         .sidenav {
           transform: translateX(-(100%));
+          width:100%;
         } 
       }
       .sidenav .nav-link{
@@ -378,7 +376,7 @@ body:not(.dark-version) {
         border: 0px;
         background-color:$white;
       }
-      .support-block a {
+      .support-block a, .support-block p {
         text-indent: -9999px;
         opacity:0;
       }
@@ -386,13 +384,15 @@ body:not(.dark-version) {
 
     .sidenav {
       &.fixed-start+.main-content {
-        margin-left:5rem;
+        margin-left:60px;
+        transition-duration: 0.5s;
       }
     }
     @media(max-width:991px){
       .sidenav {
         &.fixed-start+.main-content {
           margin-left:0;
+          transition-duration: 0.5s;
         
         }
       }
@@ -402,14 +402,14 @@ body:not(.dark-version) {
     &.g-sidenav-pinned {
       .sidenav {
         transform: translateX(0);
+        width:200px;
         &.fixed-start+.main-content {
-          margin-left: $navbar-vertical-open-width + 1.5;
+          margin-left: 200px;
   
         }
         @media(max-width:769px){
           &.fixed-start+.main-content {
             margin-left: 100%;
-            overflow:hidden;
     
           } 
         }
@@ -459,6 +459,10 @@ body:not(.dark-version) {
       .support-block a {
         font-size:$font-size-md;
         opacity:1;
+      }
+      .support-block p{
+        opacity: 1;
+        text-indent: 0%;
       }
       .tooltip.show {
         opacity: 0;
