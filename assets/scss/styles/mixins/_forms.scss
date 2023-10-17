@@ -141,9 +141,9 @@
     > .form-floating:not(:focus-within) {
       @include form-validation-state-selector($state) {
         @if $state == "valid" {
-          z-index: 3;
+          z-index: 50;
         } @else if $state == "invalid" {
-          z-index: 4;
+          z-index: 50;
         }
       }
     }

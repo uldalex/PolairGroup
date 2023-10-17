@@ -3059,7 +3059,7 @@ textarea.form-control-lg {
 .input-group > .form-select:not(:focus).is-valid,
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
 .input-group > .form-floating:not(:focus-within).is-valid {
-  z-index: 3;
+  z-index: 50;
 }
 
 .invalid-feedback {
@@ -3149,7 +3149,7 @@ textarea.form-control-lg {
 .input-group > .form-select:not(:focus).is-invalid,
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
 .input-group > .form-floating:not(:focus-within).is-invalid {
-  z-index: 4;
+  z-index: 50;
 }
 
 .btn {
@@ -22343,6 +22343,8 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 @media (max-width: 769px) {
   .g-sidenav-show.g-sidenav-pinned .sidenav.fixed-start + .main-content {
     margin-left: 100%;
+    width: 0px;
+    overflow: hidden;
   }
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav .nav-link {
@@ -24437,6 +24439,10 @@ h1.title-smaill, .title-smaill.h1 {
     font-size: 0.875rem;
   }
 }
+.datepicker_wrapper {
+  position: relative;
+}
+
 .form-floating > .bi-calendar-date + .datepicker_input + label {
   padding-left: 3.5rem;
   z-index: 3;
@@ -24458,6 +24464,9 @@ h1.title-smaill, .title-smaill.h1 {
 .custom-file-label span {
   color: #60C0C3;
 }
+.custom-file-label i.text-blue {
+  color: #60C0C3;
+}
 .custom-file-label.width-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.71875 6.40625L10 3.125L13.2812 6.40625' stroke='%2360C0C3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M10 11.875V3.125' stroke='%2360C0C3' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.875 11.875V16.25C16.875 16.4158 16.8092 16.5747 16.6919 16.6919C16.5747 16.8092 16.4158 16.875 16.25 16.875H3.75C3.58424 16.875 3.42527 16.8092 3.30806 16.6919C3.19085 16.5747 3.125 16.4158 3.125 16.25V11.875' stroke='%2360C0C3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
@@ -24466,6 +24475,10 @@ h1.title-smaill, .title-smaill.h1 {
 .custom-file-label--width-file {
   background: transparent;
   box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.04);
+}
+
+i.text-red {
+  color: #EE5157;
 }
 
 #drugfile {
@@ -24629,6 +24642,16 @@ h1.title-smaill, .title-smaill.h1 {
 
 .input-group .btn.search-btn {
   z-index: 6;
+}
+
+.input-group a.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-group a.btn i {
+  line-height: 0;
 }
 
 .search-btn {
