@@ -374,10 +374,7 @@ display:none
         background-repeat:no-repeat;
         background-position:right 15px center;
 
-        &--remove{
-
-        }
-    }
+      }
     &--width-file{
         background:transparent;
         box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.04);
@@ -860,4 +857,42 @@ stroke: rgba(96, 192, 195, 0.20);
   }
   .lh-0{
 line-height: 0;
+  }
+  .note {
+    top:37px;
+    width:327px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-radius:4px;
+    padding: 12px 16px;
+    z-index: 9999;
+    display:flex;
+    align-items: center;
+    & i {
+        margin-right:3px;
+    }
+    & span {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .note-green {
+    border: 1px solid rgba(67, 176, 42, 0.30);
+    background: linear-gradient(0deg, rgba(67, 176, 42, 0.10) 0%, rgba(67, 176, 42, 0.10) 100%), #FFF;
+    color: #43B02A;
+  }
+  .note-danger {
+    border: 1px solid rgba(238, 81, 87, 0.30);
+    background:linear-gradient(0deg, rgba(238, 81, 87, 0.1) 0%, rgba(193, 54, 59, 0.1) 100%), #FFF;  
+    color: #EE5157;
+  }
+  .note-warning {
+    border: 1px solid rgba(245, 190, 11, 0.30);
+    background:linear-gradient(0deg, rgba(245, 190, 11, 0.10) 0%, rgba(245, 190, 11, 0.10) 100%), #FFF;  
+    color: #F5BD0B;
+  }
+  .note-info{
+    border: 1px solid rgba(49, 143, 173, 0.3);
+    background:linear-gradient(0deg, rgba(49, 143, 173, 0.1) 0%, rgba(49, 143, 173, 0.1) 100%), #FFF;  
+    color:#318FAD;
   }

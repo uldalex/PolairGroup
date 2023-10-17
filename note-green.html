@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon.svg">
+  <link rel="icon"  href="assets/img/favicon.svg">
+  <title>
+   Заявки PolairGroup
+  </title>
+  	<link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/light/style.css"/>
+    <link href="assets/css/splide.min.css" rel="stylesheet" />  
+    <link id="pagestyle" href="assets/css/datepicker.min.css" rel="stylesheet" />
+    <link id="pagestyle" href="assets/css/app.css?v=3.1.0" rel="stylesheet" />
+
+</head>
+ <!--Здесь сайтбар свернут изначально-->
+<body class="g-sidenav-show  bg-gray-100 ">
+		<!--прелоадер-->
+		<div id="preloader" class="preloader">
+			<div class="preloader-grid">
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		</div>
+		<!--end прелоадер -->
+		<!--скрипт для прелоадера-->
+		<script>
+			window.addEventListener('load',function(){
+		document.querySelector('body').classList.add("loaded")  
+	});
+		</script>
+		<!--end скрипт для прелоадера-->
+  <aside class="sidebar sidenav navbar navbar-vertical navbar-expand-xs border-0 fixed-start bg-white " id="sidenav-main">
+    <div class="sidenav-header">
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+    <div class="sb-item-list bg-white">
+			<div class="sb-item  text-dark sb-menu">
+					<i class="sb-icon  text-2xl ph-light ph-bag"></i>
+					<span class="sb-text text-dark">Компания</span>
+				<div class="sb-submenu bg-white">
+					<div class="sb-item "><a class="text-dark" href="company.html" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-archive"></i><span >Пункт 1</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#"><span class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-bag"></i>Пункт 2 </span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-alarm"></i><span >Пункт 1</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-alien"></i><span >Пункт 2</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-aperture"></i><span >Пункт 3</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-apple-logo"></i><span >Пункт 4</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-bandaids"></i><span >Пункт 5</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-bag"></i><span >Пункт 6</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-bag"></i><span >Пункт 7</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-bell"></i><span >Пункт 8</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-chart-pie"></i><span >Пункт 9</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-chat-circle"></i><span >Пункт 10</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-circles-four"></i><span >Пункт 11</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-camera"></i><span >Пункт 12</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-calculator"></i><span >Пункт 13</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-briefcase"></i><span >Пункт 14</span></a></div>
+					<div class="sb-item "><a class="text-dark" href="#" class="sb-text text-dark"><i class="sb-icon  text-2xl ph-light ph-book-bookmark"></i><span >Пункт 15</span></a></div>
+			</div>
+			</div>
+			<div class="sb-item ">
+				<a class="text-dark" href="company.html">
+					<i class="sb-icon  text-2xl ph-light ph-lightning"></i><span class="sb-text text-dark">Объекты</span>
+				</a>
+			</div>
+			<div class="sb-item  text-dark sb-menu">
+					<i class="sb-icon text-2xl ph-light ph-fire"></i><span class="sb-text text-dark">Оборудование</span>
+			<div class="sb-submenu bg-white">
+					<div class="sb-item"><span class="sb-text text-dark">Пункт 1</span></div>
+					<div class="sb-item "><span class="sb-text text-dark">Пункт 2</span>
+					</div>
+			</div>
+			</div>
+			<div class="sb-item  bg-white text-dark">
+				<a class="text-dark" href="#">
+					<i class="sb-icon text-2xl ph-light ph-arrow-square-out"></i>
+					<span class="sb-text text-dark">Заявки на ремонт</span>
+				</a>
+			</div>
+			</div>
+		</div>
+    
+    <div class="sidenav-footer bg-white position-absolute w-100 bottom-0 ">
+      <div class="support-block">
+        <div class="text-dark support-block__icon">
+			 <i class="text-2xl  ph-light ph-headset"></i>
+		</div>
+        <div>
+          <p>Служба поддержки</p>
+          <a class="text-nowrap" href="tel:8 800 433 43 45">8 800 433 43 45</a>
+        </div>
+      </div>
+      <div class="mb-3">
+            <a class="d-none d-lg-flex nav-link w-100 text-dark iconNavbarSidenav" href="javascript:;" id="iconNavbarSidenav">
+				<div class="text-dark  text-center me-2 d-flex align-items-center justify-content-center">
+					<i class="text-2xl rotate ph-light ph-arrow-left"></i>
+				</div>
+				<span class="nav-link-text ms-1 mt-auto">Свернуть меню</span>
+			</a>
+      </div>
+    </div>
+  </aside>
+  <main class="bg-gray-100 main-content position-relative max-height-vh-100 pt-5 h-100">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top  p-0" id="navbarBlur" data-scroll="true">
+      <div class="container-fluid px-3">
+        <a class="hamburger d-block d-lg-none text-white iconNavbarSidenavmob " href="javascript:;" id="iconNavbarSidenavmob">
+            <span></span>
+            <span></span>
+            <span></span>
+        </a>
+        <div class=" left-part align-items-center d-flex">
+          <a class="d-none d-sm-block navbar-brand" href="#" aria-label="PolairGroup"><img src="assets/img/logo_polar.svg"></a>
+          <a class="d-none d-sm-block navbar-brand" href="#" aria-label="Carboma"><img src="assets/img/logo_carbota.svg"></a>
+          <a class="d-none d-sm-block navbar-brand" href="#" aria-label="dazzl"><img src="assets/img/logo_dazzl.svg"></a>
+          <p><img src="assets/img/sp.svg"></p>
+        </div>
+        <div class="navbar" id="navbar">
+          <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+            <a href="confirmation" class="btn btn-warning btn-sm mb-0" data-bs-toggle="modal" data-bs-target="#confirmation">  Пожалуйста потвердите свой Телефон по SMS</a>
+          </div>
+          <ul class="navbar-nav  flex-nowrap flex-row justify-content-end">
+            <li class="nav-item dropdown d-flex align-items-center">
+              <a class="btn btn-outline-primary btn-sm mb-0 me-3 text-white width-right-icon lk-btn-user"  id="dropdownlkButton" data-bs-toggle="dropdown" aria-expanded="false" href="javascript:;">ООО “Техносервис” </a>
+              <!--Внимание! стрелочка слева-центр-справа меняется классом dropdown-menu-{start} dropdown-menu-{center}dropdown-menu-{end}-->
+							<ul class="dropdown-menu  dropdown-menu-center  px-2 py-3 me-sm-n4" aria-labelledby="dropdownlkButton">
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">Перейти в личный кабинет</a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">Помощь</a>
+                </li>
+                <li>
+                  <a class="dropdown-item border-radius-md" href="javascript:;">Выйти</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown pe-2 d-flex align-items-center">
+							<!--Внимание! У ссылки добавляется класс notes внутри добавляется спан. У спана два состояния - если показываем - то добавляем класс active-->
+              <a href="javascript:;" class="notes nav-link  p-0" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="text-2xl ph-light ph-bell"></i>
+								<span class="active"></span>
+              </a>
+              <ul class="dropdown-menu  dropdown-menu-end  px-2 py-3 me-sm-n4" aria-labelledby="dropdownMenuButton">
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="assets/img/team.jpg" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">Новое сообщение</span> от Админ
+                        </h6>
+                        <span class="text-xs text-secondary mb-0">
+							<i class="text-md ph-light ph-clock"></i>
+                          13 минут назад
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="mb-2">
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="assets/img/team.jpg" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">Новое сообщение</span> от Админ
+                        </h6>
+                        <span class="text-xs text-secondary mb-0">
+							<i class="text-md ph-light ph-clock"></i>
+                          13 минут назад
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item border-radius-md" href="javascript:;">
+                    <div class="d-flex py-1">
+                      <div class="my-auto">
+                        <img src="assets/img/team.jpg" class="avatar avatar-sm  me-3 ">
+                      </div>
+                      <div class="d-flex flex-column justify-content-center">
+                        <h6 class="text-sm font-weight-normal mb-1">
+                          <span class="font-weight-bold">Новое сообщение</span> от Админ
+                        </h6>
+                        <span class="text-xs text-secondary mb-0">
+							<i class="text-md ph-light ph-clock"></i>
+                          13 минут назад
+                        </span>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- End Navbar -->
+    <div class="container-fluid pe-lg-4">
+			<!--заголовок страницы-->
+      <div class="g-0 row align-items-center">
+        <div class="col-5 mt-5 mb-3 mb-lg-3">
+          <h1 class="title-smaill">Заявки на ремонт</h1>
+          <p class="text-secondary  opacity-7 ">Всего: 54</p>
+        </div>
+        <div class="gx-sm-2 d-flex justify-content-end col-7 mt-4 mb-3 mb-lg-3">
+					<div class="">
+						<!--фильтр-->
+						<a href="#" class="filter-link btn btn-sm btn-outline-primary d-flex align-items-center px-2 px-md-2  me-2" aria-label="фильтр">
+							<i class="text-2xl ph-light ph-funnel"></i>
+						</a>
+						<!--end фильтр-->
+          </div>
+          <div class="">
+							<a href="#addob" data-bs-toggle="modal" data-bs-target="#addob" class="btn btn-sm bg-gradient-primary d-flex align-items-center px-2 px-md-2 ">
+								<span class="text-indent">Добавить заявку</span>
+								<i class="text-2xl ms-lg-2 ph-light ph-plus"></i>
+							</a>
+
+					</div>
+        </div>
+      </div>
+	    <!--end заголовок страницы-->
+			<!--фильтр форма-->
+			<div class="row">
+        <div class="filter-form col-12 mb-xl-0 mb-md-4">
+          <div class="card">
+            <div class="card-body px-0 pb-md-2">
+							<form class="filter-flex align-items-center" action="">
+								<div class="input-group mb-3 px-2">
+									<select class="form-select form-select__label">
+										<option>Объект</option>
+										<option>Объект1</option>
+										<option>Объект2</option>
+									</select>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<select class="form-select form-select__label">
+										<option>Статус</option>
+										<option>Статус1</option>
+										<option>Статус2</option>
+									</select>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<select class="form-select form-select__label">
+										<option>Тип заявки</option>
+										<option>Тип заявки1</option>
+										<option>Тип заявки2</option>
+									</select>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<select class="form-select form-select__label">
+										<option>Номенклатура</option>
+										<option>Номенклатура1</option>
+										<option>Номенклатура2</option>
+									</select>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<div class="datepicker_wrapper w-100">
+										<input type="text" class="form-control datepicker_input datepicker-input" id="dateot" placeholder="Дата создания" required="" onfocus="focused(this)" onfocusout="defocused(this)">
+									</div>
+									<div class="input-group-text"><i class="text-2xl ph-light ph-calendar"></i></div>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<select class="form-select form-select__label ">
+										<option>Исполнитель</option>
+										<option>Исполнитель1</option>
+										<option>Исполнитель2</option>
+									</select>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<a href="#" class="reset-filter btn bg-gradient-primary w-100  text-nowrap mb-0 font-weight-bold">Очистить фильтр</a>
+								</div>
+								<div class="input-group mb-3 px-2">
+									<button type="submit" class="col-lg-2 btn btn-outline-primary w-100  mb-0 text-nowrap">Применить</button>
+								</div>
+								</form>
+            </div>
+         </div>
+        </div>
+      </div>
+			<!--end фильтр форма-->
+      <!--Таблица-->
+      <div class="row">
+        <div class="col-12 mb-xl-0 mb-4">
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-warning bg-warninglight">Согласование</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="text-2xl gray400 ph-light ph-dots-three-vertical"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-success bg-successlight">Выполнена</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="text-2xl gray400 ph-light ph-dots-three-vertical"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-info bg-infolight">В работе</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="text-2xl gray400 ph-light ph-dots-three-vertical"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--мобильная карточка заявки-->
+					<div class="card p-2 my-2 d-block d-lg-none border ">
+						<div class="row">
+							<div class="col-6">
+								<div class="d-flex">
+									<p class="text-sm">235364 <span class="text-secondary">12.12.2023</span></p>
+								</div>
+							</div>
+							<div class="col-6 my-0 text-end">
+								<p class="badge badge-danger bg-dangerlight">Отказ</p>
+							</div>
+							<div class="col-10">
+								<span class="text-secondary text-sm">Артикул: 3523525</span>
+								<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+									<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+								</a>
+							</div>
+							<div class="col-2 my-1 text-end">
+								<div class="dropdown float-lg-end pe-4">
+									<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="text-2xl gray400 ph-light ph-dots-three-vertical"></i>
+									</a>
+									<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
+										<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
+									</ul>
+								</div>
+							</div>
+							<div class="col-12">
+								<p class="text-sm mt-3"><b>Точка отгрузки №2</b><br> <span class="text-secondary">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>	</p>
+							</div>
+							<div class="col-6"><p class="text-sm text-secondary">Бренд</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">Polair</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Серийный номер</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">00J2801309</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Исполнитель</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">ООО “Прогресс”</p></div>
+							<div class="col-6"><p class="text-sm text-secondary">Дата выполнения</p></div>
+							<div class="col-6"><p class="text-sm text-right font-weight-bold">12.12.2023 (1д 12 ч)</p></div>
+						</div>
+					</div>
+					<!--end мобильная карточка заявки-->
+					<!--таблица заявки десктоп-->
+					<div class="card d-none d-lg-block my-2 my-lg-4">
+						<div class="card-body px-0 pt-0 pb-2">
+							<div class="table-responsive  p-0">
+								<table class="table table_sort table-striped align-items-center mb-0">
+										<thead>
+										<tr >
+												<th  class="text-sm opacity-7 ps-2" >Номер<br>	и дата создания</th>
+												<th  class="col-lg-2 text-sm opacity-7 ps-2 sorted" data-order="-1">Номенклатура</th>
+												<th  class="text-sm opacity-7 sorted ps-2">Бренд</th>
+												<th  class="text-sm opacity-7 sorted ps-2 text-nowrap">Серийный номер</th>
+												<th  class="col-lg-2 text-sm opacity-7 sorted ps-2">Объект</th>
+												<th  class="text-sm opacity-7 sorted ps-2">Исполнитель</th>
+												<th  class="text-sm opacity-7 sorted ps-2">Дата выполнения</th>
+												<th  class="text-sm opacity-7 sorted ps-2">Статус</th>
+												<th class="text-sm opacity-7"></th>
+												<th class="text-sm opacity-7"></th>
+										</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td  class="ps-4">
+														<div class="d-flex flex-column">
+															<b>235364</b>
+														<span class="text-sm text-gray300">12.12.2023</span>
+														</div>
+														<p class="badge badge-secondary text-dark bg-secondarylight">Повторная</p>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm"></p></td>
+												<td class="align-middle"><p class="badge badge-warning bg-warninglight">Согласование</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">12.12.2023 (1д 12 ч)</p></td>
+												<td class="align-middle"><p class="badge badge-success bg-successlight">Выполнена</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+													<p class="badge badge-secondary text-dark bg-secondarylight">Повторная</p>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm"></p></td>
+												<td class="align-middle"><p class="badge badge-warning bg-warninglight">Приемка	в работу</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+													<p class="badge badge-secondary text-dark bg-secondarylight">Повторная</p>
+											</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">12.12.2023 (1д 12 ч)</p></td>
+												<td class="align-middle"><p class="badge badge-success bg-successlight">Отчет	о выполнении</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+											</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm"></p></td>
+												<td class="align-middle"><p class="badge badge-info bg-infolight">Утвержден	отчет</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+													<p class="badge badge-secondary text-dark bg-secondarylight">Повторная</p>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">12.12.2023 (1д 12 ч)</p></td>
+												<td class="align-middle"><p class="badge badge-info bg-infolight">В работе</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+													<p class="badge badge-secondary text-dark bg-secondarylight">Повторная</p>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm"></p></td>
+												<td class="align-middle"><p class="badge badge-danger bg-dangerlight" data-toggle="tooltip" data-placement="left" title="ХО находится не в пределах города (более 50км)">Отклонена</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">12.12.2023 (1д 12 ч)</p></td>
+												<td class="align-middle"><p class="badge badge-success bg-successlight">Выполнена</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">12.12.2023 (1д 12 ч)</p></td>
+												<td class="align-middle"><p class="badge badge-success bg-successlight">Выполнена</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+											<tr>
+												<td  class="ps-4">
+													<div class="d-flex flex-column">
+														<b>235364</b>
+													<span class="text-sm text-gray300">12.12.2023</span>
+													</div>
+													<p class="badge badge-secondary text-dark bg-secondarylight">Повторная</p>
+												</td>
+												<td>
+														<a href="#pasport" class="d-flex flex-column" data-bs-toggle="modal" data-bs-target="#pasport"><span class="text-sm"><b>Пароконвектомат TR10M0L</b></span>
+																<span class="text-sm"><b> ТУ 28.93.15-001-47653896-2020</b></span>
+															</a>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">Polair</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">00J2801309</p></td>
+												<td class="align-middle">
+														<p class="font-weight-bold text-sm">Точка отгрузки №1 </p>
+														<span class="text-secondary text-sm">420073, Респ Татарстан, г Казань, Советский р-н, ул Красной Позиции, д 37</span>
+												</td>
+												<td class="align-middle"><p class="font-weight-bold text-sm">ООО “Прогресс”</p></td>
+												<td class="align-middle"><p class="font-weight-bold text-sm"></p></td>
+												<!--как вставлять тултипы: data-toggle="tooltip" data-placement= top, bottom, left, right; title - текст тултипа  -->
+												<td class="align-middle"><p class="badge badge-danger bg-dangerlight" data-toggle="tooltip" data-placement="left" title="ХО находится не в пределах города (более 50км)">Отклонена</p></td>
+												<td class="align-middle">
+													<a href="order.html"  class="">
+														<i class="text-2xl text-secondary ph-light ph-pencil"></i>
+													</a>
+												</td>
+												<td class="align-middle">
+													<a href="#removeuser" data-bs-toggle="modal" data-bs-target="#removeuser">
+														<i class="text-2xl text-secondary ph-light ph-trash"></i>
+													</a>
+												</td>
+											</tr>
+										</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+			 		<!--end таблица заявки десктоп-->
+        </div>
+				<!--пагинация-->
+				<div class="col-12 mb-xl-0 mb-4">
+					<div class="g-0 row">
+						<div class="col-md-9">
+							<nav aria-label="Page navigation example">
+								<ul class="pagination justify-content-center justify-content-md-start mb-3 mb-md-0">
+									<li class="page-item active"><a class="page-link" href="#">1</a></li>
+									<li class="page-item"><a class="page-link" href="#">2</a></li>
+									<li class="page-item"><a class="page-link" href="#">3</a></li>
+									<li class="page-item"><span>...</span></li>
+									<li class="page-item"><a class="page-link" href="#">99997</a></li>
+								</ul>
+							</nav>
+						</div>
+						<div class="d-flex align-items-center  justify-content-center justify-content-md-end  col-md-3">
+							<span class="me-2">Отображать на странице</span>
+							<form action="#">
+								 <div class="input-group ">
+									 <select class="form-select form-select__label">
+										 <option>15</option>
+										 <option>20</option>
+										 <option>100</option>
+									 </select>
+								 </div>
+							 
+							</form>
+					 </div>
+
+					</div>
+					
+				</div>
+				<!--end пагинация-->
+      </div>
+      <!--end Таблица-->
+		</div>
+      <footer class="footer py-4  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-lg-between">
+          <!--содержимое футера если есть-->
+          </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </main>
+		<!--модальные-->
+    <!--подтверждение телефона-->
+    <div class="modal modal-sm fade" id="confirmation" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="pasportLabel">Подтверждение телефона</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="step-1">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <input type="tel" class="form-control " data-masked="" data-inputmask="'mask': '+7 (999) 999-99 99'" id="phone" placeholder="Номер мобильного телефона" required/>
+                        <div class="invalid-feedback">Это обязательное поле</div>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <a class="step1__btn btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Отправить код</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+                <div class="m-auto step-2">
+                  <div class="form__wrapper">
+                    <form class="needs-validation" novalidate action="">
+                        <div class="row">
+                          <div class="col-12 mb-5">
+                            <p class="font-size-lg text-center mb-4">Мы отправили СМС с кодом на номер<br><span> +7 987 654 32 10 </span><a href="">Изменить</a></p>
+                            <div class="input-group--sms m-auto mb-3">
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n1" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n2" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n3" placeholder="" required/>
+                              <input type="text" class="form-control " data-masked="" data-inputmask="'mask': '9'" id="n4" placeholder="" required/>
+                              <div class="invalid-feedback w-100 text-center">Неверный код</div>
+                              <a href="#" id="new-code" onclick="getElementById('clock').innerHTML = 10;"class="new-code font-size-lg w-100 text-center mt-2">Отправить код повторно</a>
+                            </div>
+                            <p class="text-center mb-5 mt-3"><span class="text-gray-4">Отправить повторно можно через </span  class="clock"><b id="clock"> 47 </b><span class="text-gray-4"> сек</span></p>
+                            <div class="text-center">
+                              <button type="submit" class="btn-md btn bg-gradient-primary mt-3 mb-3">Подтвердить</button>
+                            </div>
+                          </div>
+                        </div>
+                    </form>
+                    <div class="m-auto response-send">
+                      <div class="modal-body">
+                        <div class="text-center mt-3 mb-3 response-send__img">
+                          <img src="assets/img/send.svg"/>
+                        </div>
+                        <h4 class="text-center">Номер телефона подтвержден</h4>
+                        <p class="text-center">Теперь вам открыты дополнительные возможности</p>
+                        <div class="text-center">
+                          <a href="" class="btn btn-md bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отлично!</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end подтверждение телефона-->
+    <!--добавление Заявки-->
+    <div class="modal modal modal-lg fade" id="addob" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+						<div class="modal-header">
+								<h4 class="modal-title" id="pasportLabel">Добавление новой заявки</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+								<div class="form__wrapper">
+									<form class="needs-validation" novalidate action="">
+											<div class="row">
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<input type="text" class="form-control " id="objname" placeholder="Серийный номер оборудования" required/>
+														<div class="input-group-text"><i class="text-2xl text-primary ph-light ph-qr-code"></i></div>
+														<div class="invalid-feedback">Это обязательное поле</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<div class="datepicker_wrapper w-100">
+															<input type="text" class="form-control datepicker_input"  id="dateot" placeholder="Дата покупки" required/>
+														</div>
+														<div class="input-group-text"><i class="text-2xl text-primary ph-light ph-calendar"></i></div>
+														<div class="invalid-feedback">
+															Пожалуйста, выберите дату
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<div class="datepicker_wrapper w-100">
+															<input type="text" class="form-control datepicker_input"  id="datedo" placeholder="Дата ввода в эксплуатацию" required/>
+														</div>
+															<div class="input-group-text"><i class="text-2xl text-primary ph-light ph-calendar"></i></div>
+														<div class="invalid-feedback">
+															Пожалуйста, выберите дату
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Адрес расположения оборудования</span>
+														<input type="text" class="form-control " id="adress" placeholder="Адрес расположения оборудования*" required/>
+														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
+														<div class="invalid-feedback">
+														Пожалуйста, укажите адрес
+														</div>
+													</div>
+												</div>
+												<div class="col-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Наименование объекта</span>
+														<input type="text" class="form-control " id="adress" placeholder="Наименование объекта*" required/>
+														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
+														<div class="invalid-feedback">
+														Пожалуйста, укажите адрес
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Сервисный центр</span>
+														<select class="form-select form-select__label" id="s_center" >
+															<option selected disabled value="">Сервисный центр</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+														</select>
+														<div class="w-100 text-right"><small>Вы можете выбрать любой ближайший к вам</small></div>
+														<div class="invalid-feedback">
+															Выберите сервисный центр
+														</div>
+													</div>
+												</div>
+												<div class="col-lg-6">
+													<div class="input-group mb-3">
+														<span class="input-group-text input-group-text--left" for="s_center">Дилер</span>
+														<select class="form-select form-select__label" id="s_center" >
+															<option selected disabled value="">Дилер</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
+														</select>
+														<div class="invalid-feedback">
+															Выберите дилера
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<textarea class="form-control" id="validationTextarea" placeholder="Уточнения по адресу расположения" ></textarea>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<textarea class="form-control" id="validationTextarea" placeholder="Заявленная неисправность" ></textarea>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="custom-file mb-3">
+														<label class="custom-file-label w-100 text-center bg-blue" for="customFile">
+															<div id="drugfile" class="drugfile"></div>
+															<input type="file" class="custom-file-input" id="customFile"><h5>Фото/видео к заявке</h5><p><span>Загрузите</span> или перетащите файл в данную область</p>
+															<span class="file-button-text"></span>
+														</label>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="input-group mb-3">
+														<button type="submit" class="btn  bg-gradient-primary w-100 mt-3 mb-3">Сохранить и отправить</button>
+													</div>
+												</div>
+											</div>
+									</form>
+									<div class="m-auto response-send">
+										<div class="modal-body">
+											<div class="text-center mt-3 mb-3 response-send__img">
+												<img src="assets/img/send.svg"/>
+											</div>
+											<h4 class="text-center">Заявка на ремонт оборудования успешно отправлена</h4>
+											<p class="text-center">Следите за статусом в личном кабинете</p>
+											<div class="text-center">
+												<a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отлично!</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+        </div>
+      </div>
+    </div>
+    <!--end добавление заявки-->
+    <!--удаление объекта-->
+    <div class="modal modal modal-sm fade" id="removeuser" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="form__wrapper">
+                <form class="needs-validation" novalidate action="">
+                  <div class="row">
+                    <div class="col-12 text-center">
+                      <img src="assets/img/send-warning.svg"/>
+                    </div>
+                    <div class="col-12">
+                      <h4 class="modal-title text-center" id="pasportLabel">Вы действительно хотите удалить данный объект?</h4>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mt-5">
+                        <button type="submit" class="btn btn-md bg-gradient-primary w-100 mt-3 mb-3">Удалить</button>
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="input-group mb-3">
+                        <a href="" class="btn btn-md btn-outline-primary w-100 mt-3 mb-3" data-bs-dismiss="modal" aria-label="Close">Отмена</a>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <div class="m-auto response-send">
+                  <div class="modal-body">
+                    <div class="text-center mt-3 mb-3 response-send__img">
+                      <img src="assets/img/send.svg"/>
+                    </div>
+                    <p class="text-center">Пользователь создан</p>
+                    <div class="text-center">
+                      <a href="" class="btn bg-gradient-primary w-100" data-bs-dismiss="modal" aria-label="Close">Закрыть</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!--end удаление объекта-->
+		<!--просмотр оборудования-->
+		<div class="modal modal-lg fade" id="pasport" tabindex="-1" aria-hidden="true">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header border-bottom">
+						<h4 class="modal-title d-flex flex-column" id="pasportLabel"><span>Пароконвектомат TR10M0L</span><span>ТУ 28.93.15-001-47653896-2020</span>		</h4>
+						<div class="d-flex ml-auto">
+							<a href="#application" class="btn btn-outline-primary btn-sm btn--icon icon--setting me-2" aria-label="Заявка на ремонт" data-bs-toggle="modal" data-bs-target="#application"></a>
+							<a href="#login" class="btn bg-gradient-dark btn-sm btn--icon icon--repair me-2" aria-label="Личный кабинет"data-bs-toggle="modal" data-bs-target="#login"></a>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+					</div>
+					<div class="modal-body">
+						<div class="row g-0 border-bottom pb-3 mb-3">
+							<div class="col-6">
+								<p>Серийный номер оборудования</p>
+								<p>Дата покупки</p>
+								<p>Дата ввода в эксплуатацию</p>
+								<p>Объект</p>
+								<p>Поставшик</p>
+							</div>
+							<div class="col-6 text-right">
+								<p class="font-weight-bold text-right">346LHF0834</p>
+								<p class="font-weight-bold text-right">12.12.2023</p>
+								<p class="font-weight-bold text-right">12.12.2023</p>
+								<div class="d-flex flex-column" ><span class="font-weight-bold text-right">Точка отгрузки №1</span><span class="text-secondary  text-sm">г.Казань, ул.Вишневского,16В</span></div>
+								<div class="d-flex flex-column" ><span class="font-weight-bold text-right">ООО “ТехноХимСервис”</span><span class="text-secondary  text-sm">ИНН 32425335. г.Казань, ул.Вишневского,16В</span></div>
+							</div>
+							</div>
+							<div class="row g-0 ">
+							<div class="col-md-6">
+								<div class="custom-file mt-3">
+									<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
+										<div class="d-flex justify-content-between">
+											<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ">
+												<i class="text-2xl text-primary ph-light ph-file-pdf"></i>
+												<span class="ms-3 text-primary width-icon icon-pdf">Document_001_1.pdf</span></a>
+											<a href="#" aria-label="удалить документ">
+												<span class="text-blue width-icon width-icon--remove">
+												<i class="text-2xl text-danger ph-light ph-trash"></i>
+												</span>
+											</a>
+										</div>
+									</label>
+								</div>
+							</div>
+							<div class="col-md-6 ps-2">
+								<div class="custom-file mt-3">
+									<label class="custom-file-label w-100  bg-blue custom-file-label--width-file" for="customFile">
+										<div class="d-flex justify-content-between">
+											<a  href="assets/img/map.png" data-fslightbox="demo-images"  aria-label="посмотреть документ">
+												<i class="text-2xl text-primary ph-light ph-file-pdf"></i>
+												<span class="ms-3 text-primary width-icon icon-pdf">Document_001_1.pdf</span></a>
+											<a href="#" aria-label="удалить документ">
+												<span class="text-primary width-icon width-icon--remove">
+													<i class="text-2xl text-danger ph-light ph-trash"></i>
+												</span>
+											</a>
+										</div>
+									</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end просмотр оборудования-->
+    <!--уведомление зеленое-->
+    <div class="note position-fixed note note-green">
+        <i class="sb-icon  text-2xl ph-light ph-alarm"></i> 
+        <span>Новое оборудование успешно сохранено</span>
+    </div>
+<!--скрипт сортировки таблиц-->
+  <script>
+  "use strict";
+  // Все таблицы в которых будет осуществлена сортировка по thead
+  const theads = document.querySelectorAll(".table_sort thead");
+  theads.forEach(thead => thead.addEventListener("click", evt => getSort(evt)));
+  function getSort({ target }) {
+    // Доступ к атрибуту data будет задан через объект dataset, можно и через getAttribute
+    // .dataset.order ~ data-order
+
+    // Переключение если равен -1, то при -(-1) = 1, если -(1) = -1
+    // В зависимости от того чему равен data-order, будет сменя стрелки "▲" "▼"
+    const order = (target.dataset.order = -(target.dataset.order || -1));
+
+    // Событие происходит target -> th, target.parentNode -> tr
+    // tr.cells -> всех <th> или <td>  
+    const thList = Array.from(target.parentNode.cells);
+
+    // Index - нажатого th
+    // (Можно заменить стандартный метод target.cellIndex,который выдает номер ячейки в строке <th> или <td>)
+    const index = thList.indexOf(target);
+
+    // Метод для правильного сравнения строк на разных языках, последующая их сортировать 
+    const collator = new Intl.Collator(["en", "ru"], { numeric: true });
+
+    // Функция сортировки использующая метод compare, и используемая внутри функции sort
+    const comparator = (index, order) => (a, b) => {
+      /* 
+        1) Index - соответствует колонке (index - нажатого th)
+        2) a.children -> td -> целый ряд, меняется взависимости от того сравнения sort: первый b, второй a
+          Ряд:
+            b: - - - -
+            a: - - - -
+      
+        3) a.children[index] -> td -> берет из ряда колонка согласно Index (нажатого th),
+          меняется взависимости от того сравнения sort: первый b, второй a
+          Выбранная колонка: index 3 - последняя
+          Ряд:
+            b: - - - 3
+            a: - - - 3
+            
+          Сравнение уже идет на основании текста колонок:
+
+        4) collator.compare - сравнивает столбцы с друг другом в соответствии с порядком сортировки объекта Collato 
+            -1, если строка string1 предшествует строке string2; 
+            1, если строка string1 следует за строкой string2; 
+            0, если строки считаются равными	
+          
+          Пример: 
+            a Беларусь
+            b Россия
+            -1
+            a Англия
+            b Беларусь
+            -1
+            a Зимбабве
+            b Англия
+            1
+            a Зимбабве
+            b Беларусь
+            1
+            a Зимбабве
+            b Россия
+            -1
+            a США
+            b Зимбабве
+            1
+            a США
+            b Россия
+            1
+            a Германия
+            b Зимбабве
+            -1
+            a Германия
+            b Беларусь
+            1
+            
+      5) На основе отсортированных стобцов, выстариваются все остальные строки в таблицы
+      */
+      return (
+        order * // order - переключатель, для того чтобы менять порядок сортировки: "с начала" или "с конца"
+        collator.compare(a.children[index].textContent, b.children[index].textContent)
+      );
+    };
+
+    // Коллекция элементов таблицы <tbody>
+    const tablesBodies = Array.from(target.closest("table").tBodies);
+    // console.log(tablesBodies)
+
+    tablesBodies.forEach(tBody => {
+      // tBody.rows - все ряды в таблице
+      // Добавляет (несколько) отсортированных узлов или строки в конец
+      tBody.append(...Array.from(tBody.rows).sort(comparator(index, order)));
+    });
+
+    /* 
+      При нажатии на элементы th которые находяться в <thead>, происходит сравнения и переключении класс sorted
+      Если установлено значение false, класс будет только удален, но не добавлен. 
+      Если установлено значение true, класс будет только добавляться, но не удаляться 
+    */
+    
+    thList.forEach( th => th.classList.toggle("sorted", th === target));
+  }
+ </script>
+ <!--end скрипт сортировки-->
+   <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/core/bootstrap.min.js"></script>
+  <script src="assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="assets/js/datepicker-full.min.js"></script>
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+  <script src="assets/js/inputmask.min.js"></script>
+	<script src="assets/js/fslightbox.js"></script>
+  <script src="assets/js/app.js?v=3.1.0"></script>
+</body>
+
+</html>
