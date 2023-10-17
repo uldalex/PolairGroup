@@ -22710,7 +22710,19 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   opacity: 0;
 }
 
+.sidebar .sb-item-list > .sb-item > .sb-text {
+  position: absolute;
+  transition-duration: 0.5s;
+  transform: translateX(-200%);
+  opacity: 0;
+}
+
 .g-sidenav-pinned .sb-item-list > .sb-item > a .sb-text {
+  transform: none;
+  opacity: 1;
+}
+
+.g-sidenav-pinned .sb-item-list > .sb-item > .sb-text {
   transform: none;
   opacity: 1;
 }
@@ -22729,9 +22741,9 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 
 .sidebar .sb-item .sb-submenu .sb-item {
-  font-size: 11px;
-  line-height: 30px;
-  padding-left: 11px;
+  font-size: 12px;
+  line-height: 40px;
+  padding-left: 12px;
 }
 
 .sidebar .sb-item .sb-submenu .sb-item:hover {
@@ -22740,6 +22752,11 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 
 .sidebar .bg-white .sb-item .text-dark, .sidebar .sb-item .sb-submenu.bg-white .sb-item .text-dark {
   color: #003B5C !important;
+}
+
+.sidebar .sb-item .sb-submenu.bg-white .sb-item .text-dark {
+  display: flex;
+  align-items: center;
 }
 
 .sidebar .sb-item.active > .sb-icon {
@@ -22777,11 +22794,17 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   position: absolute;
   display: block;
   width: 200px;
-  top: 0;
+  top: -15px;
   left: calc(100% + 1px);
   padding: 15px 0;
   z-index: 999;
   box-shadow: 2px 2px 14px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
+  max-height: 80vh;
+}
+
+.sb-menu:hover > .sb-submenu::-webkit-scrollbar {
+  display: none;
 }
 
 .btn-toggle-sidebar .sb-icon {
@@ -22818,6 +22841,25 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   display: inline-block;
 }
 
+@media (max-width: 991px) {
+  .g-sidenav-show.g-sidenav-pinned .sidenav {
+    transform: translateX(0);
+    width: 100%;
+  }
+  .sb-menu:hover > .sb-submenu {
+    display: none;
+  }
+  .sb-menu > .sb-submenu.active {
+    position: relative;
+    display: block;
+    width: 100%;
+    top: 0;
+    left: -7px;
+    padding: 15px 0;
+    z-index: 999;
+    box-shadow: none;
+  }
+}
 .nav.nav-pills {
   background: transparent;
   border-radius: 0;

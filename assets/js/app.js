@@ -1249,4 +1249,9 @@ $(".more").click(function() {
 $('.work-clone').on('click', function() {
   $('.card-work').clone().appendTo(".card-work-list:last");
 });
-
+if ($(window).width() < 991) {
+$(".sb-menu").on("click", function(){
+  $(this).find(".sb-submenu").toggleClass('active');
+ 
+});
+}
