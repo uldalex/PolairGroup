@@ -2994,6 +2994,11 @@ textarea.form-control-lg {
   border-radius: 4px;
 }
 
+.was-validated :valid,
+.is-valid {
+  position: relative;
+  z-index: 100;
+}
 .was-validated :valid ~ .valid-feedback,
 .was-validated :valid ~ .valid-tooltip,
 .is-valid ~ .valid-feedback,
@@ -3008,6 +3013,8 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 1rem 1rem;
+  position: relative;
+  z-index: 100;
 }
 .was-validated .form-control:valid:focus, .form-control.is-valid:focus {
   border-color: #43B02A;
@@ -3017,10 +3024,14 @@ textarea.form-control-lg {
 .was-validated textarea.form-control:valid, textarea.form-control.is-valid {
   padding-right: unset;
   background-position: top 0.75rem right 0.75rem;
+  position: relative;
+  z-index: 100;
 }
 
 .was-validated .form-select:valid, .form-select.is-valid {
   border-color: #43B02A;
+  position: relative;
+  z-index: 100;
 }
 .was-validated .form-select:valid:not([multiple]):not([size]), .was-validated .form-select:valid:not([multiple])[size="1"], .form-select.is-valid:not([multiple]):not([size]), .form-select.is-valid:not([multiple])[size="1"] {
   padding-right: 2.75rem;
@@ -3035,10 +3046,14 @@ textarea.form-control-lg {
 
 .was-validated .form-control-color:valid, .form-control-color.is-valid {
   width: calc(3rem + unset);
+  position: relative;
+  z-index: 100;
 }
 
 .was-validated .form-check-input:valid, .form-check-input.is-valid {
   border-color: #43B02A;
+  position: relative;
+  z-index: 100;
 }
 .was-validated .form-check-input:valid:checked, .form-check-input.is-valid:checked {
   background-color: #43B02A;
@@ -3060,6 +3075,8 @@ textarea.form-control-lg {
 .was-validated .input-group > .form-floating:not(:focus-within):valid,
 .input-group > .form-floating:not(:focus-within).is-valid {
   z-index: 50;
+  position: relative;
+  z-index: 100;
 }
 
 .invalid-feedback {
@@ -3084,6 +3101,11 @@ textarea.form-control-lg {
   border-radius: 4px;
 }
 
+.was-validated :invalid,
+.is-invalid {
+  position: relative;
+  z-index: 100;
+}
 .was-validated :invalid ~ .invalid-feedback,
 .was-validated :invalid ~ .invalid-tooltip,
 .is-invalid ~ .invalid-feedback,
@@ -3098,6 +3120,8 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: right 0.75rem center;
   background-size: 1rem 1rem;
+  position: relative;
+  z-index: 100;
 }
 .was-validated .form-control:invalid:focus, .form-control.is-invalid:focus {
   border-color: #EE5157;
@@ -3107,10 +3131,14 @@ textarea.form-control-lg {
 .was-validated textarea.form-control:invalid, textarea.form-control.is-invalid {
   padding-right: unset;
   background-position: top 0.75rem right 0.75rem;
+  position: relative;
+  z-index: 100;
 }
 
 .was-validated .form-select:invalid, .form-select.is-invalid {
   border-color: #EE5157;
+  position: relative;
+  z-index: 100;
 }
 .was-validated .form-select:invalid:not([multiple]):not([size]), .was-validated .form-select:invalid:not([multiple])[size="1"], .form-select.is-invalid:not([multiple]):not([size]), .form-select.is-invalid:not([multiple])[size="1"] {
   padding-right: 2.75rem;
@@ -3125,10 +3153,14 @@ textarea.form-control-lg {
 
 .was-validated .form-control-color:invalid, .form-control-color.is-invalid {
   width: calc(3rem + unset);
+  position: relative;
+  z-index: 100;
 }
 
 .was-validated .form-check-input:invalid, .form-check-input.is-invalid {
   border-color: #EE5157;
+  position: relative;
+  z-index: 100;
 }
 .was-validated .form-check-input:invalid:checked, .form-check-input.is-invalid:checked {
   background-color: #EE5157;
@@ -3150,6 +3182,8 @@ textarea.form-control-lg {
 .was-validated .input-group > .form-floating:not(:focus-within):invalid,
 .input-group > .form-floating:not(:focus-within).is-invalid {
   z-index: 50;
+  position: relative;
+  z-index: 100;
 }
 
 .btn {
@@ -19417,8 +19451,15 @@ body.dark-version {
     transition: top 0.35s ease;
   }
   .dropdown:not(.dropdown-hover) .dropdown-menu {
-    margin-top: 2.8125rem !important;
+    margin-top: 2.8125rem;
   }
+}
+@media (max-width: 991.98px) and (max-width: 600px) {
+  .dropdown:not(.dropdown-hover) .dropdown-menu {
+    margin-top: 2rem;
+  }
+}
+@media (max-width: 991.98px) {
   .dropdown .dropdown-menu.show {
     opacity: 1;
     pointer-events: auto;

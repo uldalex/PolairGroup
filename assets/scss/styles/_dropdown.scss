@@ -181,7 +181,12 @@
       }
     }
     &:not(.dropdown-hover) .dropdown-menu {
-      margin-top: $dropdown-mt !important;
+      margin-top: $dropdown-mt ;
+    }
+    @media(max-width:600px){
+      &:not(.dropdown-hover) .dropdown-menu {
+        margin-top: 2rem ;
+      }
     }
 
     .dropdown-menu.show {
