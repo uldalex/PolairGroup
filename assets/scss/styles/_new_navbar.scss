@@ -1,34 +1,35 @@
 .sidebar {
-    width: 200px;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    white-space: nowrap;
-    transition-duration: 0.5s;
-    z-index: 1000;
-  }
- .sidebar .sb-item-list {
-    width: 100%;
-  
-  }
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  white-space: nowrap;
+  transition-duration: 0.5s;
+  z-index: 1000;
+}
+.sidebar .sb-item-list {
+  width: 100%;
+
+}
 .sidebar .sb-item-list > .sb-item > .sb-text {
-    position: absolute;
     transition-duration: 0.5s;
     transform: translateX(-200%);
     opacity: 0;
+    white-space: normal;
   }
   .sidebar .sb-item-list > .sb-item > a .sb-text {
-    position: absolute;
     transition-duration: 0.5s;
     transform: translateX(-200%);
     opacity: 0;
+    white-space: normal;
   }
   .sidebar .sb-item-list > .sb-item > .sb-text {
-    position: absolute;
+  
     transition-duration: 0.5s;
     transform: translateX(-200%);
     opacity: 0;
+    white-space: normal;
   }
   .g-sidenav-pinned .sb-item-list > .sb-item > a .sb-text {
     transform: none;
@@ -39,20 +40,29 @@
     opacity: 1;
   }
 .sidebar .sb-item {
-    display: block;
+    display: flex;
     width: 100%;
-    line-height: 40px;
+    padding-top:8px;
+    padding-bottom:8px;
     cursor: pointer;
     padding-left: 7px;
     position: relative;
+  }
+  @media(max-width:991px){
+    .sidebar .sb-item{
+      flex-wrap:wrap;
+
+      & .sb-text{
+        max-width:70%;
+      }
+    }
   }
   .sidebar .sb-item:hover{
     background-color: $gray-100;
   }
   .sidebar .sb-item .sb-submenu .sb-item{
     font-size: 12px;
-    line-height: 40px;
-    padding-left: 12px;
+    white-space: normal;
   }
   .sidebar .sb-item .sb-submenu .sb-item:hover{
 background-color: $gray-100;
@@ -89,6 +99,16 @@ background-color: $gray-100;
     border: solid 5px transparent;
     border-left-color: $light;
     transition-duration: 0.5s;
+    position:absolute;
+    right: 10px;
+  top: 0;
+  }
+  @media(max-width:991px){
+    .g-sidenav-pinned .sb-menu:after {
+      position:absolute;
+      right: 10px;
+    top: 0;
+    } 
   }
 .sb-menu > .sb-submenu {
     display: none;
@@ -146,13 +166,14 @@ background-color: $gray-100;
         display:none;
     }
     .sb-menu > .sb-submenu.active {
-        position: relative; 
-        display: block;
-        width: 100%;
-        top: 0;
-        left: -7px;
-        padding: 15px 0;
-        z-index: 999;
-        box-shadow: none;
+      position: relative;
+      display: block;
+      width: calc(100% + 14px);
+      top: 0;
+      left: -4px;
+      margin-top: 8px;
+      padding: 15px 0;
+      z-index: 999;
+      box-shadow: none;
     }
 }

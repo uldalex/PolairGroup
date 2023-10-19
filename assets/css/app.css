@@ -21623,7 +21623,6 @@ hr.horizontal.gray-light {
 .navbar-vertical .navbar-nav .nav-link {
   display: flex;
   align-items: center;
-  white-space: nowrap;
 }
 .navbar-vertical .navbar-heading {
   padding-top: 0.5rem;
@@ -22376,10 +22375,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav {
   transform: translateX(0);
-  width: 200px;
+  width: 240px;
 }
 .g-sidenav-show.g-sidenav-pinned .sidenav.fixed-start + .main-content {
-  margin-left: 200px;
+  margin-left: 240px;
 }
 @media (max-width: 769px) {
   .g-sidenav-show.g-sidenav-pinned .sidenav.fixed-start + .main-content {
@@ -22427,10 +22426,12 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 .g-sidenav-show.g-sidenav-pinned .support-block a {
   font-size: 0.91875rem;
   opacity: 1;
+  transition-duration: 0.5s;
 }
 .g-sidenav-show.g-sidenav-pinned .support-block p {
   opacity: 1;
   text-indent: 0%;
+  transition-duration: 0.5s;
 }
 .g-sidenav-show.g-sidenav-pinned .tooltip.show {
   opacity: 0;
@@ -22740,24 +22741,24 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 
 .sidebar .sb-item-list > .sb-item > .sb-text {
-  position: absolute;
   transition-duration: 0.5s;
   transform: translateX(-200%);
   opacity: 0;
+  white-space: normal;
 }
 
 .sidebar .sb-item-list > .sb-item > a .sb-text {
-  position: absolute;
   transition-duration: 0.5s;
   transform: translateX(-200%);
   opacity: 0;
+  white-space: normal;
 }
 
 .sidebar .sb-item-list > .sb-item > .sb-text {
-  position: absolute;
   transition-duration: 0.5s;
   transform: translateX(-200%);
   opacity: 0;
+  white-space: normal;
 }
 
 .g-sidenav-pinned .sb-item-list > .sb-item > a .sb-text {
@@ -22771,22 +22772,30 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
 }
 
 .sidebar .sb-item {
-  display: block;
+  display: flex;
   width: 100%;
-  line-height: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   cursor: pointer;
   padding-left: 7px;
   position: relative;
 }
 
+@media (max-width: 991px) {
+  .sidebar .sb-item {
+    flex-wrap: wrap;
+  }
+  .sidebar .sb-item .sb-text {
+    max-width: 70%;
+  }
+}
 .sidebar .sb-item:hover {
   background-color: #E5EDF1;
 }
 
 .sidebar .sb-item .sb-submenu .sb-item {
   font-size: 12px;
-  line-height: 40px;
-  padding-left: 12px;
+  white-space: normal;
 }
 
 .sidebar .sb-item .sb-submenu .sb-item:hover {
@@ -22827,8 +22836,18 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   border: solid 5px transparent;
   border-left-color: #CCD3D9;
   transition-duration: 0.5s;
+  position: absolute;
+  right: 10px;
+  top: 0;
 }
 
+@media (max-width: 991px) {
+  .g-sidenav-pinned .sb-menu:after {
+    position: absolute;
+    right: 10px;
+    top: 0;
+  }
+}
 .sb-menu > .sb-submenu {
   display: none;
 }
@@ -22895,9 +22914,10 @@ body:not(.dark-version) .sidenav.bg-transparent .collapse .nav-item .nav-link.ac
   .sb-menu > .sb-submenu.active {
     position: relative;
     display: block;
-    width: 100%;
+    width: calc(100% + 14px);
     top: 0;
-    left: -7px;
+    left: -4px;
+    margin-top: 8px;
     padding: 15px 0;
     z-index: 999;
     box-shadow: none;
@@ -24578,6 +24598,7 @@ i.text-red {
   border-radius: 8px;
   border: 1px solid var(--gray-1, #E3EAF1);
   padding: 12px;
+  transition-duration: 0.5s;
 }
 .support-block__icon {
   display: flex;
@@ -24887,7 +24908,7 @@ th.sorted[data-order="1"]::after {
      object-fit: cover;
 }
 
-.more.open svg {
+.more.open i {
   transform: rotate(180deg);
 }
 
@@ -25066,6 +25087,41 @@ th.sorted[data-order="1"]::after {
   color: #318FAD;
 }
 
+.point {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: relative;
+  background-color: rgba(49, 143, 173, 0.6);
+}
+
+.point:after {
+  position: absolute;
+  content: "";
+  width: 20px;
+  height: 20px;
+  top: -4px;
+  left: -4px;
+  border-radius: 50%;
+  background-color: rgba(49, 143, 173, 0.3);
+}
+
+.point--animate:after {
+  animation-duration: 2s;
+  animation-name: pulse;
+  animation-iteration-count: infinite;
+  opacity: 0;
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 .step-map {
   display: none;
 }

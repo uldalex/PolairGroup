@@ -442,6 +442,7 @@ display:none
         border-radius: 8px;
         border: 1px solid var(--gray-1, #E3EAF1);
         padding: 12px;
+        transition-duration: 0.5s;
         &__icon {
             display: flex;
             padding: 4px;
@@ -752,7 +753,7 @@ display:none
   }
   .more{
     &.open{
-        svg{
+        i{
             transform: rotate(180deg);
         }
     }
@@ -913,4 +914,38 @@ line-height: 0;
     border: 1px solid rgba(49, 143, 173, 0.3);
     background:linear-gradient(0deg, rgba(49, 143, 173, 0.1) 0%, rgba(49, 143, 173, 0.1) 100%), #FFF;  
     color:#318FAD;
+  }
+  .point {
+    width:12px;
+    height:12px;
+    border-radius: 50%;
+    position:relative;
+    background-color:rgba(49, 143, 173, 0.6);
+  }
+  .point:after{
+    position:absolute;
+    content:"";
+    width:20px;
+    height:20px;
+    top:-4px;
+    left:-4px;
+    border-radius:50%;
+    background-color:rgba(49, 143, 173, 0.3);
+
+    
+  }
+  .point--animate:after{
+    animation-duration: 2s;
+    animation-name: pulse;
+    animation-iteration-count: infinite;
+    opacity:0;
+  }
+  @keyframes pulse {
+    from {
+      transform: scale(0.1);
+    }
+    to {
+      opacity:1;
+      transform: scale(1);
+    }
   }

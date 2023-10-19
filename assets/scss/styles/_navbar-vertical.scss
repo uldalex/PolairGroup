@@ -47,7 +47,6 @@
   .navbar-nav .nav-link {
     display: flex;
     align-items: center;
-    white-space: nowrap;
   }
   // Navbar heading
   .navbar-heading {
@@ -402,16 +401,16 @@ body:not(.dark-version) {
     &.g-sidenav-pinned {
       .sidenav {
         transform: translateX(0);
-        width:200px;
+        width:240px;
         &.fixed-start+.main-content {
-          margin-left: 200px;
+          margin-left: 240px;
   
         }
         @media(max-width:769px){
           &.fixed-start+.main-content {
             margin-left: 100%;
             width: 0px;
-    overflow: hidden;
+            overflow: hidden;
     
           } 
         }
@@ -461,10 +460,12 @@ body:not(.dark-version) {
       .support-block a {
         font-size:$font-size-md;
         opacity:1;
+        transition-duration: 0.5s;
       }
       .support-block p{
         opacity: 1;
         text-indent: 0%;
+        transition-duration: 0.5s;
       }
       .tooltip.show {
         opacity: 0;
