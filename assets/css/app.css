@@ -25122,6 +25122,10 @@ th.sorted[data-order="1"]::after {
     transform: scale(1);
   }
 }
+.minh-14 p {
+  min-height: 14px;
+}
+
 .step-map {
   display: none;
 }
