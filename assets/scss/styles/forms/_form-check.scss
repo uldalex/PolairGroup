@@ -17,8 +17,7 @@
     background-image: none;
     &:after {
       transition: opacity $form-check-transition-time ease-in-out;
-      font-family: "FontAwesome";
-      content: "\f00c";
+      content: "✔";
       width: 100%;
       height: 100%;
       color: $form-check-input-checked-color;
