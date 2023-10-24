@@ -19908,6 +19908,7 @@ body.dark-version {
 }
 .form-check:not(.form-switch) .form-check-input[type=checkbox]:after {
   transition: opacity 0.25s ease-in-out;
+  font-family: inherit;
   content: "✔";
   width: 100%;
   height: 100%;
