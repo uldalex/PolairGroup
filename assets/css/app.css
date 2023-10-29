@@ -23988,8 +23988,13 @@ p {
   font-weight: 400 !important;
 }
 
+@media (min-width: 575.98px) {
+  .font-weight-bold {
+    font-weight: 600;
+  }
+}
 .font-weight-bold {
-  font-weight: 600 !important;
+  font-weight: 500;
 }
 
 .font-weight-bolder {
@@ -25129,6 +25134,39 @@ th.sorted[data-order="1"]::after {
   min-height: 14px;
 }
 
+.card-dropdown {
+  height: 0;
+  overflow: hidden;
+}
+.card-dropdown.open {
+  height: auto;
+}
+
+.card-link.open .card-link--arrow {
+  transform: rotate(90deg);
+  margin-bottom: 1rem;
+}
+
+.nav-pills .nav-item {
+  width: 33%;
+  display: flex;
+  justify-content: center;
+}
+
+.text-gray500 {
+  color: #5F666D;
+}
+
+@media (max-width: 575.98px) {
+  h5, .h5 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .nav-pills .nav-link {
+    font-size: 12px;
+    padding: 0.5rem 0.2rem;
+  }
+}
 .step-map {
   display: none;
 }

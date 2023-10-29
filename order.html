@@ -209,8 +209,9 @@
 												<span>Заявка на ремонт</span>
 												<h5 class="mb-0">№324253 от 12.12.2023</h5>
 											</div>
-											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="d-block d-lg-none btn  bg-gradient-primary p-1 mb-0 ">
+											<a href="#addob" data-bs-toggle="modal" data-bs-target="#addob" class="d-block d-lg-none btn  bg-gradient-primary p-1 mb-0 ">
 												<i class="sb-icon  text-2xl ph-light ph-arrow-clockwise"></i>
+											</a>
 										</div>
 										<div class="d-flex flex-column flex-lg-row">
 											<div class="d-flex flex-lg-column justify-content-between px-lg-3">
@@ -235,93 +236,93 @@
 											</div>
 										</div>
 										<div class="col-2 d-none d-lg-block">
-											<a href="#editcompany" data-bs-toggle="modal" data-bs-target="#editcompany" class="btn  bg-gradient-primary d-flex align-items-center justify-content-center px-2 px-md-2">
+											<a href="#addob" data-bs-toggle="modal" data-bs-target="#addob" class="btn  bg-gradient-primary d-flex align-items-center justify-content-center px-2 px-md-2">
 												<span class="text-indent">Повторная заявка</span>
 												<i class="sb-icon  ms-2 text-2xl ph-light ph-arrow-clockwise"></i></a>
 										</div>	
 									</div>
+									<!--стадии заявки. Внимание!!!! незавершенным стадиям добавляем класс opacity-5 пример - последняя стадия в верстке-->
 									<div class="row d-none d-lg-flex">
 										<div class="col-lg-2">
-											<a href class="d-flex my-3 justify-content-between align-items-start">
-												<div class="d-flex align-items-center">
+											<div class="d-flex my-3 justify-content-between align-items-start">
+												<div class="d-flex align-items-start">
 													<div class="card-about__img card-about__img--small me-2">
 														<i class="sb-icon  ms-2 text-2xl ph-light ph-book-bookmark"></i>
 													</div>
 													<span>Формирование</span>
 												</div>
 												<i class="sb-icon  ms-2 text-2xl ph-light ph-caret-right"></i>
-											</a>
+											</div>
 										</div>
 										<div class="col-lg-2">
-											<a href class="d-flex my-3 justify-content-between align-items-start">
-												<div class="d-flex">
+											<div class="d-flex my-3 justify-content-between align-items-start">
+												<div class="d-flex align-items-start">
 													<div class="card-about__img card-about__img--small me-2">
 														<i class="sb-icon  ms-2 text-2xl ph-light ph-chats-circle"></i>
 													</div>
 													<span>Согласование </span>
 												</div>
 												<i class="sb-icon  ms-2 text-2xl ph-light ph-caret-right"></i>
-											</a>
+											</div>
 										</div>
 										<div class="col-lg-2">
-											<a href class="d-flex my-3 justify-content-between align-items-start">
-												<div class="d-flex">
+											<div class="d-flex my-3 justify-content-between align-items-start">
+												<div class="d-flex align-items-start">
 													<div class="card-about__img card-about__img--small me-2">
 														<i class="sb-icon  ms-2 text-2xl ph-light ph-target"></i>
 													</div>
 													<span>Передача заявки	в АСЦ</span>
 												</div>
 												<i class="sb-icon  ms-2 text-2xl ph-light ph-caret-right"></i>
-											</a>
+											</div>
 										</div>
 										<div class="col-lg-2">
-											<a href class="d-flex my-3 justify-content-between align-items-start">
-												<div class="d-flex">
+											<div class="d-flex my-3 justify-content-between align-items-start">
+												<div class="d-flex align-items-start">
 													<div class="card-about__img card-about__img--small me-2">
 														<i class="sb-icon  ms-2 text-2xl ph-light ph-chats-circle"></i>
 													</div>
 													<span>Работа АСЦ и согласование сроков</span>
 												</div>
 													<i class="sb-icon  ms-2 text-2xl ph-light ph-caret-right"></i>
-											</a>
+											</div>
 										</div>
 										<div class="col-lg-2">
-											<a href class="d-flex my-3 justify-content-between align-items-start">
-												<div class="d-flex">
+											<div class="d-flex my-3 justify-content-between align-items-start">
+												<div class="d-flex align-items-start">
 													<div class="card-about__img card-about__img--small me-2">
 														<i class="sb-icon  ms-2 text-2xl ph-light ph-gear"></i>
 													</div>
 													<span>Ремонт/выполнение заявки</span>
 												</div>
 												<i class="sb-icon  ms-2 text-2xl ph-light ph-caret-right"></i>
-											</a>
+											</div>
 										</div>
-										<div class="col-lg-2">
-											<a href class="d-flex my-3 justify-content-between align-items-start">
-												<div class="d-flex">
+										<!--Незавершенная стадия-->
+										<div class="col-lg-2 opacity-5">
+											<div class="d-flex my-3 justify-content-between align-items-start">
+												<div class="d-flex align-items-start">
 													<div class="card-about__img card-about__img--small me-2">
 														<i class="sb-icon  ms-2 text-2xl ph-light ph-star"></i>
 													</div>
 													<span>Оценка качества работы</span>
 												</div>
 												<i class="sb-icon  ms-2 text-2xl ph-light ph-caret-right"></i>
-											</a>
+											</div>
 										</div>
 									</div>
                 </div>
-                <div class="card-body px-0 pb-md-2">
-                 
-                </div>
              </div>
             </div>
-         </div>
+        </div>
 			<!-- end шапка заявки -->
 			<!--табы-->
       <div class="row">
         <div class="col-12 mb-xl-0 mb-4">
 					<div class="my-2 my-lg-4">
 						<div class="card p-3 ">
-							<ul class="nav nav-pills nav-justified nav-tabs" id="orderTab" role="tablist">
+							<!--Ссылки табов, навигация по табам-->
+							<ul class="nav nav-pills  nav-tabs" id="orderTab" role="tablist">
 								<li class="nav-item" role="presentation">
 									<button class="nav-link active" id="order-tab" data-bs-toggle="tab" data-bs-target="#order" type="button" role="tab" aria-controls="order" aria-selected="true">Заявка на ремонт</button>
 								</li>
@@ -351,46 +352,46 @@
 										<div class="col-lg-9">
 											<div class="d-flex flex-column flex-lg-row">
 												<div class="d-flex flex-column">
-													<p class="p-2 m-0 text-sm text-secondary">Оборудование</p>
-													<p class="font-weight-bold px-2 m-0 ">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
+													<p class="p-2 m-0 text-sm text-gray500">Оборудование</p>
+													<p class="px-2 m-0 ">Пароконвектомат TR10M0L ТУ 28.93.15-001-47653896-2020</p>
+												</div>
+												<div class="d-flex flex-column ps-lg-4">
+													<p class="p-2 m-0  text-sm text-gray500">Бренд</p>
+													<p class="px-2 m-0 ">Polair</p>
 												</div>
 												<div class="d-flex flex-column">
-													<p class="p-2 m-0  text-sm text-secondary">Бренд</p>
-													<p class="font-weight-bold px-2 m-0 ">Polair</p>
+													<p class="p-2 m-0  text-sm text-gray500">Дата покупки</p>
+													<p class="px-2 m-0 ">12.12.2023</p>
 												</div>
 												<div class="d-flex flex-column">
-													<p class="p-2 m-0  text-sm text-secondary">Дата покупки</p>
-													<p class="font-weight-bold px-2 m-0 ">12.12.2023</p>
-												</div>
-												<div class="d-flex flex-column">
-													<p class="p-2 m-0  text-sm text-secondary">Дата ввода в экслуатацию</p>
-													<p class="font-weight-bold px-2 m-0 ">12.12.2023</p>
+													<p class="p-2 m-0  text-sm text-gray500">Дата ввода в экслуатацию</p>
+													<p class="px-2 m-0 ">12.12.2023</p>
 												</div>
 											</div>
 											<div class="d-flex">
 												<div class="d-flex flex-column">
-													<p class="p-2 m-0  text-sm text-secondary">Адрес оборудования</p>
-													<p class="font-weight-bold px-2 m-0 ">г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
+													<p class="p-2 m-0  text-sm text-gray500">Адрес оборудования</p>
+													<p class="px-2 m-0 ">г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
 												</div>
 											</div>
 											<div class="row">
 												<div class="col-md-6 d-flex flex-column">
-													<p class="p-2 m-0  text-sm text-secondary">Уточнения по адресу</p>
-													<p class="font-weight-bold ps-3">г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
+													<p class="p-2 m-0  text-sm text-gray500">Уточнения по адресу</p>
+													<p class="p-2">Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.</p>
 												</div>
 												<div class="col-md-6 d-flex flex-column">
-													<p class="p-2 m-0  text-sm text-secondary">Заявленная неисправность</p>
-													<p class="font-weight-bold">г.Казань, ул.Толстого, 2В <a href="map" data-bs-toggle="modal" data-bs-target="#map" >на карте</a></p>
+													<p class="p-2 m-0  text-sm text-gray500">Заявленная неисправность</p>
+													<p class="p-2">Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.</p>
 												</div>
 											</div>
 											<div class="d-flex">
 												<div class="d-flex flex-column">
-													<p class="p-2 m-0 text-sm text-secondary">Сервисный центр</p>
-													<p class="font-weight-bold px-2 m-0 ">“Техносервис-116” (ул.Фучика, 35В)</p>
+													<p class="p-2 m-0 text-sm text-gray500">Сервисный центр</p>
+													<p class="px-2 m-0 ">“Техносервис-116” (ул.Фучика, 35В)</p>
 												</div>
-												<div class="d-flex flex-column">
-													<p class="p-2 m-0 text-sm text-secondary">Дилер</p>
-													<p class="font-weight-bold px-2 m-0 ">“Техносервис-116”</p>
+												<div class="d-flex flex-column ps-lg-4">
+													<p class="p-2 m-0 text-sm text-gray500">Дилер</p>
+													<p class="px-2 m-0 ">“Техносервис-116”</p>
 												</div>
 											</div>
 										</div>
@@ -410,7 +411,7 @@
 											</div>
 										</div>
 									</div>
-									<!--карточка-->
+									<!--карточка диагностика-->
 									<div class="border rounded my-3 pt-3 px-3">
 											<div class="d-flex justify-content-between">
 												<h5>Диагностика</h5>
@@ -431,316 +432,346 @@
 												<span class="font-weight-bold">531 - Негерметичность пайки калачей батареи испарителя (БИ)</span>
 											</div>
 									</div>
-									<!--карточка-->
-									<div class="border rounded my-3 pt-3 px-3">
-										<div class="d-flex justify-content-between">
+									<!--карточка работы добавляем класс card-toggle для поиска свернутых элементов-->
+									<div class="card-toggle border rounded my-3 pt-3 px-3">
+										<!--добавляем класс card-link Внимание! если изначально должно быть развернуто, то добавляем 2 класса: card-link open-->
+										<div class="card-link d-flex justify-content-between">
 											<h5>Работы</h5>
 											<div class="d-flex">
 												<p class="font-weight-bold">2 400,00 руб</p>
-												<a href="#">
+												<a href="#editwork"  data-bs-toggle="modal" data-bs-target="#editwork">
 													<i class="sb-icon text-secondary ms-2 text-2xl ph-light ph-pencil-simple"></i>
 												</a>
-												<div class="dropdown float-lg-end pe-4">
+												<div class="d-none d-lg-block dropdown float-lg-end">
 													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
-														<svg class="grey100" height="20" width="20"><use xlink:href="assets/img/sprite.svg#ellips"></use></svg>
+														<i class="sb-icon text-secondary  text-2xl ph-light ph-dots-three-vertical"></i>
 													</a>
 													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
 													</ul>
 												</div>
+												<!--добавляем иконку с классом card-link--arrow -->
+												<i class="card-link--arrow d-none d-lg-block sb-icon text-secondary  text-2xl ph-light ph-caret-right"></i>
 											</div>
 										</div>
 										<!--карточка работ мобильная-->
-										<div class="d-block d-lg-none d-flex flex-column my-2">
+										<!--добавляем класс card-dropdown для всего, что нужно свернуть. Внимание! если изначально должно быть развернуто, то добавляем 2 класса: card-dropdown open-->
+										<div class="card-dropdown d-block d-lg-none d-flex flex-column my-2">
 											<span class="text-sm text-secondary">Работа</span>
 											<span class="font-weight-bold">Регулировка дозы хладагента</span>
 										</div>
-										<div class="d-block d-lg-none d-flex flex-column my-2">
+										<div class="card-dropdown d-block d-lg-none d-flex flex-column my-2">
 											<span class="text-sm text-secondary">Категория работ</span>
 											<span class="font-weight-bold">Диагностика</span>
 										</div>
-										<div class="row">
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Часы</span>
-												<span class="font-weight-bold">1,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Стоимость</span>
-												<span class="font-weight-bold">800,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Сумма</span>
-												<span class="font-weight-bold">800,0</span>
-											</div>
-										</div>
-										<!--таблица работ десктоп-->
-										<div class="card d-none d-lg-block my-2 my-lg-4">
-											<div class="card-body px-0 pt-0 pb-2">
-												<div class="table-responsive  p-0">
-													<table class="table table_sort table-striped align-items-center mb-0">
-															<thead>
-															<tr >
-																	<th  class="col-5 text-sm opacity-7 ps-2" >Работа</th>
-																	<th  class="col-4 text-sm opacity-7 ps-2 sorted" data-order="-1">Категория работ</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Часы</th>
-																	<th  class="text-sm opacity-7 sorted ps-2 text-nowrap">Стоимость</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
-															</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
-																	<td><p class="font-weight-bold text-sm">Диагностика</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">1,0</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
-																</tr>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
-																	<td><p class="font-weight-bold text-sm">Диагностика</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">2,0</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">1600,00</p></td>
-																</tr>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
-																	<td><p class="font-weight-bold text-sm">Диагностика</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">3,0</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">1800,00</p></td>
-																</tr>
-															</tbody>
-													</table>
+										<div class="card-dropdown">
+											<div class="row">
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Часы</span>
+													<span class="font-weight-bold">1,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Стоимость</span>
+													<span class="font-weight-bold">800,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Сумма</span>
+													<span class="font-weight-bold">800,0</span>
 												</div>
 											</div>
 										</div>
-			 		<!--end таблица заявки десктоп-->
+										<!--таблица заявки десктоп-->
+										<div class="card-dropdown">
+											<div class="d-none d-lg-block my-2 my-lg-4">
+												<div class="card-body px-0 pt-0 pb-2">
+													<div class="table-responsive  p-0">
+														<table class="table table_sort table-striped align-items-center mb-0">
+																<thead>
+																<tr >
+																		<th  class="col-5 text-sm opacity-7 ps-2" >Работа</th>
+																		<th  class="col-4 text-sm opacity-7 ps-2 sorted" data-order="-1">Категория работ</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Часы</th>
+																		<th  class="text-sm opacity-7 sorted ps-2 text-nowrap">Стоимость</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
+																</tr>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
+																		<td><p class="font-weight-bold text-sm">Диагностика</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">1,0</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																	</tr>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
+																		<td><p class="font-weight-bold text-sm">Диагностика</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">2,0</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">1600,00</p></td>
+																	</tr>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Регулировка дозы хладагента</p></td>
+																		<td><p class="font-weight-bold text-sm">Диагностика</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">3,0</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">800,00</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">1800,00</p></td>
+																	</tr>
+																</tbody>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+			 							<!--end таблица заявки десктоп-->
 									</div>
-									<!--карточка-->
-									<div class="border rounded my-3 pt-3 px-3">
-										<div class="d-flex justify-content-between">
+									<!--карточка запчасти добавляем класс card-toggle для поиска свернутых элементов-->
+									<div class="card-toggle border rounded my-3 pt-3 px-3">
+										<!--добавляем класс card-link Внимание! если изначально должно быть развернуто, то добавляем 2 класса: card-link open-->
+										<div class="card-link d-flex justify-content-between">
 											<h5>Запчасти с ответхранения</h5>
 											<div class="d-flex">
 												<a href="#">
 													<i class="sb-icon text-secondary ms-2 text-2xl ph-light ph-pencil-simple"></i>
 												</a>
-												<div class="dropdown float-lg-end pe-4">
+												<div class="dropdown d-none d-lg-block  float-lg-end">
 													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
-														<svg class="grey100" height="20" width="20"><use xlink:href="assets/img/sprite.svg#ellips"></use></svg>
+														<i class="card-link sb-icon text-secondary  text-2xl ph-light ph-dots-three-vertical"></i>
 													</a>
 													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
 													</ul>
 												</div>
+												<!--добавляем иконку с классом card-link--arrow-->
+												<i class="card-link--arrow d-none d-lg-block  sb-icon text-secondary  text-2xl ph-light ph-caret-right"></i>
 											</div>
 										</div>
 										<!--карточка запчасти мобильная-->
-										<div class="d-block d-lg-none d-flex flex-column my-2">
-											<span class="text-sm text-secondary">Наименование запчасти</span>
-											<span class="font-weight-bold">Фрион А45</span>
-										</div>
-										<div class="row">
-											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">	Ед изм</span>
-												<span class="font-weight-bold">л</span>
+										<!--добавляем класс card-dropdown для всего, что нужно свернуть.Внимание! если изначально должно быть развернуто, то добавляем 2 класса: card-dropdown open -->
+										<div class="card-dropdown">
+											<div class=" d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Наименование запчасти</span>
+												<span class="font-weight-bold">Фрион А45</span>
 											</div>
-											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Кол-во</span>
-												<span class="font-weight-bold">2,0</span>
+											<div class="row">
+												<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">	Ед изм</span>
+													<span class="font-weight-bold">л</span>
+												</div>
+												<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Кол-во</span>
+													<span class="font-weight-bold">2,0</span>
+												</div>
 											</div>
 										</div>
 										<!--таблица запчасти десктоп-->
-										<div class="card d-none d-lg-block my-2 my-lg-4">
-											<div class="card-body px-0 pt-0 pb-2">
-												<div class="table-responsive  p-0">
-													<table class="table table_sort table-striped align-items-center mb-0">
-															<thead>
-															<tr >
-																	<th  class="col-4 text-sm opacity-7 ps-2" >Наименование запчасти</th>
-																	<th  class="col-4 text-sm opacity-7 ps-2 sorted" data-order="-1">Единица измерения</th>
-																	<th  class="col-4 text-sm opacity-7 sorted ps-2">Количество</th>
-															</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Фрион А45</p></td>
-																	<td><p class="font-weight-bold text-sm">л</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+										<div class="card-dropdown">
+											<div class="card d-none d-lg-block my-2 my-lg-4">
+												<div class="card-body px-0 pt-0 pb-2">
+													<div class="table-responsive  p-0">
+														<table class="table table_sort table-striped align-items-center mb-0">
+																<thead>
+																<tr >
+																		<th  class="col-4 text-sm opacity-7 ps-2" >Наименование запчасти</th>
+																		<th  class="col-4 text-sm opacity-7 ps-2 sorted" data-order="-1">Единица измерения</th>
+																		<th  class="col-4 text-sm opacity-7 sorted ps-2">Количество</th>
 																</tr>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Вентиль М20</p></td>
-																	<td><p class="font-weight-bold text-sm">шт</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">1,0</p></td>
-																</tr>
-															</tbody>
-													</table>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Фрион А45</p></td>
+																		<td><p class="font-weight-bold text-sm">л</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+																	</tr>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Вентиль М20</p></td>
+																		<td><p class="font-weight-bold text-sm">шт</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">1,0</p></td>
+																	</tr>
+																</tbody>
+														</table>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<!--карточка-->
-									<div class="border rounded my-3 pt-3 px-3">
-										<div class="d-flex justify-content-between">
+									<!--карточка запчасти собственные добавляем класс card-toggle для поиска свернутых элементов-->
+									<div class="card-toggle border rounded my-3 pt-3 px-3">
+										<!--добавляем класс card-link Внимание! если изначально должно быть развернуто, то добавляем 2 класса: card-link open-->
+										<div class="card-link d-flex justify-content-between">
 											<h5>Собственные запчасти </h5>
 											<div class="d-flex">
 												<p class="font-weight-bold">1 600,00 руб</p>
 												<a href="#">
 													<i class="sb-icon text-secondary ms-2 text-2xl ph-light ph-pencil-simple"></i>
 												</a>
-												<div class="dropdown float-lg-end pe-4">
+												<div class="dropdown d-none d-lg-block  float-lg-end">
 													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
-														<svg class="grey100" height="20" width="20"><use xlink:href="assets/img/sprite.svg#ellips"></use></svg>
+														<i class="card-link sb-icon text-secondary  text-2xl ph-light ph-dots-three-vertical"></i>
 													</a>
 													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
 													</ul>
 												</div>
+												<!--добавляем иконку с классом card-link--arrow-->
+												<i class="d-none d-lg-block  card-link--arrow sb-icon text-secondary  text-2xl ph-light ph-caret-right"></i>
 											</div>
 										</div>
 										<!--карточка запчасти мобильная-->
-										<div class="d-block d-lg-none d-flex flex-column my-2">
-											<span class="text-sm text-secondary">Наименование запчасти</span>
-											<span class="font-weight-bold">Фрион А45</span>
-										</div>
-										<div class="row">
-											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">	Ед изм</span>
-												<span class="font-weight-bold">л</span>
+										<div class="card-dropdown">
+											<div class="d-block d-lg-none d-flex flex-column my-2">
+												<span class="text-sm text-secondary">Наименование запчасти</span>
+												<span class="font-weight-bold">Фрион А45</span>
 											</div>
-											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Кол-во</span>
-												<span class="font-weight-bold">2,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Часы</span>
-												<span class="font-weight-bold">2,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Стоимость</span>
-												<span class="font-weight-bold">800,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Сумма</span>
-												<span class="font-weight-bold">1600,0</span>
+											<div class="row">
+												<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">	Ед изм</span>
+													<span class="font-weight-bold">л</span>
+												</div>
+												<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Кол-во</span>
+													<span class="font-weight-bold">2,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Часы</span>
+													<span class="font-weight-bold">2,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Стоимость</span>
+													<span class="font-weight-bold">800,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Сумма</span>
+													<span class="font-weight-bold">1600,0</span>
+												</div>
 											</div>
 										</div>
 										<!--таблица запчасти десктоп-->
-										<div class="card d-none d-lg-block my-2 my-lg-4">
-											<div class="card-body px-0 pt-0 pb-2">
-												<div class="table-responsive  p-0">
-													<table class="table table_sort table-striped align-items-center mb-0">
-															<thead>
-															<tr >
-																	<th  class="col-3 text-sm opacity-7 ps-2" >Наименование запчасти</th>
-																	<th  class="col-3 text-sm opacity-7 ps-2 sorted" data-order="-1">Единица измерения</th>
-																	<th  class="col-3 text-sm opacity-7 sorted ps-2">Количество</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Часы</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Стоимость</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
+										<div class="card-dropdown">
+											<div class="d-none d-lg-block my-2 my-lg-4">
+												<div class="card-body px-0 pt-0 pb-2">
+													<div class="table-responsive  p-0">
+														<table class="table table_sort table-striped align-items-center mb-0">
+																<thead>
+																<tr >
+																		<th  class="col-3 text-sm opacity-7 ps-2" >Наименование запчасти</th>
+																		<th  class="col-3 text-sm opacity-7 ps-2 sorted" data-order="-1">Единица измерения</th>
+																		<th  class="col-3 text-sm opacity-7 sorted ps-2">Количество</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Часы</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Стоимость</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
 
-															</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Фрион А45</p></td>
-																	<td><p class="font-weight-bold text-sm">л</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
-																	<td><p class="font-weight-bold text-sm">1,0</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
 																</tr>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Вентиль М20</p></td>
-																	<td><p class="font-weight-bold text-sm">шт</p></td>
-																	<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
-																	<td><p class="font-weight-bold text-sm">1,0</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
-																</tr>
-															</tbody>
-													</table>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Фрион А45</p></td>
+																		<td><p class="font-weight-bold text-sm">л</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+																		<td><p class="font-weight-bold text-sm">1,0</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	</tr>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Вентиль М20</p></td>
+																		<td><p class="font-weight-bold text-sm">шт</p></td>
+																		<td class="align-middle"><p class="font-weight-bold text-sm">3,5</p></td>
+																		<td><p class="font-weight-bold text-sm">1,0</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	</tr>
+																</tbody>
+														</table>
+													</div>
 												</div>
 											</div>
 										</div>
 									</div>
-									<!--карточка-->
-									<div class="border rounded my-3 pt-3 px-3">
-										<div class="d-flex justify-content-between">
+									<!--карточка транспортные расходы добавляем класс card-toggle для поиска свернутых элементов-->
+									<div class="card-toggle border rounded my-3 pt-3 px-3">
+										<!--добавляем класс card-link Внимание! если изначально должно быть развернуто, то добавляем 2 класса: card-link open-->
+										<div class="card-link d-flex justify-content-between">
 											<h5>Транспортные расходы</h5>
 											<div class="d-flex">
 												<p class="font-weight-bold">12 000,00 руб</p>
 												<a href="#transport" data-bs-toggle="modal" data-bs-target="#transport">
 													<i class="sb-icon text-secondary ms-2 text-2xl ph-light ph-pencil-simple"></i>
 												</a>
-												<div class="dropdown float-lg-end pe-4">
+												<div class="dropdown d-none d-lg-block float-lg-end">
 													<a class="cursor-pointer" id="dropdownTable" data-bs-toggle="dropdown" aria-expanded="false">
-														<svg class="grey100" height="20" width="20"><use xlink:href="assets/img/sprite.svg#ellips"></use></svg>
+														<i class="card-link sb-icon text-secondary  text-2xl ph-light ph-dots-three-vertical"></i>
 													</a>
 													<ul class="dropdown-menu px-2 py-3 ms-sm-n4 ms-n5" aria-labelledby="dropdownTable">
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#edituser">Редактировать</a></li>
 														<li><a class="dropdown-item border-radius-md" href="javascript:;" data-bs-toggle="modal" data-bs-target="#removeuser">Удалить</a></li>
 													</ul>
 												</div>
+												<!--добавляем иконку с классом card-link--arrow-->
+												<i class="card-link--arrow d-none d-lg-block  card-link--arrow sb-icon text-secondary  text-2xl ph-light ph-caret-right"></i>
 											</div>
 										</div>
 										<!--карточка транспорт мобильная-->
-										<div class="row">
-											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Пункт А</span>
-												<span class="font-weight-bold">Казань</span>
-											</div>
-											<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Пункт Б</span>
-												<span class="font-weight-bold">Москва</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Дистанция, км</span>
-												<span class="font-weight-bold">2,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Стоимость</span>
-												<span class="font-weight-bold">2,0</span>
-											</div>
-											<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
-												<span class="text-sm text-secondary">Сумма</span>
-												<span class="font-weight-bold">1600,0</span>
+										<div class="card-dropdown">
+											<div class="row">
+												<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Пункт А</span>
+													<span class="font-weight-bold">Казань</span>
+												</div>
+												<div class="col-6 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Пункт Б</span>
+													<span class="font-weight-bold">Москва</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Дистанция, км</span>
+													<span class="font-weight-bold">2,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Стоимость</span>
+													<span class="font-weight-bold">2,0</span>
+												</div>
+												<div class="col-4 d-block d-lg-none d-flex flex-column my-2">
+													<span class="text-sm text-secondary">Сумма</span>
+													<span class="font-weight-bold">1600,0</span>
+												</div>
 											</div>
 										</div>
 										<!--таблица транспорт дескторп-->
-										<div class="card d-none d-lg-block my-2 my-lg-4">
-											<div class="card-body px-0 pt-0 pb-2">
-												<div class="table-responsive  p-0">
-													<table class="table table_sort table-striped align-items-center mb-0">
-															<thead>
-															<tr >
-																	<th  class="col-3 text-sm opacity-7 ps-2" >Пункт А</th>
-																	<th  class="col-3 text-sm opacity-7 ps-2 sorted" data-order="-1">Пункт Б</th>
-																	<th  class="col-3 text-sm opacity-7 sorted ps-2">Дистанция, км</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Стоимость</th>
-																	<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
+										<div class="card-dropdown">
+											<div class="card d-none d-lg-block my-2 my-lg-4">
+												<div class="card-body px-0 pt-0 pb-2">
+													<div class="table-responsive  p-0">
+														<table class="table table_sort table-striped align-items-center mb-0">
+																<thead>
+																<tr >
+																		<th  class="col-3 text-sm opacity-7 ps-2" >Пункт А</th>
+																		<th  class="col-3 text-sm opacity-7 ps-2 sorted" data-order="-1">Пункт Б</th>
+																		<th  class="col-3 text-sm opacity-7 sorted ps-2">Дистанция, км</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Стоимость</th>
+																		<th  class="text-sm opacity-7 sorted ps-2">Сумма</th>
 
-															</tr>
-															</thead>
-															<tbody>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Казань</p></td>
-																	<td><p class="font-weight-bold text-sm">Москва</p></td>
-																	<td><p class="font-weight-bold text-sm">845</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
 																</tr>
-																<tr>
-																	<td><p class="font-weight-bold text-sm">Москва</p></td>
-																	<td><p class="font-weight-bold text-sm">Санкт-Петербург</p></td>
-																	<td><p class="font-weight-bold text-sm">360</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
-																	<td><p class="font-weight-bold text-sm">800,0</p></td>
-																</tr>
-															</tbody>
-													</table>
+																</thead>
+																<tbody>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Казань</p></td>
+																		<td><p class="font-weight-bold text-sm">Москва</p></td>
+																		<td><p class="font-weight-bold text-sm">845</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	</tr>
+																	<tr>
+																		<td><p class="font-weight-bold text-sm">Москва</p></td>
+																		<td><p class="font-weight-bold text-sm">Санкт-Петербург</p></td>
+																		<td><p class="font-weight-bold text-sm">360</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																		<td><p class="font-weight-bold text-sm">800,0</p></td>
+																	</tr>
+																</tbody>
+														</table>
+													</div>
 												</div>
 											</div>
 										</div>
@@ -756,7 +787,13 @@
 									<!--карточка-->
 									<div class="tab-head border  rounded my-3">
 										<div class="d-flex align-items-center ">
-											<svg class="blue" height="64" width="64"><use xlink:href="assets/img/sprite.svg#dock"></use></svg>
+											<!--Предлагаю в этом месте вставить свгшку или картинкой или в код, потому что размер не стандартный, 64 пикселя, придется новый класс вводить только для этой иконки, не думаю, что это правильно-->
+											<svg width="64" height="64" class="blue" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M18 28.5H30" stroke="#003B5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M18 22.5H30" stroke="#003B5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M30 7.5H37.5C37.8978 7.5 38.2794 7.65804 38.5607 7.93934C38.842 8.22064 39 8.60218 39 9V40.5C39 40.8978 38.842 41.2794 38.5607 41.5607C38.2794 41.842 37.8978 42 37.5 42H10.5C10.1022 42 9.72064 41.842 9.43934 41.5607C9.15804 41.2794 9 40.8978 9 40.5V9C9 8.60218 9.15804 8.22064 9.43934 7.93934C9.72064 7.65804 10.1022 7.5 10.5 7.5H18" stroke="#003B5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+												<path d="M16.5 13.5V12C16.5 10.0109 17.2902 8.10322 18.6967 6.6967C20.1032 5.29018 22.0109 4.5 24 4.5C25.9891 4.5 27.8968 5.29018 29.3033 6.6967C30.7098 8.10322 31.5 10.0109 31.5 12V13.5H16.5Z" stroke="#003B5C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+											</svg>
 											<div>
 												<h5>Отчет по работе</h5>
 												<a href="#">Скачать</a>
@@ -781,9 +818,7 @@
 													<input type="radio" id="r-5" name="r" value="5">
 													<label for="r-5" title="Оценка «5»"></label>
 												</div>
-												<div class="border rounded my-2 p-3">
-													Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.
-												</div>
+												<textarea class="border rounded w-100 text-left my-2 p-3" placeholder="Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit."></textarea>
 											</div>
 											<!--отзыв-->
 											<div class="review-item">
@@ -800,9 +835,7 @@
 													<input type="radio" id="r-1-5" name="r-1-1" value="5">
 													<label for="r-1-5" title="Оценка «5»"></label>
 												</div>
-												<div class="border rounded my-2 p-3">
-													Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.
-												</div>
+												<textarea class="border rounded w-100 text-left my-2 p-3" placeholder="Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit."></textarea>
 											</div>
 											<!--отзыв-->
 											<div class="review-item">
@@ -819,9 +852,7 @@
 													<input type="radio" id="r-2-5" name="r-2-1" value="5">
 													<label for="r-2-5" title="Оценка «5»"></label>
 												</div>
-												<div class="border rounded my-2 p-3">
-													Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit.
-												</div>
+												<textarea class="border rounded w-100 text-left my-2 p-3" placeholder="Lorem ipsum dolor sit amet consectetur. In nunc rhoncus quam tellus in feugiat blandit."></textarea>
 											</div>
 										</div>
 									</div>
@@ -1371,30 +1402,59 @@
 		</div>
 		<!--end карта-->
 		<!--работы-->
-		<div class="modal modal-lg fade" id="work" tabindex="-1" aria-hidden="true">
+		<div class="modal modal-lg fade" id="editwork" tabindex="-1" aria-hidden="true">
       <div class="modal-dialog">
         <div class="modal-content">
 					<div class="modal-header px-2 mb-0">
 						<div>
-							<h4 class="modal-title" id="applicationLabel">Выбрать адрес</h4>
+							<h4 class="modal-title" id="applicationLabel">Добавление работ</h4>
 						</div>
 						<div class="d-flex align-self-start ml-auto">
 							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 					</div>
-					<div class="row  modal-body">
-							<div class="col-12">
-								<div class="input-group mb-3">
-									<input type="text" class="form-control " id="mapinput" placeholder="Выберите сервисный центр"/>
-								</div>
-								<div class="input-group mb-3">
-									<!--Здесь фрейм с картой-->
-									<img src="assets/img/map.png"/>
+					<div class="modal-body">
+						<form>
+							<div class="card-work-list col-12">
+								<div class="card-work bg-secondarylight p-3 mb-3">
+									<p class="text-sm opacity-7">Работа #1</p>
+									<div class="d-flex flex-column flex-lg-row">
+										<div class="input-group mb-2 pe-1">
+											<select class="form-select form-select__label" id="s_center">
+												<option selected="" disabled="" value="">Выберите работу</option>
+												<option value="">работа</option>
+												<option value="">работа</option>
+											</select>
+										</div>
+										<div class="input-group mb-2 px-1">
+											<select class="form-select form-select__label" id="s_center">
+												<option selected="" disabled="" value="">Категория</option>
+												<option value="">работа</option>
+												<option value="">работа</option>
+											</select>
+										</div>
+										<div class="input-group mb-2 px-1">
+											<input type="text" class="form-control " id="adress" placeholder="Часы" required>
+										</div>
+										<div class="input-group mb-2 px-1">
+											<input type="text" class="form-control " id="adress" placeholder="Стоимость" required>
+										</div>
+										<div class="input-group mb-2 ps-1">
+											<input type="text" class="form-control " id="adress" placeholder="Сумма" required>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-12">
-								<a href="#" class="map__btn btn bg-gradient-primary w-100">Сохранить</a>
+							<a class="work-clone mb-4 font-weight-bold d-flex" href="#"><svg class="blue me-2" height="20" width="20"><use xlink:href="assets/img/sprite.svg#plus"></use></svg>Добавить работу</a>	
+							<div class="row">
+								<div class="col-6">
+									<a href="#"  class="btn  btn-outline-primary w-100" data-bs-dismiss="modal" aria-label="Close">Отменить</a>
+								</div>
+								<div class="col-6">
+									<a href="#" class="map__btn btn bg-gradient-primary w-100">Сохранить</a>
+								</div>
 							</div>
+						</form>
 					</div>
 				</div>
 			</div>

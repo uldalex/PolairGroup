@@ -952,3 +952,39 @@ line-height: 0;
   .minh-14 p {
     min-height:14px;
   }
+.card-dropdown{
+    height:0;
+    overflow:hidden;
+
+    &.open {
+        height:auto;
+    }
+}
+.card-link.open{
+    .card-link--arrow {
+        transform: rotate(90deg);
+        margin-bottom:1rem;
+    }
+}
+.nav-pills{
+    .nav-item{
+      width:33%;
+      display:flex;
+      justify-content:center;
+    }
+}
+.text-gray500{
+    color: $gray-500;
+}
+@media (max-width: 575.98px) {
+h5, .h5 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.nav-pills{
+    .nav-link{
+        font-size:12px;
+        padding: 0.5rem 0.2rem;
+    }
+}
+}

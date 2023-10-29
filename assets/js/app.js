@@ -1255,3 +1255,7 @@ $(".sb-menu").on("click", function(){
  
 });
 }
+$(".card-link").on("click", function(){
+  $(this).toggleClass("open");
+  $(this).parents(".card-toggle").find('.card-dropdown').toggleClass("open")
+})
