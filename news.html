@@ -10,9 +10,7 @@
     Новости
   </title>
     <link href="assets/css/splide.min.css" rel="stylesheet" />  
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
-    <link href="assets/css/nucleo-svg.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/light/style.css"/>
     <link id="pagestyle" href="assets/css/datepicker.min.css" rel="stylesheet" />
     <link id="pagestyle" href="assets/css/app.css?v=3.1.0" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
@@ -238,15 +236,17 @@
                 </div>
             </div>
           </div>
+          <!--Пагинация-->
           <div class="col-12 mt-3 mb-5">
-            <nav aria-label="Page navigation example">
-              <ul class="pagination">
+            <nav aria-label="Page navigation">
+              <ul class="pagination d-none d-md-flex">
                 <li class="page-item active"><a class="page-link" href="#">1</a></li>
                 <li class="page-item"><a class="page-link" href="#">2</a></li>
                 <li class="page-item"><a class="page-link" href="#">3</a></li>
                 <li class="page-item"><span>...</span></li>
                 <li class="page-item"><a class="page-link" href="#">7</a></li>
               </ul>
+              <a href="#" class="btn btn-outline-primary d-flex align-items-center justify-content-center d-md-none"><i class="sb-icon  text-2xl ph-light ph-arrow-down me-4 "></i>Загрузить еще</a>
             </nav>
           </div>
       </div>
