@@ -13,10 +13,10 @@
 }
 
 .breadcrumb-dark {
-    background-color: $breadcrumb-dark-bg;
+    background-color:transparent;
 
     .breadcrumb-item {
-        font-weight: 600;
+        font-weight: 400;
 
         a {
             color: $breadcrumb-dark-color;

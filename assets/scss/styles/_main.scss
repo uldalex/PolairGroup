@@ -151,6 +151,12 @@ img {
             margin-bottom:8px;
         }
     }
+    .sticky .card-about{
+       min-height:20px;
+    }
+    .sticky{
+        margin-bottom:32px;
+    }
 
 }
 .partners-content{
@@ -998,4 +1004,18 @@ h5, .h5 {
 }
 .work__item:last-child::after{
     display:none;
+}
+@media(min-width:768px){
+.stkey-parent{
+    position: relative;
+    align-items: flex-start;
+}
+.sticky {
+    position: sticky;
+    top: 200px;
+}
+}
+.card-meta{
+    font-size:10px;
+    color:$gray-400;
 }
