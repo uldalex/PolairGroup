@@ -1058,7 +1058,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 .page_content ul li {
     margin-left: 20px;
 }
-ol li::before {
+.page_content ol li::before {
     counter-increment: myCounter;
     content: counter(myCounter);
     height: 24px;
@@ -1076,7 +1076,7 @@ ol li::before {
     align-items: center;
     justify-content: center;
 }
-ul li:before {
+.page_content ul li:before {
     content: "";
     height: 6px;
     width: 6px;
@@ -1085,6 +1085,17 @@ ul li:before {
     left: -20px;
     top: 24px;
     background-color:#318FAD;
+}
+a.card {
+    color: var(--bs-body-color);
+}
+a.card:hover {
+    color: #003B5C;
+}
+.card_footer{
+    font-size: 12px;
+    color: #959A9E;
+    margin: 0 1.5rem 1.5rem;
 }
 blockquote {
     padding-top:36px;
