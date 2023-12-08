@@ -943,7 +943,8 @@
 												<div class="col-lg-6">
 													<div class="input-group mb-3">
 														<div class="datepicker_wrapper w-100">
-															<input type="text" class="form-control datepicker_input"  id="datedo" placeholder="Дата ввода в эксплуатацию" required/>
+															<input type="text" class="form-control datepicker_input width_label" name="datedo"  id="datedo" placeholder="Дата ввода в эксплуатацию" required/>
+															<label class="" for="datedo">Дата ввода в эксплуатацию<span class="text-red">*</span></label>
 														</div>
 															<div class="input-group-text"><i class="text-2xl text-primary ph-light ph-calendar"></i></div>
 														<div class="invalid-feedback">
@@ -954,7 +955,7 @@
 												<div class="col-6">
 													<div class="input-group mb-3">
 														<!--Убираем спан, убираем плейсхолдер и добавляем лейбл, сразу после инпута. У инпута добавим класс width_label чтобы не поехали какие-то другие-->
-														<input type="text" class="form-control width_label" name="adress_new" id="adress" required/>
+														<input type="text" class="form-control width_label" name="adress_new" placeholder="Адрес расположения оборудования" id="adress" required/>
 														<label class="" for="adress_new">Адрес расположения оборудования<span class="text-red">*</span></label>
 														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
 														<div class="invalid-feedback">
@@ -975,12 +976,12 @@
 												</div>
 												<div class="col-lg-6">
 													<div class="input-group mb-3">
-														<span class="input-group-text input-group-text--left" for="s_center">Сервисный центр</span>
-														<select class="form-select form-select__label" id="s_center" >
+														<select class="form-select form-select__label width_label" name="s_center" id="s_center" >
 															<option selected disabled value="">Сервисный центр</option>
 															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
 															<option value="">“Техносервис-116” (ул.Фучика, 35В)</option>
 														</select>
+														<label class="" for="s_center">Сервисный центр<span class="text-red">*</span></label>
 														<div class="w-100 text-right"><small>Вы можете выбрать любой ближайший к вам</small></div>
 														<div class="invalid-feedback">
 															Выберите сервисный центр
@@ -1002,7 +1003,9 @@
 												</div>
 												<div class="col-12">
 													<div class="input-group mb-3">
-														<textarea class="form-control" id="validationTextarea" placeholder="Уточнения по адресу расположения" ></textarea>
+														<textarea class="form-control width_label" id="validationTextarea" placeholder="Уточнения по адресу расположения" ></textarea>
+														<label class="" for="s_center">Уточнения по адресу расположения<span class="text-red">*</span></label>
+														
 													</div>
 												</div>
 												<div class="col-12">

@@ -25308,19 +25308,35 @@ blockquote span {
   font-style: normal;
 }
 
-input.width_label {
+.width_label {
   background-color: transparent;
   z-index: 5;
 }
 
-input.width_label + label {
+.width_label::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.width_label::-moz-placeholder {
+  color: transparent;
+}
+
+.width_label:-moz-placeholder {
+  color: transparent;
+}
+
+.width_label:-ms-input-placeholder {
+  color: transparent;
+}
+
+.width_label + label {
   position: absolute;
   top: 12px;
   left: 5px;
-  transition: top 0.5s linear;
+  transition: top 0.3s linear;
 }
 
-input.width_label:focus + label {
+.width_label:focus + label {
   z-index: 101;
   top: -12px;
   font-size: 10px;
@@ -25329,7 +25345,25 @@ input.width_label:focus + label {
   padding: 0 6px;
 }
 
-input.width_label:disabled + label {
+.width_label:not(:-moz-placeholder-shown):not(:disabled) + label {
+  z-index: 101;
+  top: -12px;
+  font-size: 10px;
+  background-color: #ffffff;
+  right: auto;
+  padding: 0 6px;
+}
+
+.width_label:not(:placeholder-shown):not(:disabled) + label {
+  z-index: 101;
+  top: -12px;
+  font-size: 10px;
+  background-color: #ffffff;
+  right: auto;
+  padding: 0 6px;
+}
+
+.width_label:disabled + label {
   z-index: 101;
   opacity: 0.7;
 }
