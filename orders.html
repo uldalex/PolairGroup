@@ -953,8 +953,9 @@
 												</div>
 												<div class="col-6">
 													<div class="input-group mb-3">
-														<span class="input-group-text input-group-text--left" for="s_center">Адрес расположения оборудования</span>
-														<input type="text" class="form-control " id="adress" placeholder="Адрес расположения оборудования*" required/>
+														<!--Убираем спан, убираем плейсхолдер и добавляем лейбл, сразу после инпута. У инпута добавим класс width_label чтобы не поехали какие-то другие-->
+														<input type="text" class="form-control width_label" name="adress_new" id="adress" required/>
+														<label class="" for="adress_new">Адрес расположения оборудования<span class="text-red">*</span></label>
 														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
 														<div class="invalid-feedback">
 														Пожалуйста, укажите адрес
@@ -963,8 +964,9 @@
 												</div>
 												<div class="col-6">
 													<div class="input-group mb-3">
-														<span class="input-group-text input-group-text--left" for="s_center">Наименование объекта</span>
-														<input type="text" class="form-control " id="adress" placeholder="Наименование объекта*" required/>
+														<!--Тоже самое, но с отключенныи инпутом. Убираем спан, убираем плейсхолдер и добавляем лейбл, сразу после инпута. У инпута добавим класс width_label чтобы не поехали какие-то другие-->
+														<input type="text" class="form-control width_label" disabled id="adress" required/>
+														<label class="" for="adress_new">Наименование объекта<span class="text-red">*</span></label>
 														<div class="w-100 text-right"><a href="#" class="step1__map"><small>Показать на карте</small></a></div>
 														<div class="invalid-feedback">
 														Пожалуйста, укажите адрес
