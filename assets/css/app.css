@@ -20122,7 +20122,7 @@ label,
 .input-group .input-group-text--left {
   left: 0;
   z-index: 102;
-  top: -12px;
+  top: -14px;
   font-size: 10px;
   padding: 0;
   background-color: #ffffff;
@@ -25332,7 +25332,7 @@ blockquote span {
 .width_label + label {
   position: absolute;
   top: 12px;
-  left: 5px;
+  left: 0.5rem;
   transition: top 0.3s linear;
 }
 
