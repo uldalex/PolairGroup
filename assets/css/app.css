@@ -25152,7 +25152,7 @@ th.sorted[data-order="1"]::after {
 }
 
 .nav-pills .nav-item {
-  width: 33%;
+  width: 25%;
   display: flex;
   justify-content: center;
 }
